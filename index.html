@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joffrey Ros, Hypnothérapeute expert troubles anxieux à Néfiach (66170). Spécialiste anxiété, crises d'angoisse, burn-out, dépression. Cabinet MSP Perpignan. Résultats en 3-8 séances.">
+    <title>Hypnothérapeute Anxiété Néfiach (66) | Joffrey Ros - Crises d'Angoisse, Burn-out</title>
+    
+    <!-- SEO Local et Réseaux Sociaux -->
+    <meta name="geo.region" content="FR-66">
+    <meta name="geo.placename" content="Néfiach, Pyrénées-Orientales">
+    <meta name="geo.position" content="42.6333;2.6167">
+    <meta name="ICBM" content="42.6333, 2.6167">
+    
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content="Hypnothérapeute Anxiété Néfiach | Joffrey Ros - Spécialiste Troubles Anxieux">
+    <meta property="og:description" content="Expert en troubles anxieux à Néfiach (66). Hypnose, EMDR, TCC pour vaincre l'anxiété, burn-out, dépression. Résultats rapides en 3-8 séances.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joffreyros.github.io/hypnose-nefiach">
+    <meta property="og:image" content="https://joffreyros.github.io/hypnose-nefiach/images/joffrey-ros-photo.jpg">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hypnothérapeute Anxiété Néfiach | Joffrey Ros">
+    <meta name="twitter:description" content="Spécialiste troubles anxieux. Hypnose, EMDR, TCC. Cabinet Néfiach (66). Résultats en 3-8 séances.">
+    
+    <!-- Données structurées JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Joffrey Ros - Hypnothérapeute",
+      "description": "Cabinet d'hypnothérapie spécialisé dans les troubles anxieux, burn-out, dépression et traumatismes",
+      "url": "https://joffreyros.github.io/hypnose-nefiach",
+      "telephone": "+33-6-XX-XX-XX-XX",
+      "email": "contact@hypnosejoffrey.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 rue de Verdun, MSP",
+        "addressLocality": "Néfiach",
+        "postalCode": "66170",
+        "addressRegion": "Pyrénées-Orientales",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "42.6333",
+        "longitude": "2.6167"
+      },
+      "openingHours": [
+        "Mo-Fr 09:00-19:00",
+        "Sa 09:00-13:00"
+      ],
+      "priceRange": "60€-80€",
+      "image": "https://joffreyros.github.io/hypnose-nefiach/images/joffrey-ros-photo.jpg",
+      "founder": {
+        "@type": "Person",
+        "name": "Joffrey Ros",
+        "jobTitle": "Hypnothérapeute",
+        "description": "Spécialiste des troubles anxieux, formé en Hypnose Ericksonienne, EMDR et TCC"
+      },
+      "medicalSpecialty": [
+        "Troubles anxieux",
+        "Burn-out",
+        "Dépression", 
+        "Traumatismes",
+        "Crises d'angoisse"
+      ],
+      "areaServed": [
+        "Néfiach",
+        "Perpignan", 
+        "Prades",
+        "Pyrénées-Orientales",
+        "Occitanie"
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Bannière d'urgence */
+        .urgency-banner {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .urgency-banner .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .urgency-text {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .urgency-cta {
+            background: white;
+            color: #ff6b6b;
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        
+        .urgency-cta:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #5f9ea0 0%, #4682b4 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: drift 20s linear infinite;
+        }
+        
+        @keyframes drift {
+            from { transform: translate(0, 0); }
+            to { transform: translate(20px, 20px); }
+        }
+        
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero .tagline {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(255,107,107,0.4);
+        }
+        
+        .cta-button:hover {
+            background: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255,107,107,0.6);
+        }
+        
+        /* Indicateurs de confiance */
+        .trust-bar {
+            background: white;
+            padding: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .trust-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .trust-item {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .trust-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .trust-item .icon {
+            font-size: 3em;
+            color: #5f9ea0;
+            margin-bottom: 15px;
+        }
+        
+        .trust-item strong {
+            color: #333;
+            font-size: 1.1em;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 60px;
+            color: #333;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #5f9ea0;
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+        
+        .section:nth-child(even) {
+            background: white;
+        }
+        
+        .section:nth-child(odd) {
+            background: #f8f9fa;
+        }
+        
+        /* Grille spécialisations */
+        .specializations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .specialization-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .specialization-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border-color: #5f9ea0;
+        }
+        
+        .specialization-card h3 {
+            color: #5f9ea0;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+        
+        .specialization-card ul {
+            list-style: none;
+            text-align: left;
+        }
+        
+        .specialization-card li {
+            margin: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.5;
+        }
+        
+        .specialization-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #5f9ea0;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        /* Section À propos */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-image {
+            text-align: center;
+        }
+        
+        .profile-photo {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #5f9ea0;
+            box-shadow: 0 10px 30px rgba(95, 158, 160, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-photo:hover {
+            transform: scale(1.05);
+        }
+        
+        .certifications {
+            margin-top: 30px;
+        }
+        
+        .certification-badge {
+            display: inline-block;
+            background: #5f9ea0;
+            color: white;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .about-text h3 {
+            color: #5f9ea0;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #5f9ea0;
+            font-size: 1.2em;
+            border-left: 4px solid #5f9ea0;
+            padding-left: 20px;
+            margin-top: 30px;
+        }
+        
+        /* Section Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info, .contact-form {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .contact-info h3, .contact-form h3 {
+            color: #5f9ea0;
+            margin-bottom: 30px;
+            font-size: 1.6em;
+        }
+        
+        .contact-item {
+            margin: 25px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .contact-item .icon {
+            color: #5f9ea0;
+            font-size: 1.8em;
+            margin-top: 5px;
+        }
+        
+        .contact-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .contact-item a {
+            color: #5f9ea0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .urgency-box {
+            background: #ffe6e6;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 5px solid #ff6b6b;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #5f9ea0;
+        }
+        
+        .submit-button {
+            background: linear-gradient(45deg, #5f9ea0, #4682b4);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(95, 158, 160, 0.4);
+        }
+        
+        .guarantees {
+            background: #e6f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            font-size: 0.95em;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 50px 0 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        
+        .footer-section h4 {
+            color: #5f9ea0;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin: 8px 0;
+        }
+        
+        .footer-section a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            color: #5f9ea0;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 30px;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .specializations-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .trust-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-info, .contact-form {
+                padding: 30px;
+            }
+            
+            .urgency-banner .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Bannière d'urgence -->
+    <div class="urgency-banner">
+        <div class="container">
+            <span class="urgency-text">🔥 JUIN 2025 : Créneaux d'urgence anxiété disponibles cette semaine</span>
+            <a href="#contact" class="urgency-cta">Réserver maintenant</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Spécialiste des Troubles Anxieux</h1>
+            <p class="tagline">"Retrouvez votre équilibre émotionnel et votre sérénité"</p>
+            <p class="subtitle">
+                Expert en anxiété, dépression, burn-out et traumatismes<br>
+                Hypnose Ericksonienne • EMDR • TCC • Approche intégrative
+            </p>
+            <a href="#contact" class="cta-button">Libérez-vous de l'Anxiété</a>
+        </div>
+    </section>
+
+    <!-- Indicateurs de confiance -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <div class="icon">🎯</div>
+                    <p><strong>Spécialiste Anxiété</strong><br>+200 patients accompagnés</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">🏥</div>
+                    <p><strong>Cabinet MSP Agréé</strong><br>3 rue de Verdun, Néfiach (66)</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">🎓</div>
+                    <p><strong>Formations Certifiées</strong><br>ADELI N°66XXXXXXX</p>
+                </div>
+                <div class="trust-item">
+                    <div class="icon">⚡</div>
+                    <p><strong>Résultats Rapides</strong><br>3 à 8 séances • 85% de réussite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spécialisations -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Expert en Troubles Anxieux</h2>
+            <p style="text-align: center; max-width: 900px; margin: 0 auto 50px; font-size: 1.2em; color: #666;">
+                L'anxiété n'est pas une fatalité. Que vos troubles anxieux soient liés à un traumatisme, 
+                une dépression, un burn-out ou des événements de vie difficiles, je vous accompagne 
+                vers un mieux-être durable avec des techniques éprouvées.
+            </p>
+            
+            <div class="specializations-grid">
+                <div class="specialization-card">
+                    <h3>Anxiété Généralisée</h3>
+                    <ul>
+                        <li>Inquiétudes permanentes</li>
+                        <li>Tension musculaire chronique</li>
+                        <li>Difficultés de concentration</li>
+                        <li>Troubles du sommeil</li>
+                        <li>Fatigue persistante</li>
+                        <li>Irritabilité</li>
+                    </ul>
+                </div>
+                
+                <div class="specialization-card">
+                    <h3>Anxiété Post-Traumatique</h3>
+                    <ul>
+                        <li>Flashbacks et cauchemars</li>
+                        <li>Hypervigilance</li>
+                        <li>Évitement des déclencheurs</li>
+                        <li>Détresse émotionnelle</li>
+                        <li>Souvenirs intrusifs</li>
+                        <li>Réactions de sursaut</li>
+                    </ul>
+                </div>
+                
+                <div class="specialization-card">
+                    <h3>Anxiété liée au Burn-out</h3>
+                    <ul>
+                        <li>Épuisement professionnel</li>
+                        <li>Perte de sens au travail</li>
+                        <li>Anxiété de performance</li>
+                        <li>Peur de l'échec</li>
+                        <li>Surcharge mentale</li>
+                        <li>Dévalorisation de soi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Votre Thérapeute</h2>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- VOTRE PHOTO SERA ICI - Uploadez joffrey-ros-photo.jpg dans le dossier images/ -->
+                    <img src="images/joffrey-ros-photo.jpg" 
+                         alt="Joffrey Ros - Hypnothérapeute spécialisé en troubles anxieux" 
+                         class="profile-photo"
+                         onerror="this.src='https://via.placeholder.com/280x280/5f9ea0/ffffff?text=JR'">
+                    <div class="certifications">
+                        <span class="certification-badge">Expert Anxiété</span>
+                        <span class="certification-badge">Hypnose Certifiée</span>
+                        <span class="certification-badge">Praticien EMDR</span>
+                        <span class="certification-badge">Formation TCC</span>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Joffrey Ros - Votre Allié Contre l'Anxiété</h3>
+                    <p>
+                        Spécialisé dans l'accompagnement des troubles anxieux, je comprends profondément 
+                        la souffrance que génère l'anxiété au quotidien. Ayant moi-même traversé des périodes 
+                        difficiles, j'ai développé une approche empathique et efficace.
+                    </p>
+                    <p>
+                        Ma formation approfondie en Hypnose Ericksonienne, EMDR et TCC me permet de vous 
+                        proposer un accompagnement complet et personnalisé. Je crois fermement que chacun 
+                        possède en lui les ressources nécessaires pour surmonter l'anxiété.
+                    </p>
+                    <p>
+                        Dans mon cabinet situé en Maison de Santé Professionnelle à Néfiach, je vous accueille 
+                        dans un espace sécurisant et bienveillant, propice à la transformation et à la guérison.
+                    </p>
+                    <p class="quote">
+                        "Mon objectif : vous aider à retrouver votre liberté intérieure et à vivre pleinement, 
+                        sans être limité par l'anxiété."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Commencez Votre Transformation</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informations Pratiques</h3>
+                    
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>Cabinet en MSP</strong>
+                            3 rue de Verdun<br>
+                            66170 Néfiach<br>
+                            <small>Proche Prades et Perpignan</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <strong>Téléphone - Réponse Immédiate</strong>
+                            <a href="tel:+33XXXXXXXXX">06 XX XX XX XX</a><br>
+                            <small>Urgences anxiété : réponse en 2h max</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">💬</span>
+                        <div>
+                            <strong>WhatsApp - Contact Rapide</strong>
+                            <a href="https://wa.me/33XXXXXXXXX">Message WhatsApp</a><br>
+                            <small>Réponse en moins de 1h</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            contact@hypnosejoffrey.fr
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">🕐</span>
+                        <div>
+                            <strong>Horaires</strong>
+                            Lun-Ven : 9h-19h<br>
+                            Sam : 9h-13h<br>
+                            <small>Urgences anxiété : créneaux prioritaires</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="icon">💰</span>
+                        <div>
+                            <strong>Tarifs</strong>
+                            Première consultation (1h30) : 80€<br>
+                            Séance de suivi (1h) : 60€<br>
+                            Forfait 5 séances : 250€<br>
+                            <small>Possibilité de paiement échelonné</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>🚨 Réservation Prioritaire</h3>
+                    
+                    <div class="urgency-box">
+                        <strong>⏰ URGENCE ANXIÉTÉ :</strong> Créneaux d'urgence disponibles cette semaine pour crises d'angoisse sévères. 
+                        <strong>Réponse garantie sous 2h.</strong>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Nom et Prénom *</label>
+                            <input type="text" required placeholder="Ex: Marie Dupont">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Téléphone *</label>
+                            <input type="tel" required placeholder="06 XX XX XX XX">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" required placeholder="votre.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Votre problématique principale *</label>
+                            <select required>
+                                <option value="">Sélectionnez...</option>
+                                <option>Crises d'angoisse / Attaques de panique</option>
+                                <option>Anxiété généralisée chronique</option>
+                                <option>Burn-out / Épuisement professionnel</option>
+                                <option>Traumatisme / Stress post-traumatique</option>
+                                <option>Anxiété sociale / Phobie sociale</option>
+                                <option>Dépression avec anxiété</option>
+                                <option>Autre / Situation complexe</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Message (optionnel)</label>
+                            <textarea rows="3" placeholder="Décrivez brièvement votre situation..."></textarea>
+                        </div>
+
+                        <div class="guarantees">
+                            ✅ <strong>Confidentialité totale :</strong> Secret professionnel absolu<br>
+                            ✅ <strong>Réponse rapide :</strong> Contact dans les 2h (urgences) ou 24h max
+                        </div>
+                        
+                        <button type="submit" class="submit-button">🔥 RÉSERVER MA CONSULTATION PRIORITAIRE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cabinet Hypnothérapie Néfiach</h4>
+                    <p><strong>Joffrey Ros</strong><br>
+                    Hypnothérapeute Spécialisé Anxiété<br>
+                    N° ADELI : 66XXXXXXX<br>
+                    SIRET : XXX XXX XXX XXXXX</p>
+                    
+                    <p style="margin-top: 15px;">
+                    📍 3 rue de Verdun<br>
+                    MSP 66170 Néfiach<br>
+                    📞 <a href="tel:+33XXXXXXXXX">06 XX XX XX XX</a>
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Spécialisations</h4>
+                    <ul>
+                        <li>Hypnose contre l'anxiété</li>
+                        <li>Thérapie des crises d'angoisse</li>
+                        <li>EMDR pour traumatismes</li>
+                        <li>Traitement du burn-out</li>
+                        <li>TCC pour dépression</li>
+                        <li>Hypnose Ericksonienne</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Zone d'Intervention</h4>
+                    <ul>
+                        <li>Néfiach (66170)</li>
+                        <li>Perpignan (66000)</li>
+                        <li>Prades (66500)</li>
+                        <li>Céret (66400)</li>
+                        <li>Thuir (66300)</li>
+                        <li>Pyrénées-Orientales (66)</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><strong>Consultations :</strong><br>
+                    Lundi au Vendredi : 9h-19h<br>
+                    Samedi : 9h-13h<br>
+                    <em>Créneaux d'urgence disponibles</em></p>
+                    
+                    <p style="margin-top: 15px;">
+                    📧 contact@hypnosejoffrey.fr<br>
+                    💬 <a href="https://wa.me/33XXXXXXXXX">WhatsApp</a><br>
+                    🌐 Votre site GitHub
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Joffrey Ros - Hypnothérapeute Spécialisé Troubles Anxieux Néfiach</p>
+                <p style="margin-top: 10px; font-size: 0.9em; color: #95a5a6;">
+                    Hypnose Anxiété Néfiach • EMDR Burn-out Perpignan • TCC Dépression Prades • Thérapie Traumatisme Pyrénées-Orientales
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation fluide
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Validation et soumission du formulaire
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const requiredFields = this.querySelectorAll('[required]');
+            let allValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = '#e74c3c';
+                    allValid = false;
+                } else {
+                    field.style.borderColor = '#27ae60';
+                }
+            });
+            
+            if (allValid) {
+                const submitButton = this.querySelector('.submit-button');
+                const originalText = submitButton.textContent;
+                
+                submitButton.textContent = '✅ DEMANDE ENVOYÉE ! Vous serez rappelé dans 2h max';
+                submitButton.style.background = '#27ae60';
+                submitButton.disabled = true;
+                
+                setTimeout(() => {
+                    submitButton.textContent = originalText;
+                    submitButton.style.background = 'linear-gradient(45deg, #5f9ea0, #4682b4)';
+                    submitButton.disabled = false;
+                    this.reset();
+                    
+                    // Reset field colors
+                    requiredFields.forEach(field => {
+                        field.style.borderColor = '#e0e0e0';
+                    });
+                }, 4000);
+            } else {
+                alert('Merci de remplir tous les champs obligatoires pour que je puisse vous recontacter rapidement.');
+            }
+        });
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer les cartes de spécialisation
+        document.querySelectorAll('.specialization-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
