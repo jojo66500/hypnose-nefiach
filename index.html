@@ -76,10 +76,10 @@
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
+        "ratingValue": "5.0",
         "reviewCount": "15",
         "bestRating": "5",
-        "worstRating": "4"
+        "worstRating": "5"
       },
       "review": [
         {
@@ -134,26 +134,59 @@
             padding: 0 20px;
         }
         
-        /* Header avec logo */
-        .header-logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 2000;
-            background: rgba(255,255,255,0.95);
-            padding: 8px 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #5f9ea0 0%, #4682b4 100%);
+            color: white;
+            padding: 100px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
         
-        .header-logo img {
-            height: 50px;
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: drift 20s linear infinite;
+        }
+        
+        @keyframes drift {
+            from { transform: translate(0, 0); }
+            to { transform: translate(20px, 20px); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-logo {
+            margin-bottom: 30px;
+        }
+        
+        .hero-logo img {
+            height: 60px;
             width: auto;
             transition: transform 0.3s ease;
+            filter: brightness(0) invert(1);
         }
         
-        .header-logo:hover img {
+        .hero-logo img:hover {
             transform: scale(1.05);
+        }
+        
+        .hero-name {
+            font-size: 1.8em;
+            font-weight: 300;
+            margin-bottom: 15px;
+            color: rgba(255,255,255,0.95);
+            letter-spacing: 2px;
         }
         
         /* Bannière d'urgence */
@@ -193,38 +226,6 @@
         
         .urgency-cta:hover {
             transform: scale(1.05);
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #5f9ea0 0%, #4682b4 100%);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-            background-size: 20px 20px;
-            animation: drift 20s linear infinite;
-        }
-        
-        @keyframes drift {
-            from { transform: translate(0, 0); }
-            to { transform: translate(20px, 20px); }
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
         }
         
         .hero h1 {
@@ -724,14 +725,17 @@
         
         /* Responsive */
         @media (max-width: 768px) {
-            .header-logo {
-                top: 10px;
-                left: 10px;
-                padding: 6px 10px;
+            .hero {
+                padding: 60px 0;
             }
             
-            .header-logo img {
-                height: 40px;
+            .hero-logo img {
+                height: 45px;
+            }
+            
+            .hero-name {
+                font-size: 1.5em;
+                letter-spacing: 1px;
             }
             
             .hero h1 {
@@ -796,13 +800,6 @@
     </style>
 </head>
 <body>
-    <!-- Header avec logo -->
-    <div class="header-logo">
-        <img src="images/logo-joffrey-ros-photo-blanc.png" 
-             alt="Logo Joffrey Ros Hypnothérapeute Néfiach" 
-             onerror="this.style.display='none'">
-    </div>
-
     <!-- Bannière d'urgence -->
     <div class="urgency-banner">
         <div class="container">
@@ -815,6 +812,16 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
+                <!-- Logo professionnel dans la zone bleue -->
+                <div class="hero-logo">
+                    <img src="images/logo-joffrey-ros-photo-blanc.png" 
+                         alt="Logo Joffrey Ros Hypnothérapeute" 
+                         onerror="this.style.display='none'">
+                </div>
+                
+                <!-- Nom du thérapeute -->
+                <h2 class="hero-name">JOFFREY ROS</h2>
+                
                 <h1>Spécialiste des Troubles Anxieux</h1>
                 <p class="tagline">"Retrouvez votre équilibre émotionnel et votre sérénité"</p>
                 <p class="subtitle">
@@ -845,7 +852,7 @@
                 </div>
                 <div class="trust-item">
                     <div class="icon">⭐</div>
-                    <p><strong>Avis Clients Excellents</strong><br>4.9/5 sur Google • 15+ avis</p>
+                    <p><strong>Avis Clients Excellents</strong><br>5/5 sur Google • 15+ avis</p>
                 </div>
                 <div class="trust-item">
                     <div class="icon">⚡</div>
@@ -910,7 +917,7 @@
         <div class="container">
             <h2 class="section-title">Témoignages de Mes Patients</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1em; color: #666;">
-                Découvrez les retours authentiques de patients qui ont retrouvé leur sérénité grâce à l'hypnothérapie.
+                Découvrez les retours authentiques de patients ayant bénéficié d'un accompagnement en hypnothérapie.
                 <strong>Tous les témoignages respectent l'anonymat et le secret professionnel.</strong>
             </p>
             
@@ -918,22 +925,22 @@
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
-                        "Après 3 séances avec Joffrey, mes crises d'angoisse ont complètement disparu. 
-                        Je recommande vivement son approche bienveillante et efficace. 
-                        Je dors enfin paisiblement et j'ai retrouvé confiance en moi."
+                        "La première séance a été tout à fait probante et j'ai éliminé très vite 
+                        une difficulté qui me gênait dans mon quotidien. Les séances sont comme 
+                        un souffle d'air pour soi, prendre le temps de parler, d'être écouté."
                     </div>
                     <div class="testimonial-author">
                         <span class="testimonial-name">Marie L.</span>
-                        <span class="testimonial-problem">Crises d'angoisse</span>
+                        <span class="testimonial-problem">Anxiété</span>
                     </div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
-                        "Grâce à l'hypnose avec Joffrey, j'ai surmonté mon burn-out. 
-                        Les séances m'ont permis de retrouver goût au travail et sérénité au quotidien. 
-                        Un accompagnement professionnel remarquable."
+                        "Thérapeute qui fait preuve d'une grande empathie et grande écoute. 
+                        Très professionnel, discret. Les résultats obtenus ont été rapides 
+                        et la transformation tout en douceur mais intense."
                     </div>
                     <div class="testimonial-author">
                         <span class="testimonial-name">Thomas B.</span>
@@ -944,59 +951,58 @@
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
-                        "Les séances en visio ont été très efficaces pour mon anxiété généralisée. 
-                        Joffrey est à l'écoute et ses techniques d'hypnose sont remarquables. 
-                        Je me sens transformée."
+                        "J'apprécie le professionnalisme, je me suis tout de suite sentie 
+                        en confiance et écoutée. Le travail effectué m'a permis de mieux 
+                        me connaître et d'augmenter ma confiance en moi."
                     </div>
                     <div class="testimonial-author">
                         <span class="testimonial-name">Sophie M.</span>
-                        <span class="testimonial-problem">Anxiété généralisée</span>
+                        <span class="testimonial-problem">Confiance en soi</span>
                     </div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
-                        "Après un traumatisme, j'ai consulté Joffrey pour des séances EMDR. 
-                        En quelques séances, j'ai retrouvé un équilibre émotionnel. 
-                        Son approche est respectueuse et très professionnelle."
+                        "Séance après séance, je gagne en autonomie dans mon bien-être ! 
+                        Son dynamisme et son sourire viennent compléter de manière agréable 
+                        les séances. Grand merci !"
                     </div>
                     <div class="testimonial-author">
-                        <span class="testimonial-name">David R.</span>
-                        <span class="testimonial-problem">Traumatisme</span>
+                        <span class="testimonial-name">Émilie D.</span>
+                        <span class="testimonial-problem">Bien-être</span>
                     </div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
-                        "J'étais sceptique au début, mais l'hypnose m'a aidé à gérer mes phobies. 
-                        Joffrey explique bien le processus et met en confiance. 
-                        Les résultats ont été rapides et durables."
+                        "J'adore mes séances d'hypnose, car c'est puissant et rapide à la fois. 
+                        Il a su m'écouter avec patience, respect et zéro jugement. 
+                        Je recommande vivement."
                     </div>
                     <div class="testimonial-author">
-                        <span class="testimonial-name">Claire D.</span>
-                        <span class="testimonial-problem">Phobies</span>
+                        <span class="testimonial-name">Claire R.</span>
+                        <span class="testimonial-problem">Stress</span>
                     </div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
-                        "Cabinet très accueillant à Néfiach. Joffrey a su m'accompagner 
-                        dans ma dépression avec empathie. Je recommande les yeux fermés 
-                        pour tous ceux qui souffrent d'anxiété."
+                        "Amélioration constatée dans les 30 jours suivant la consultation. 
+                        Merci de m'avoir libérée et permis de comprendre qu'il était temps de vivre."
                     </div>
                     <div class="testimonial-author">
                         <span class="testimonial-name">Antoine F.</span>
-                        <span class="testimonial-problem">Dépression</span>
+                        <span class="testimonial-problem">Traumatisme</span>
                     </div>
                 </div>
             </div>
             
             <div class="testimonials-cta">
                 <a href="https://www.google.com/search?q=hypnosejoffrey+avis" target="_blank" class="testimonials-link">
-                    ⭐ Voir tous nos avis Google (4.9/5)
+                    ⭐ Voir tous nos avis Google (5/5) - 15+ témoignages
                 </a>
             </div>
         </div>
@@ -1222,7 +1228,7 @@
                     <!-- Avis Google -->
                     <div style="margin-top: 20px; padding: 15px; background: rgba(95,158,160,0.1); border-radius: 8px;">
                         <p style="margin: 0; font-size: 0.9em;">
-                            ⭐⭐⭐⭐⭐ <strong>4.9/5</strong> sur Google<br>
+                            ⭐⭐⭐⭐⭐ <strong>5/5</strong> sur Google<br>
                             <a href="https://www.google.com/search?client=ms-android-samsung-ss&sca_esv=3865a5c24f38e491&sxsrf=AE3TifNSiC_nCU1ZHGmpY1d7iAWMm4H7og%3A1749464290666&q=hypnosejoffrey&stick=H4sIAAAAAAAAAONgU1I1qDA0SjIwNDS1sLQwNjQyNzC2MqgwNzBKMTEwN7VINko1TjJPXcTKl1FZkJdfnJqVn5ZWlFoJAEpqWyM6AAAA&mat=CWEuHeE8yMUY&ved=2ahUKEwi1rN6sjuSNAxVTKvsDHd1-OVsQrMcEegQIfxAC#mpd=~1785052991122648673/customers/reviews" target="_blank" style="color: #5f9ea0; font-size: 0.85em;">
                                 Voir tous les avis clients
                             </a>
