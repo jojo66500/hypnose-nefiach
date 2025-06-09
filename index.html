@@ -33,7 +33,7 @@
       "name": "Joffrey Ros - Hypnothérapeute",
       "description": "Cabinet d'hypnothérapie spécialisé dans les troubles anxieux, burn-out, dépression et traumatismes",
       "url": "https://joffreyros.github.io/hypnose-nefiach",
-      "telephone": "+33-6-XX-XX-XX-XX",
+      "telephone": "+33-7-59-68-43-59",
       "email": "contact@hypnosejoffrey.fr",
       "address": {
         "@type": "PostalAddress",
@@ -52,7 +52,7 @@
         "Mo-Fr 09:00-19:00",
         "Sa 09:00-13:00"
       ],
-      "priceRange": "60€-80€",
+      "priceRange": "60€-90€",
       "image": "https://joffreyros.github.io/hypnose-nefiach/images/joffrey-ros-photo.jpg",
       "founder": {
         "@type": "Person",
@@ -76,6 +76,10 @@
       ]
     }
     </script>
+    
+    <!-- Calendly Integration -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     
     <style>
         * {
@@ -163,27 +167,43 @@
             to { transform: translate(20px, 20px); }
         }
         
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-logo {
+            margin-bottom: 30px;
+        }
+        
+        .hero-logo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.9);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .hero-logo img:hover {
+            transform: scale(1.05);
+        }
+        
         .hero h1 {
             font-size: 2.8em;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            position: relative;
-            z-index: 1;
         }
         
         .hero .tagline {
             font-size: 1.4em;
             margin-bottom: 30px;
             font-style: italic;
-            position: relative;
-            z-index: 1;
         }
         
         .hero .subtitle {
             font-size: 1.2em;
             margin-bottom: 40px;
-            position: relative;
-            z-index: 1;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
@@ -199,8 +219,6 @@
             font-size: 1.2em;
             font-weight: bold;
             transition: all 0.3s ease;
-            position: relative;
-            z-index: 1;
             box-shadow: 0 4px 15px rgba(255,107,107,0.4);
         }
         
@@ -442,59 +460,100 @@
             border-left: 5px solid #ff6b6b;
         }
         
-        .form-group {
-            margin-bottom: 25px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-            font-weight: bold;
-        }
-        
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 1em;
-            transition: border-color 0.3s;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #5f9ea0;
-        }
-        
-        .submit-button {
-            background: linear-gradient(45deg, #5f9ea0, #4682b4);
-            color: white;
-            padding: 18px 40px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.1em;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-        }
-        
-        .submit-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(95, 158, 160, 0.4);
-        }
-        
         .guarantees {
             background: #e6f7ff;
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 25px;
             font-size: 0.95em;
+        }
+        
+        /* Calendly Options */
+        .calendly-options {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .calendly-option {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .calendly-option:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .calendly-option.urgent {
+            border-color: #ff6b6b;
+            background: linear-gradient(135deg, #fff5f5, #ffffff);
+        }
+        
+        .calendly-option.primary {
+            border-color: #5f9ea0;
+            background: linear-gradient(135deg, #f0f8ff, #ffffff);
+        }
+        
+        .calendly-option.follow {
+            border-color: #28a745;
+            background: linear-gradient(135deg, #f8fff8, #ffffff);
+        }
+        
+        .calendly-option h4 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .calendly-option p {
+            margin: 8px 0;
+            color: #666;
+        }
+        
+        .calendly-btn {
+            width: 100%;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .urgent-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff5252);
+            color: white;
+        }
+        
+        .urgent-btn:hover {
+            background: linear-gradient(45deg, #ff5252, #ff4444);
+            transform: scale(1.02);
+        }
+        
+        .primary-btn {
+            background: linear-gradient(45deg, #5f9ea0, #4682b4);
+            color: white;
+        }
+        
+        .primary-btn:hover {
+            background: linear-gradient(45deg, #4682b4, #2e8b57);
+            transform: scale(1.02);
+        }
+        
+        .follow-btn {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+        }
+        
+        .follow-btn:hover {
+            background: linear-gradient(45deg, #20c997, #17a2b8);
+            transform: scale(1.02);
         }
         
         /* Footer */
@@ -548,6 +607,11 @@
                 font-size: 2.2em;
             }
             
+            .hero-logo img {
+                width: 100px;
+                height: 100px;
+            }
+            
             .about-content,
             .contact-grid {
                 grid-template-columns: 1fr;
@@ -570,6 +634,14 @@
                 flex-direction: column;
                 gap: 10px;
             }
+            
+            .calendly-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .calendly-option {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -578,20 +650,30 @@
     <div class="urgency-banner">
         <div class="container">
             <span class="urgency-text">🔥 JUIN 2025 : Créneaux d'urgence anxiété disponibles cette semaine</span>
-            <a href="#contact" class="urgency-cta">Réserver maintenant</a>
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-urgence'});return false;" class="urgency-cta">Réserver maintenant</a>
         </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Spécialiste des Troubles Anxieux</h1>
-            <p class="tagline">"Retrouvez votre équilibre émotionnel et votre sérénité"</p>
-            <p class="subtitle">
-                Expert en anxiété, dépression, burn-out et traumatismes<br>
-                Hypnose Ericksonienne • EMDR • TCC • Approche intégrative
-            </p>
-            <a href="#contact" class="cta-button">Libérez-vous de l'Anxiété</a>
+            <div class="hero-content">
+                <!-- Logo professionnel -->
+                <div class="hero-logo">
+                    <img src="images/logo-joffrey-ros.png" 
+                         alt="Logo Joffrey Ros Hypnothérapeute" 
+                         onerror="this.style.display='none'">
+                </div>
+                
+                <h1>Spécialiste des Troubles Anxieux</h1>
+                <p class="tagline">"Retrouvez votre équilibre émotionnel et votre sérénité"</p>
+                <p class="subtitle">
+                    Expert en anxiété, dépression, burn-out et traumatismes<br>
+                    Hypnose Ericksonienne • EMDR • TCC • Approche intégrative<br>
+                    <strong>📍 Cabinet Néfiach • 💻 Consultations Visio disponibles</strong>
+                </p>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="cta-button">Libérez-vous de l'Anxiété</a>
+            </div>
         </div>
     </section>
 
@@ -737,7 +819,7 @@
                         <span class="icon">📞</span>
                         <div>
                             <strong>Téléphone - Réponse Immédiate</strong>
-                            <a href="tel:+33XXXXXXXXX">06 XX XX XX XX</a><br>
+                            <a href="tel:+33759684359">07 59 68 43 59</a><br>
                             <small>Urgences anxiété : réponse en 2h max</small>
                         </div>
                     </div>
@@ -746,7 +828,7 @@
                         <span class="icon">💬</span>
                         <div>
                             <strong>WhatsApp - Contact Rapide</strong>
-                            <a href="https://wa.me/33XXXXXXXXX">Message WhatsApp</a><br>
+                            <a href="https://wa.me/33759684359">Message WhatsApp</a><br>
                             <small>Réponse en moins de 1h</small>
                         </div>
                     </div>
@@ -774,63 +856,70 @@
                         <div>
                             <strong>Tarifs</strong>
                             Première consultation (1h30) : 80€<br>
+                            Consultation d'urgence (1h30) : 90€<br>
                             Séance de suivi (1h) : 60€<br>
-                            Forfait 5 séances : 250€<br>
+                            <small>💻 Toutes consultations disponibles en visio</small><br>
                             <small>Possibilité de paiement échelonné</small>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <h3>🚨 Réservation Prioritaire</h3>
+                    <h3>🚨 Réservation Immédiate</h3>
                     
                     <div class="urgency-box">
                         <strong>⏰ URGENCE ANXIÉTÉ :</strong> Créneaux d'urgence disponibles cette semaine pour crises d'angoisse sévères. 
-                        <strong>Réponse garantie sous 2h.</strong>
+                        <strong>Réservation instantanée 24h/24.</strong>
                     </div>
                     
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label>Nom et Prénom *</label>
-                            <input type="text" required placeholder="Ex: Marie Dupont">
+                    <!-- Types de consultations Calendly -->
+                    <div class="calendly-options">
+                        <div class="calendly-option urgent">
+                            <h4>🚨 Consultation d'Urgence</h4>
+                            <p><strong>Cette semaine</strong> • 1h30 • 90€</p>
+                            <p>Pour crises d'angoisse, attaques de panique sévères</p>
+                            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-urgence'});return false;" class="calendly-btn urgent-btn">
+                                🔥 RÉSERVER URGENCE - Cette semaine
+                            </button>
                         </div>
                         
-                        <div class="form-group">
-                            <label>Téléphone *</label>
-                            <input type="tel" required placeholder="06 XX XX XX XX">
+                        <div class="calendly-option primary">
+                            <h4>💙 Première Consultation</h4>
+                            <p><strong>Découverte</strong> • 1h30 • 80€</p>
+                            <p>Bilan complet + mini-séance d'hypnose + plan personnalisé</p>
+                            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="calendly-btn primary-btn">
+                                📅 RÉSERVER MA PREMIÈRE CONSULTATION
+                            </button>
                         </div>
                         
-                        <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" required placeholder="votre.email@example.com">
+                        <div class="calendly-option follow">
+                            <h4>🔄 Séance de Suivi</h4>
+                            <p><strong>Patients actuels</strong> • 1h • 60€</p>
+                            <p>Continuité de l'accompagnement en cours</p>
+                            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/seance-suivi'});return false;" class="calendly-btn follow-btn">
+                                ⏰ RÉSERVER SÉANCE DE SUIVI
+                            </button>
                         </div>
+                    </div>
 
-                        <div class="form-group">
-                            <label>Votre problématique principale *</label>
-                            <select required>
-                                <option value="">Sélectionnez...</option>
-                                <option>Crises d'angoisse / Attaques de panique</option>
-                                <option>Anxiété généralisée chronique</option>
-                                <option>Burn-out / Épuisement professionnel</option>
-                                <option>Traumatisme / Stress post-traumatique</option>
-                                <option>Anxiété sociale / Phobie sociale</option>
-                                <option>Dépression avec anxiété</option>
-                                <option>Autre / Situation complexe</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Message (optionnel)</label>
-                            <textarea rows="3" placeholder="Décrivez brièvement votre situation..."></textarea>
-                        </div>
-
-                        <div class="guarantees">
-                            ✅ <strong>Confidentialité totale :</strong> Secret professionnel absolu<br>
-                            ✅ <strong>Réponse rapide :</strong> Contact dans les 2h (urgences) ou 24h max
-                        </div>
-                        
-                        <button type="submit" class="submit-button">🔥 RÉSERVER MA CONSULTATION PRIORITAIRE</button>
-                    </form>
+                    <div class="guarantees">
+                        ✅ <strong>Réservation immédiate :</strong> Créneaux disponibles en temps réel<br>
+                        ✅ <strong>Modalité au choix :</strong> Cabinet MSP Néfiach ou visioconférence<br>
+                        ✅ <strong>Confirmation automatique :</strong> Email + SMS de rappel<br>
+                        ✅ <strong>Modification facile :</strong> Reprogrammation en 1 clic<br>
+                        ✅ <strong>Sécurisé :</strong> Paiement en ligne ou sur place
+                    </div>
+                    
+                    <!-- Contact traditionnel en backup -->
+                    <div style="text-align: center; margin-top: 25px; padding-top: 25px; border-top: 2px solid #e0e0e0;">
+                        <p style="color: #666; margin-bottom: 15px;"><strong>Préférez-vous être rappelé ?</strong></p>
+                        <a href="tel:+33759684359" class="calendly-btn primary-btn" style="display: inline-block; width: auto; padding: 15px 30px; margin-right: 10px;">
+                            📞 07 59 68 43 59
+                        </a>
+                        <a href="https://wa.me/33759684359" class="calendly-btn follow-btn" style="display: inline-block; width: auto; padding: 15px 30px; background: #25d366;">
+                            💬 WhatsApp
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -850,7 +939,7 @@
                     <p style="margin-top: 15px;">
                     📍 3 rue de Verdun<br>
                     MSP 66170 Néfiach<br>
-                    📞 <a href="tel:+33XXXXXXXXX">06 XX XX XX XX</a>
+                    📞 <a href="tel:+33759684359">07 59 68 43 59</a>
                     </p>
                 </div>
                 
@@ -887,7 +976,7 @@
                     
                     <p style="margin-top: 15px;">
                     📧 contact@hypnosejoffrey.fr<br>
-                    💬 <a href="https://wa.me/33XXXXXXXXX">WhatsApp</a><br>
+                    💬 <a href="https://wa.me/33759684359">WhatsApp</a><br>
                     🌐 Votre site GitHub
                     </p>
                 </div>
@@ -915,46 +1004,6 @@
                     });
                 }
             });
-        });
-
-        // Validation et soumission du formulaire
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const requiredFields = this.querySelectorAll('[required]');
-            let allValid = true;
-            
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    field.style.borderColor = '#e74c3c';
-                    allValid = false;
-                } else {
-                    field.style.borderColor = '#27ae60';
-                }
-            });
-            
-            if (allValid) {
-                const submitButton = this.querySelector('.submit-button');
-                const originalText = submitButton.textContent;
-                
-                submitButton.textContent = '✅ DEMANDE ENVOYÉE ! Vous serez rappelé dans 2h max';
-                submitButton.style.background = '#27ae60';
-                submitButton.disabled = true;
-                
-                setTimeout(() => {
-                    submitButton.textContent = originalText;
-                    submitButton.style.background = 'linear-gradient(45deg, #5f9ea0, #4682b4)';
-                    submitButton.disabled = false;
-                    this.reset();
-                    
-                    // Reset field colors
-                    requiredFields.forEach(field => {
-                        field.style.borderColor = '#e0e0e0';
-                    });
-                }, 4000);
-            } else {
-                alert('Merci de remplir tous les champs obligatoires pour que je puisse vous recontacter rapidement.');
-            }
         });
 
         // Animation au scroll
