@@ -118,6 +118,190 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+
+        /* Navigation Menu - Identique à la page d'accueil */
+        .main-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(95, 158, 160, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1001;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+        
+        .nav-logo {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #5f9ea0;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            align-items: center;
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .nav-link {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 8px 0;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .nav-link:hover {
+            color: #5f9ea0;
+        }
+        
+        .nav-arrow {
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav-item:hover .nav-arrow {
+            transform: rotate(180deg);
+        }
+        
+        /* Dropdown Menu */
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border: 1px solid rgba(95, 158, 160, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            padding: 8px 0;
+        }
+        
+        .nav-item:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-item {
+            display: block;
+            padding: 12px 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .dropdown-item:hover {
+            background: rgba(95, 158, 160, 0.05);
+            border-left-color: #5f9ea0;
+            color: #5f9ea0;
+        }
+        
+        .dropdown-header {
+            padding: 8px 20px 4px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid rgba(95, 158, 160, 0.1);
+            margin-bottom: 4px;
+        }
+        
+        .cta-nav {
+            background: linear-gradient(45deg, #5f9ea0, #4682b4);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-nav:hover {
+            background: linear-gradient(45deg, #4682b4, #2e8b57);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(95, 158, 160, 0.3);
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 2px;
+            background: #333;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 1px solid rgba(95, 158, 160, 0.1);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .mobile-nav-item {
+            border-bottom: 1px solid rgba(95, 158, 160, 0.1);
+        }
+        
+        .mobile-nav-link {
+            display: block;
+            padding: 15px 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .mobile-nav-link:hover {
+            background: rgba(95, 158, 160, 0.05);
+            color: #5f9ea0;
+        }
         
         /* Alert Banner - Modern Style */
         .alert-banner {
@@ -1116,6 +1300,14 @@
         
         /* Responsive Design */
         @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
             .container {
                 padding: 0 16px;
             }
@@ -1230,6 +1422,112 @@
     </style>
 </head>
 <body>
+    <!-- Navigation Menu - Identique à la page d'accueil -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Joffrey Ros - Hypnothérapeute</a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="index.html#specializations" class="nav-link">
+                        Spécialisations 
+                        <span class="nav-arrow">▼</span>
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-header">Troubles traités</div>
+                        <a href="#" class="dropdown-item">🧠 Hypnose Anxiété & Crises d'Angoisse</a>
+                        <a href="#" class="dropdown-item">💔 Burn-out & Épuisement professionnel</a>
+                        <a href="#" class="dropdown-item">😢 Dépression & Troubles de l'humeur</a>
+                        <a href="#" class="dropdown-item">💥 Traumatismes & EMDR</a>
+                        <a href="#" class="dropdown-item">😴 Troubles du sommeil</a>
+                        <a href="#" class="dropdown-item">🎯 Confiance en soi & Estime de soi</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Zones d'intervention
+                        <span class="nav-arrow">▼</span>
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-header">Cabinet principal</div>
+                        <a href="#" class="dropdown-item">📍 Néfiach (66170) - Cabinet MSP</a>
+                        <div class="dropdown-header">Villes desservies</div>
+                        <a href="#" class="dropdown-item">🏙️ Hypnothérapeute Perpignan (15 min)</a>
+                        <a href="#" class="dropdown-item">🏘️ Hypnothérapeute Prades (10 min)</a>
+                        <a href="#" class="dropdown-item">🌿 Hypnothérapeute Thuir (20 min)</a>
+                        <a href="#" class="dropdown-item">🎨 Hypnothérapeute Céret (25 min)</a>
+                        <a href="#" class="dropdown-item">💻 Consultations Visio (Toute la France)</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Blog & Ressources
+                        <span class="nav-arrow">▼</span>
+                    </a>
+                    <div class="dropdown">
+                        <div class="dropdown-header">Articles spécialisés</div>
+                        <a href="#" class="dropdown-item">📝 Comment gérer une crise d'angoisse</a>
+                        <a href="#" class="dropdown-item">📝 L'hypnose contre l'anxiété : guide complet</a>
+                        <a href="#" class="dropdown-item">📝 Burn-out : signes et solutions</a>
+                        <a href="#" class="dropdown-item">📝 EMDR et traumatismes : comment ça marche</a>
+                        <div class="dropdown-header">Outils gratuits</div>
+                        <a href="#" class="dropdown-item">🎧 Audio d'auto-hypnose gratuit</a>
+                        <a href="#" class="dropdown-item">📊 Test d'anxiété en ligne</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">À propos</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+                
+                <li class="nav-item">
+                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation-anxiete'});return false;" class="cta-nav">
+                        📅 Réserver
+                    </button>
+                </li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">Accueil</a>
+                </div>
+                <div class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link">Hypnose Anxiété</a>
+                </div>
+                <div class="mobile-nav-item">
+                    <a href="index.html#specializations" class="mobile-nav-link">Spécialisations</a>
+                </div>
+                <div class="mobile-nav-item">
+                    <a href="index.html#about" class="mobile-nav-link">À propos</a>
+                </div>
+                <div class="mobile-nav-item">
+                    <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+                </div>
+                <div class="mobile-nav-item">
+                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation-anxiete'});return false;" class="mobile-nav-link" style="color: #5f9ea0; font-weight: bold;">📅 Réserver</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Alert Banner -->
     <div class="alert-banner">
         <div class="container">
@@ -1755,7 +2053,7 @@
                     <p style="color: rgba(255,255,255,0.7);">
                         <strong>Horaires :</strong> Lun-Ven 9h-19h, Sam 9h-13h<br>
                         📧 contact@hypnosejoffrey.fr<br>
-                        🌐 <a href="../index.html">Site principal</a>
+                        🌐 <a href="index.html">Site principal</a>
                     </p>
                 </div>
             </div>
@@ -1767,6 +2065,12 @@
     </footer>
 
     <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+
         // FAQ Toggle
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
@@ -2008,6 +2312,25 @@
                 element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                 observer.observe(element);
             });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const mobileMenu = document.getElementById('mobileMenu');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('.main-nav');
+            
+            if (!nav.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
         });
     </script>
 </body>
