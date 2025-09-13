@@ -571,24 +571,14 @@
             font-size: 1.2em;
         }
         
-        /* Nouvelle carte spéciale Crohn - PLUS GRANDE */
-        .specialization-card.crohn-card {
+        /* Nouvelle carte spéciale Maladies Chroniques */
+        .specialization-card.chronic-card {
             background: linear-gradient(135deg, #e8f5e8, #ffffff);
             border: 2px solid #4caf50;
             position: relative;
-            grid-column: span 2;
-            max-width: none;
-            padding: 50px;
         }
         
-        @media (max-width: 768px) {
-            .specialization-card.crohn-card {
-                grid-column: span 1;
-                padding: 40px;
-            }
-        }
-        
-        .specialization-card.crohn-card::before {
+        .specialization-card.chronic-card::before {
             content: '🧬 NOUVEAU';
             position: absolute;
             top: -10px;
@@ -601,15 +591,15 @@
             font-weight: bold;
         }
         
-        .specialization-card.crohn-card h3 {
+        .specialization-card.chronic-card h3 {
             color: #2e7d32;
         }
         
-        .specialization-card.crohn-card li::before {
+        .specialization-card.chronic-card li::before {
             color: #4caf50;
         }
         
-        .crohn-experience {
+        .chronic-experience {
             background: #f1f8e9;
             padding: 15px;
             border-radius: 10px;
@@ -617,7 +607,7 @@
             border-left: 4px solid #4caf50;
         }
         
-        .crohn-cta {
+        .chronic-cta {
             display: inline-block;
             background: linear-gradient(45deg, #4caf50, #45a049);
             color: white;
@@ -630,7 +620,7 @@
             transition: all 0.3s ease;
         }
         
-        .crohn-cta:hover {
+        .chronic-cta:hover {
             background: linear-gradient(45deg, #45a049, #388e3c);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
@@ -1091,7 +1081,7 @@
                         <a href="#" class="dropdown-item">🕊️ Accompagnement du deuil</a>
                         <a href="#" class="dropdown-item">😨 Phobies & Peurs irrationnelles</a>
                         <div class="dropdown-header">Maladies Chroniques</div>
-                        <a href="hypnose-maladie-crohn.html" class="dropdown-item">🧬 Maladie de Crohn - Accompagnement Épigénétique</a>
+                        <a href="page-maladies-chroniques.html" class="dropdown-item">🧬 Maladies Chroniques</a>
                     </div>
                 </li>
                 
@@ -1160,7 +1150,7 @@
                     <a href="hypnose-anxiete-nefiach.html" class="mobile-nav-link">Hypnose Anxiété</a>
                 </div>
                 <div class="mobile-nav-item">
-                    <a href="hypnose-maladie-crohn.html" class="mobile-nav-link">Maladie de Crohn</a>
+                    <a href="page-maladies-chroniques.html" class="mobile-nav-link">Maladies Chroniques</a>
                 </div>
                 <div class="mobile-nav-item">
                     <a href="#specializations" class="mobile-nav-link">Spécialisations</a>
@@ -1178,7 +1168,7 @@
         </div>
     </nav>
 
-    <!-- Bannière d'urgence MISE À JOUR -->
+    <!-- Bannière d'urgence -->
     <div class="urgency-banner">
         <div class="container">
             <span class="urgency-text">🔥 SEPTEMBRE 2025 : Créneaux d'urgence anxiété + maladies chroniques disponibles cette semaine</span>
@@ -1245,13 +1235,11 @@
         </div>
     </section>
 
-    <!-- Spécialisations AVEC NOUVELLE CARTE CROHN -->
+    <!-- Spécialisations -->
     <section class="section" id="specializations">
         <div class="container">
             <h2 class="section-title">Expert en Troubles Anxieux</h2>
             <p style="text-align: center; max-width: 900px; margin: 0 auto 50px; font-size: 1.2em; color: #666;">
-                <strong>Expert en Troubles Anxieux</strong><br>
-                <strong>Expert en Maladies Chroniques</strong><br><br>
                 L'anxiété n'est pas une fatalité. En consultation dans mon cabinet MSP de Néfiach (66170)
                 ou en visioconférence pour les patients de Perpignan, Prades, Thuir et des Pyrénées-Orientales, 
                 je vous accompagne vers un mieux-être durable avec des techniques éprouvées. 
@@ -1311,7 +1299,7 @@
                         Expérience personnelle avec une maladie chronique<br>
                         Accompagnement complémentaire spécialisé
                     </div>
-                    <a href="./page-maladies-chroniques.html" class="chronic-cta">
+                    <a href="page-maladies-chroniques.html" class="chronic-cta">
                         Découvrir l'Accompagnement
                     </a>
                 </div>
