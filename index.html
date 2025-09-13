@@ -571,11 +571,21 @@
             font-size: 1.2em;
         }
         
-        /* Nouvelle carte spéciale Crohn */
+        /* Nouvelle carte spéciale Crohn - PLUS GRANDE */
         .specialization-card.crohn-card {
             background: linear-gradient(135deg, #e8f5e8, #ffffff);
             border: 2px solid #4caf50;
             position: relative;
+            grid-column: span 2;
+            max-width: none;
+            padding: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .specialization-card.crohn-card {
+                grid-column: span 1;
+                padding: 40px;
+            }
         }
         
         .specialization-card.crohn-card::before {
