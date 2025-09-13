@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accompagnement hypnothérapeutique pour maladies chroniques par Joffrey Ros - Spécialiste avec expérience personnelle Crohn. Approche complémentaire innovante pour améliorer votre qualité de vie. Cabinet Néfiach (66) + Visio France.">
+    <title>Hypnose Maladies Chroniques - Accompagnement Spécialisé | Joffrey Ros Néfiach (66)</title>
+    
+    <!-- SEO Maladies Chroniques -->
+    <meta name="keywords" content="hypnose maladies chroniques, accompagnement maladie chronique, hypnothérapeute maladies inflammatoires, MICI hypnose, fibromyalgie hypnose, endométriose hypnose, Perpignan 66">
+    <meta name="geo.region" content="FR-66">
+    <meta name="geo.placename" content="Néfiach, Pyrénées-Orientales">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hypnose Maladies Chroniques - Accompagnement Spécialisé">
+    <meta property="og:description" content="Joffrey Ros, hypnothérapeute spécialisé dans l'accompagnement des maladies chroniques. Approche complémentaire basée sur l'expérience personnelle.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hypnosejoffrey.fr/hypnose-maladies-chroniques">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Hypnose pour Maladies Chroniques - Accompagnement Complémentaire",
+      "description": "Accompagnement hypnothérapeutique spécialisé pour personnes vivant avec des maladies chroniques",
+      "url": "https://www.hypnosejoffrey.fr/hypnose-maladies-chroniques",
+      "mainEntity": {
+        "@type": "MedicalCondition",
+        "name": "Maladies Chroniques",
+        "alternateName": ["MICI", "Fibromyalgie", "Endométriose", "Maladies auto-immunes"],
+        "possibleTreatment": {
+          "@type": "MedicalTherapy",
+          "name": "Hypnothérapie complémentaire",
+          "description": "Accompagnement combinant hypnose, méditation et techniques de gestion du stress"
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Joffrey Ros",
+        "jobTitle": "Hypnothérapeute Spécialisé Maladies Chroniques",
+        "knowsAbout": "Maladies chroniques, Hypnose thérapeutique, EMDR",
+        "hasCredential": "Expérience personnelle maladie de Crohn et formation spécialisée"
+      }
+    }
+    </script>
+    
+    <!-- Calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <style>
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #4CAF50;
+            --accent-color: #FF6B35;
+            --danger-color: #dc3545;
+            --success-color: #28a745;
+            --text-dark: #2c3e50;
+            --text-gray: #7f8c8d;
+            --bg-light: #f8f9fa;
+            --shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-cta {
+            background: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Bannière d'accompagnement */
+        .support-banner {
+            background: linear-gradient(45deg, #2e7d32, #4caf50);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        
+        .support-text {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        /* Hero */
+        .hero-chronic {
+            background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-chronic::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="8" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="60" r="12" fill="rgba(255,255,255,0.08)"/><circle cx="40" cy="80" r="6" fill="rgba(255,255,255,0.12)"/></svg>');
+            background-size: 200px 200px;
+            opacity: 0.7;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .hero-badge {
+            background: rgba(46, 125, 50, 0.9);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        
+        .hero-chronic h1 {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3em;
+            margin-bottom: 35px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+        
+        .expertise-box {
+            background: rgba(76, 175, 80, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(76, 175, 80, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 35px auto;
+            max-width: 700px;
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--accent-color);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+        }
+        
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.6);
+        }
+        
+        /* Section générale */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section:nth-child(even) {
+            background: white;
+        }
+        
+        .section-title {
+            font-size: 2.3em;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--text-dark);
+        }
+        
+        .section-subtitle {
+            font-size: 1.1em;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: var(--text-gray);
+        }
+        
+        /* Histoire */
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .story-timeline {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .timeline-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .timeline-date {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        
+        .timeline-event {
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .timeline-highlight {
+            background: linear-gradient(45deg, #4caf50, #45a049);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .story-content h3 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+        
+        .story-highlight {
+            background: #e8f5e8;
+            border: 2px solid #4caf50;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .story-highlight h4 {
+            color: #2e7d32;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        /* Protocole */
+        .protocol-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .protocol-step {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+            border-top: 4px solid var(--primary-color);
+        }
+        
+        .protocol-number {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+        
+        .protocol-step h4 {
+            color: var(--primary-color);
+            margin: 20px 0 15px;
+            font-size: 1.2em;
+        }
+        
+        /* Maladies concernées */
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .condition-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .condition-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .condition-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .condition-card li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .condition-card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        /* Section tarifs */
+        .pricing-chronic {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--accent-color);
+            transform: scale(1.05);
+        }
+        
+        .pricing-badge {
+            background: var(--accent-color);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .pricing-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+        
+        .pricing-price {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features li {
+            margin: 12px 0;
+            padding-left: 25px;
+            position: relative;
+            text-align: left;
+        }
+        
+        .pricing-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+        
+        .pricing-cta {
+            width: 100%;
+            background: var(--primary-color);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .pricing-cta:hover {
+            background: #1e3f70;
+            transform: translateY(-2px);
+        }
+        
+        .pricing-cta.featured {
+            background: var(--accent-color);
+        }
+        
+        .pricing-cta.featured:hover {
+            background: #e85a2b;
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .faq-question {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: #1e3f70;
+        }
+        
+        .faq-answer {
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        /* Contact */
+        .contact-chronic {
+            background: linear-gradient(135deg, var(--text-dark) 0%, #1a252f 100%);
+            color: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            padding: 30px;
+        }
+        
+        .contact-calendly {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+        }
+        
+        .calendly-option {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .calendly-option:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent-color);
+        }
+        
+        .calendly-btn {
+            width: 100%;
+            background: var(--accent-color);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+        
+        .calendly-btn:hover {
+            background: #e85a2b;
+            transform: translateY(-1px);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .story-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .protocol-grid,
+            .pricing-grid,
+            .conditions-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .hero-chronic {
+                padding: 60px 0;
+            }
+            
+            .hero-chronic h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 50px 0;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-content container">
+            <a href="index.html" class="nav-logo">Joffrey Ros - Maladies Chroniques</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="#protocole" class="nav-link">Mon Approche</a>
+                <a href="#maladies" class="nav-link">Maladies</a>
+                <a href="#tarifs" class="nav-link">Tarifs</a>
+                <a href="#contact" class="nav-cta">Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bannière -->
+    <div class="support-banner">
+        <div class="container">
+            <span class="support-text">🌟 Accompagnement spécialisé maladies chroniques avec expérience personnelle</span>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero-chronic">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    🤝 Accompagnement Complémentaire pour Maladies Chroniques
+                </div>
+                
+                <h1>Hypnothérapie pour<br>Maladies Chroniques</h1>
+                
+                <p class="hero-subtitle">
+                    <strong>Joffrey Ros</strong> - Hypnothérapeute spécialisé dans l'accompagnement 
+                    des personnes vivant avec des maladies chroniques. Approche complémentaire 
+                    <strong>en soutien</strong> de votre suivi médical pour améliorer votre qualité de vie.
+                </p>
+                
+                <div class="expertise-box">
+                    <h3>🎯 MON APPROCHE COMPLÉMENTAIRE :</h3>
+                    <p><strong>✅ Expérience personnelle</strong> avec la maladie chronique (Crohn)<br>
+                    <strong>✅ Formation spécialisée</strong> en hypnothérapie et techniques complémentaires<br>
+                    <strong>✅ Accompagnement respectueux</strong> en collaboration avec votre équipe médicale<br>
+                    <strong>✅ Objectif de mieux-être</strong> et d'amélioration de votre qualité de vie<br>
+                    <strong>✅ Approche personnalisée</strong> adaptée à votre maladie chronique</p>
+                </div>
+                
+                <a href="#contact" class="hero-cta">
+                    <span>🤝 Découvrir Mon Accompagnement</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mon Parcours -->
+    <section class="section" id="histoire">
+        <div class="container">
+            <h2 class="section-title">Mon Expérience avec les Maladies Chroniques</h2>
+            <p class="section-subtitle">
+                Un parcours personnel qui m'a motivé à développer un accompagnement spécialisé 
+                en complément du suivi médical traditionnel
+            </p>
+            
+            <div class="story-grid">
+                <div class="story-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2000 - Le Diagnostic (16 ans)</div>
+                        <div class="timeline-event">
+                            Diagnostic de maladie de Crohn à 16 ans. Première confrontation 
+                            avec une maladie chronique : douleurs, fatigue, 
+                            impact sur la vie quotidienne et sociale.
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2000-2002 - La Période Active</div>
+                        <div class="timeline-event">
+                            Deux années de vie avec une maladie chronique active. 
+                            Apprentissage de la gestion des symptômes, adaptation 
+                            du mode de vie, suivi médical régulier.
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2002 - Amélioration Significative</div>
+                        <div class="timeline-event">
+                            Amélioration remarquable de ma condition à 18 ans. 
+                            Cette expérience m'a profondément questionné sur les facteurs 
+                            qui peuvent influencer l'évolution d'une maladie chronique.
+                            <span class="timeline-highlight">Tournant personnel</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2002-2023 - Réflexion et Observation</div>
+                        <div class="timeline-event">
+                            21 ans de questionnement sur mon expérience avec la maladie chronique. 
+                            Observation des facteurs psychologiques, émotionnels et 
+                            environnementaux dans la gestion des maladies chroniques.
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023-2025 - Formation Spécialisée</div>
+                        <div class="timeline-event">
+                            Formation approfondie aux techniques thérapeutiques : 
+                            hypnose, EMDR, méditation. Développement d'une approche 
+                            d'accompagnement pour les maladies chroniques.
+                            <span class="timeline-highlight">Expertise professionnelle</span>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aujourd'hui - Accompagnement (41 ans)</div>
+                        <div class="timeline-event">
+                            Je propose un accompagnement complémentaire pour les personnes 
+                            vivant avec diverses maladies chroniques, basé sur mon expérience 
+                            personnelle et ma formation thérapeutique.
+                            <span class="timeline-highlight">Mission d'accompagnement</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-content">
+                    <h3>Pourquoi Cette Spécialisation ?</h3>
+                    
+                    <p>Ayant vécu personnellement avec une maladie chronique (Crohn) de 16 à 18 ans, 
+                    puis bénéficié d'une amélioration durable, j'ai développé une compréhension 
+                    particulière des défis rencontrés par les personnes vivant avec des maladies chroniques. 
+                    Cette expérience, combinée à ma formation thérapeutique spécialisée (2023-2025), 
+                    me permet de proposer un accompagnement unique <strong>en complément</strong> 
+                    du suivi médical traditionnel.</p>
+                    
+                    <div class="story-highlight">
+                        <h4>🧬 Mon Protocole Épigénétique Multi-Outils :</h4>
+                        <p><strong>Phase 1 :</strong> Analyse complète et compréhension de votre maladie chronique<br>
+                        <strong>Phase 2 :</strong> Mise en place du protocole épigénétique personnalisé<br>
+                        <strong>Phase 3 :</strong> Hypnose thérapeutique pour la gestion des symptômes et le mieux-être<br>
+                        <strong>Phase 4 :</strong> EMDR pour traiter les traumatismes liés au diagnostic et aux épreuves<br>
+                        <strong>Phase 5 :</strong> Méditation adaptée et techniques de pleine conscience spécifiques<br>
+                        <strong>Phase 6 :</strong> Coordination respectueuse avec votre équipe médicale<br>
+                        <strong>Phase 7 :</strong> Autonomisation et outils d'auto-gestion durables</p>
+                    </div>
+                    
+                    <p><strong>Ma conviction :</strong> Chaque parcours avec une maladie chronique est unique. 
+                    Les maladies chroniques ont souvent une dimension épigénétique - c'est-à-dire que 
+                    l'expression des gènes peut être influencée par l'environnement émotionnel et le stress. 
+                    Mon protocole combine plusieurs approches thérapeutiques pour agir sur cette connexion 
+                    mental-physique, toujours en complément du suivi médical.</p>
+                    
+                    <p><strong>Mon engagement professionnel :</strong> Je vous propose un accompagnement 
+                    respectueux combinant approche épigénétique, hypnose, EMDR et méditation, 
+                    basé sur mon expérience vécue et ma formation spécialisée. 
+                    Cet accompagnement vise à améliorer votre qualité de vie et votre relation à la maladie, 
+                    <strong>toujours en complément et jamais en remplacement de votre suivi médical.</strong></p>
+                    
+                    <p style="font-style: italic; color: var(--primary-color); font-weight: 600; margin-top: 25px;">
+                    "Mon objectif est de vous accompagner vers un mieux-être possible grâce à un protocole 
+                    épigénétique innovant, en respectant votre parcours unique et en collaboration 
+                    totale avec votre équipe soignante."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protocole -->
+    <section class="section" id="protocole" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Mon Approche d'Accompagnement</h2>
+            <p class="section-subtitle">
+                Une méthode d'accompagnement développée pour les maladies chroniques, 
+                toujours en complément de votre suivi médical.
+            </p>
+            
+            <div class="protocol-grid">
+                <div class="protocol-step">
+                    <div class="protocol-number">1</div>
+                    <h4>Écoute et Compréhension</h4>
+                    <p><strong>Accueil personnalisé :</strong> Écoute attentive de votre parcours 
+                    avec votre maladie chronique, compréhension de vos défis spécifiques, 
+                    respect de votre situation médicale actuelle.</p>
+                </div>
+                
+                <div class="protocol-step">
+                    <div class="protocol-number">2</div>
+                    <h4>Gestion du Stress</h4>
+                    <p><strong>Techniques adaptées :</strong> Outils de relaxation et méditation 
+                    spécifiquement adaptés aux maladies chroniques, gestion du stress 
+                    et accompagnement des émotions difficiles.</p>
+                </div>
+                
+                <div class="protocol-step">
+                    <div class="protocol-number">3</div>
+                    <h4>Hypnothérapie Personnalisée</h4>
+                    <p><strong>Séances sur-mesure :</strong> Accompagnement hypnothérapeutique 
+                    adapté à votre maladie chronique pour améliorer votre confort 
+                    et votre relation à la maladie.</p>
+                </div>
+                
+                <div class="protocol-step">
+                    <div class="protocol-number">4</div>
+                    <h4>Collaboration Médicale</h4>
+                    <p><strong>Approche intégrative :</strong> Respect total de votre suivi médical, 
+                    possibilité de coordination avec votre équipe soignante, 
+                    accompagnement complémentaire éthique.</p>
+                </div>
+                
+                <div class="protocol-step">
+                    <div class="protocol-number">5</div>
+                    <h4>Autonomisation</h4>
+                    <p><strong>Outils durables :</strong> Apprentissage de techniques d'auto-gestion 
+                    pour votre quotidien, développement de vos ressources personnelles, 
+                    renforcement de votre capacité d'adaptation.</p>
+                </div>
+                
+                <div class="protocol-step">
+                    <div class="protocol-number">6</div>
+                    <h4>Amélioration du Quotidien</h4>
+                    <p><strong>Mieux-être durable :</strong> Amélioration de votre bien-être au jour le jour, 
+                    développement d'une relation plus sereine avec votre maladie chronique.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background: #e8f5e8; border-radius: 15px; border-left: 5px solid var(--success-color);">
+                <p style="margin: 0; font-weight: 600; font-size: 1.1em;">
+                    🧬 <strong>Protocole Épigénétique Innovant :</strong> Développé grâce à mon expérience personnelle 
+                    avec une maladie chronique, ce protocole épigénétique représente une approche révolutionnaire 
+                    que j'ai l'opportunité de proposer aujourd'hui à d'autres personnes vivant avec des maladies chroniques.
+                </p>
+                <p style="margin-top: 15px; font-size: 0.95em; color: var(--text-gray); font-style: italic;">
+                    <strong>Important :</strong> Mon expérience personnelle est unique à mon parcours. 
+                    Les bénéfices de l'accompagnement peuvent varier selon chaque personne et sa situation. 
+                    Cet accompagnement ne remplace en aucun cas un suivi médical approprié.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maladies concernées -->
+    <section class="section" id="maladies">
+        <div class="container">
+            <h2 class="section-title">Maladies Chroniques Accompagnées</h2>
+            <p class="section-subtitle">
+                Mon accompagnement s'adresse aux personnes vivant avec diverses maladies chroniques, 
+                toujours en complément de leur suivi médical
+            </p>
+            
+            <div class="conditions-grid">
+                <div class="condition-card">
+                    <h4>Maladies Inflammatoires</h4>
+                    <ul>
+                        <li>Maladie de Crohn</li>
+                        <li>Rectocolite hémorragique</li>
+                        <li>Polyarthrite rhumatoïde</li>
+                        <li>Spondylarthrite</li>
+                        <li>Maladies inflammatoires intestinales (MICI)</li>
+                    </ul>
+                </div>
+                
+                <div class="condition-card">
+                    <h4>Maladies Auto-immunes</h4>
+                    <ul>
+                        <li>Sclérose en plaques</li>
+                        <li>Lupus</li>
+                        <li>Thyroïdite de Hashimoto</li>
+                        <li>Diabète type 1</li>
+                        <li>Maladie cœliaque</li>
+                    </ul>
+                </div>
+                
+                <div class="condition-card">
+                    <h4>Syndromes Douloureux</h4>
+                    <ul>
+                        <li>Fibromyalgie</li>
+                        <li>Endométriose</li>
+                        <li>Syndrome du côlon irritable</li>
+                        <li>Migraine chronique</li>
+                        <li>Douleurs chroniques</li>
+                    </ul>
+                </div>
+                
+                <div class="condition-card">
+                    <h4>Autres Maladies Chroniques</h4>
+                    <ul>
+                        <li>Asthme</li>
+                        <li>Eczéma/Psoriasis</li>
+                        <li>Syndrome de fatigue chronique</li>
+                        <li>Troubles du sommeil chroniques</li>
+                        <li>Et autres selon évaluation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section class="section pricing-chronic" id="tarifs">
+        <div class="container">
+            <h2 class="section-title">Tarifs de l'Accompagnement</h2>
+            <p class="section-subtitle">
+                Des accompagnements adaptés à votre situation et votre maladie chronique, 
+                toujours en complément de votre suivi médical.
+            </p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-title">Consultation Découverte</div>
+                    <div class="pricing-price">100€</div>
+                    <ul class="pricing-features">
+                        <li>Première rencontre (1h30)</li>
+                        <li>Écoute de votre parcours de maladie</li>
+                        <li>Présentation de mon approche</li>
+                        <li>Évaluation de la compatibilité</li>
+                        <li>Réponses à vos questions</li>
+                        <li>Aucun engagement</li>
+                    </ul>
+                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-decouverte'});return false;" class="pricing-cta">
+                        Réserver une Découverte
+                    </button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">🤝 Accompagnement Complet</div>
+                    <div class="pricing-title">Suivi Personnalisé</div>
+                    <div class="pricing-price">1650€</div>
+                    <ul class="pricing-features">
+                        <li>15 séances d'accompagnement</li>
+                        <li>Suivi sur 6 mois</li>
+                        <li>Hypnothérapie adaptée</li>
+                        <li>Techniques de gestion personnalisées</li>
+                        <li>Support entre les séances</li>
+                        <li>Coordination avec votre équipe médicale</li>
+                        <li>Outils d'autonomie</li>
+                        <li>Paiement échelonné possible</li>
+                    </ul>
+                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/accompagnement-complet'});return false;" class="pricing-cta featured">
+                        🤝 Commencer l'Accompagnement
+                    </button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-title">Séances Ponctuelles</div>
+                    <div class="pricing-price">85€</div>
+                    <ul class="pricing-features">
+                        <li>Séance d'accompagnement (1h)</li>
+                        <li>Hypnothérapie ou coaching</li>
+                        <li>Techniques de relaxation</li>
+                        <li>Gestion d'une période difficile</li>
+                        <li>Flexibilité des rendez-vous</li>
+                        <li>En présentiel ou visio</li>
+                    </ul>
+                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/seance-ponctuelle'});return false;" class="pricing-cta">
+                        Réserver une Séance
+                    </button>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background: white; border-radius: 15px; box-shadow: var(--shadow);">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">🎯 Mon Engagement Professionnel</h3>
+                <p style="margin: 0; font-size: 1.1em; line-height: 1.6;">
+                    <strong>Je m'engage à vous accompagner</strong> dans l'amélioration de votre qualité de vie 
+                    avec votre maladie chronique. Si après 2 séances vous n'êtes pas satisfait(e) 
+                    de notre collaboration, je vous rembourse intégralement ces 2 premières séances.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Comment votre accompagnement peut-il m'aider avec ma maladie chronique ?
+                    </div>
+                    <div class="faq-answer">
+                        Mon accompagnement vise à améliorer votre qualité de vie en travaillant sur la gestion du stress, 
+                        des émotions et en développant vos ressources personnelles face à la maladie chronique. 
+                        L'hypnothérapie peut aider à la relaxation et au mieux-être. Cet accompagnement complète 
+                        toujours votre suivi médical, il ne le remplace jamais.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Travaillez-vous avec toutes les maladies chroniques ?
+                    </div>
+                    <div class="faq-answer">
+                        Je me spécialise principalement dans les maladies inflammatoires, auto-immunes et syndromes douloureux chroniques. 
+                        Lors de la consultation découverte, nous évaluerons ensemble si mon approche est adaptée à votre situation 
+                        spécifique. Dans tous les cas, l'accompagnement reste strictement complémentaire au suivi médical.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Dois-je arrêter mes traitements médicaux ?
+                    </div>
+                    <div class="faq-answer">
+                        <strong>Absolument pas !</strong> Il ne faut jamais arrêter vos traitements médicaux 
+                        sans l'accord de votre médecin. Mon accompagnement est strictement complémentaire 
+                        et vise uniquement à améliorer votre bien-être psychologique. Je respecte totalement 
+                        votre suivi médical et peux collaborer avec votre équipe soignante si souhaité.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Qu'est-ce qui vous différencie des autres hypnothérapeutes ?
+                    </div>
+                    <div class="faq-answer">
+                        J'ai personnellement vécu avec une maladie chronique (Crohn) pendant 2 ans, 
+                        ce qui me donne une compréhension particulière des défis que vous rencontrez. 
+                        Cette expérience, combinée à ma formation spécialisée, me permet de proposer 
+                        un accompagnement empathique et adapté aux personnes vivant avec des maladies chroniques.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Proposez-vous des consultations en visioconférence ?
+                    </div>
+                    <div class="faq-answer">
+                        Oui, je propose des consultations en visioconférence sécurisée pour les personnes 
+                        qui ne peuvent pas se déplacer au cabinet de Néfiach (66). L'hypnothérapie 
+                        fonctionne très bien à distance, permettant un accès depuis toute la France.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-chronic" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Commencez Votre Accompagnement</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="color: var(--accent-color); margin-bottom: 25px;">Spécialiste Maladies Chroniques</h3>
+                    
+                    <p style="font-size: 1.1em; margin-bottom: 25px;">
+                    <strong>Je vous accompagne dans votre parcours avec la maladie chronique.</strong><br>
+                    Grâce à mon expérience personnelle et ma formation spécialisée, 
+                    je propose un accompagnement complémentaire pour améliorer votre qualité de vie.
+                    </p>
+                    
+                    <div style="margin: 25px 0;">
+                        <strong style="color: var(--accent-color);">🏥 Cabinet Spécialisé :</strong><br>
+                        3 rue de Verdun, MSP<br>
+                        66170 Néfiach<br>
+                        <small>Proche Perpignan (15min)</small>
+                    </div>
+                    
+                    <div style="margin: 25px 0;">
+                        <strong style="color: var(--accent-color);">📱 Contact Direct :</strong><br>
+                        <a href="tel:+33759684359" style="color: white; font-size: 1.2em; font-weight: bold;">07 59 68 43 59</a><br>
+                        <small>Réponse sous 24h</small>
+                    </div>
+                    
+                    <div style="margin: 25px 0;">
+                        <strong style="color: var(--accent-color);">💻 Consultations Visio :</strong><br>
+                        France entière • Même efficacité<br>
+                        <small>Plateforme sécurisée</small>
+                    </div>
+                    
+                    <div style="background: rgba(76, 175, 80, 0.2); padding: 20px; border-radius: 10px; margin-top: 30px;">
+                        <p style="margin: 0; font-weight: 600;">
+                        ✅ <strong>Accompagnement Complémentaire :</strong><br>
+                        Amélioration de la qualité de vie avec votre maladie chronique<br>
+                        Toujours en respect de votre suivi médical
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-calendly">
+                    <h3 style="margin-bottom: 25px; color: white;">🚀 Réservation</h3>
+                    
+                    <div class="calendly-option">
+                        <h4 style="color: white;">💙 Consultation Découverte</h4>
+                        <p style="color: #ccc;"><strong>Première rencontre • 1h30 • 100€</strong></p>
+                        <p style="color: #ccc;">Écoute de votre parcours<br>
+                        Présentation de mon approche • Évaluation</p>
+                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-decouverte'});return false;" class="calendly-btn">
+                            📅 DÉCOUVRIR L'APPROCHE
+                        </button>
+                    </div>
+                    
+                    <div class="calendly-option">
+                        <h4 style="color: white;">🎯 Accompagnement Complet</h4>
+                        <p style="color: #ccc;"><strong>Suivi personnalisé • 15 séances • 1650€</strong></p>
+                        <p style="color: #ccc;">Accompagnement sur 6 mois<br>
+                        Paiement échelonné possible</p>
+                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/accompagnement-complet'});return false;" class="calendly-btn">
+                            🤝 COMMENCER L'ACCOMPAGNEMENT
+                        </button>
+                    </div>
+                    
+                    <div class="calendly-option">
+                        <h4 style="color: white;">🔧 Séance Ponctuelle</h4>
+                        <p style="color: #ccc;"><strong>Séance individuelle • 1h • 85€</strong></p>
+                        <p style="color: #ccc;">Hypnothérapie ou accompagnement<br>
+                        Présentiel ou visio</p>
+                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/seance-ponctuelle'});return false;" class="calendly-btn">
+                            📝 RÉSERVER UNE SÉANCE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #1a1a1a; color: white; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <p><strong>&copy; 2025 Joffrey Ros - Hypnothérapeute Spécialisé Maladies Chroniques</strong></p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
+                Expérience personnelle maladie chronique • Cabinet Néfiach (66170) • 
+                Consultations visio France entière • Accompagnement complémentaire • 
+                Amélioration qualité de vie
+            </p>
+            <p style="margin-top: 10px; font-size: 0.8em; color: #666;">
+                <strong>SEO :</strong> Hypnose maladies chroniques Perpignan • MICI hypnothérapie 66 • 
+                Fibromyalgie hypnose France • Endométriose accompagnement • Maladies inflammatoires visio
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Animations au scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Observer les éléments
+        document.querySelectorAll('.protocol-step, .pricing-card, .condition-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navigation fluide
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Tracking conversions
+        function trackConversion(action, value) {
+            console.log('Conversion tracked:', action, value);
+        }
+
+        // Tracking clics Calendly
+        document.querySelectorAll('[onclick*="Calendly"]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (btn.textContent.includes('DÉCOUVRIR')) {
+                    trackConversion('decouverte_click', 100);
+                } else if (btn.textContent.includes('ACCOMPAGNEMENT')) {
+                    trackConversion('accompagnement_click', 1650);
+                } else if (btn.textContent.includes('SÉANCE')) {
+                    trackConversion('seance_click', 85);
+                }
+            });
+        });
+
+        console.log('🌟 Page Maladies Chroniques optimisée chargée - Joffrey Ros');
+    </script>
+</body>
+</html>
