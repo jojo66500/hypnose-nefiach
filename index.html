@@ -571,6 +571,61 @@
             font-size: 1.2em;
         }
         
+        /* Nouvelle carte spéciale Crohn */
+        .specialization-card.crohn-card {
+            background: linear-gradient(135deg, #e8f5e8, #ffffff);
+            border: 2px solid #4caf50;
+            position: relative;
+        }
+        
+        .specialization-card.crohn-card::before {
+            content: '🧬 NOUVEAU';
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: #4caf50;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        
+        .specialization-card.crohn-card h3 {
+            color: #2e7d32;
+        }
+        
+        .specialization-card.crohn-card li::before {
+            color: #4caf50;
+        }
+        
+        .crohn-experience {
+            background: #f1f8e9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .crohn-cta {
+            display: inline-block;
+            background: linear-gradient(45deg, #4caf50, #45a049);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.95em;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .crohn-cta:hover {
+            background: linear-gradient(45deg, #45a049, #388e3c);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+        
         /* Témoignages clients */
         .testimonials-section {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -1025,6 +1080,8 @@
                         <a href="#" class="dropdown-item">❤️ Gestion des émotions</a>
                         <a href="#" class="dropdown-item">🕊️ Accompagnement du deuil</a>
                         <a href="#" class="dropdown-item">😨 Phobies & Peurs irrationnelles</a>
+                        <div class="dropdown-header">Maladies Chroniques</div>
+                        <a href="hypnose-maladie-crohn.html" class="dropdown-item">🧬 Maladie de Crohn - Accompagnement Épigénétique</a>
                     </div>
                 </li>
                 
@@ -1093,6 +1150,9 @@
                     <a href="hypnose-anxiete-nefiach.html" class="mobile-nav-link">Hypnose Anxiété</a>
                 </div>
                 <div class="mobile-nav-item">
+                    <a href="hypnose-maladie-crohn.html" class="mobile-nav-link">Maladie de Crohn</a>
+                </div>
+                <div class="mobile-nav-item">
                     <a href="#specializations" class="mobile-nav-link">Spécialisations</a>
                 </div>
                 <div class="mobile-nav-item">
@@ -1108,10 +1168,10 @@
         </div>
     </nav>
 
-    <!-- Bannière d'urgence -->
+    <!-- Bannière d'urgence MISE À JOUR -->
     <div class="urgency-banner">
         <div class="container">
-            <span class="urgency-text">🔥 JUIN 2025 : Créneaux d'urgence anxiété disponibles cette semaine</span>
+            <span class="urgency-text">🔥 SEPTEMBRE 2025 : Créneaux d'urgence anxiété + consultations Crohn disponibles cette semaine</span>
             <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-urgence'});return false;" class="urgency-cta">Réserver maintenant</a>
         </div>
     </div>
@@ -1171,7 +1231,7 @@
         </div>
     </section>
 
-    <!-- Spécialisations -->
+    <!-- Spécialisations AVEC NOUVELLE CARTE CROHN -->
     <section class="section" id="specializations">
         <div class="container">
             <h2 class="section-title">Expert en Troubles Anxieux</h2>
@@ -1217,6 +1277,27 @@
                         <li>Surcharge mentale</li>
                         <li>Dévalorisation de soi</li>
                     </ul>
+                </div>
+                
+                <!-- NOUVELLE CARTE MALADIE DE CROHN -->
+                <div class="specialization-card crohn-card">
+                    <h3>🧬 Maladie de Crohn</h3>
+                    <ul>
+                        <li>Accompagnement épigénétique innovant</li>
+                        <li>Gestion du stress chronique</li>
+                        <li>Amélioration qualité de vie</li>
+                        <li>Protocole personnalisé</li>
+                        <li>Coordination équipe médicale</li>
+                        <li>Développement autonomie</li>
+                    </ul>
+                    <div class="crohn-experience">
+                        <strong>🎯 Mon expérience unique :</strong><br>
+                        23 ans d'expérience personnelle avec la maladie de Crohn<br>
+                        Accompagnement complémentaire spécialisé
+                    </div>
+                    <a href="hypnose-maladie-crohn.html" class="crohn-cta">
+                        Découvrir l'Accompagnement Crohn
+                    </a>
                 </div>
             </div>
         </div>
