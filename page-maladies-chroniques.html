@@ -413,8 +413,8 @@
         
         .pricing-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
         }
         
         .pricing-card {
@@ -626,6 +626,10 @@
             
             .nav-links {
                 display: none;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
             }
         }
         
@@ -940,7 +944,7 @@
         </div>
     </section>
 
-    <!-- Tarifs -->
+    <!-- Tarifs - NOUVELLES OFFRES -->
     <section class="section pricing-chronic" id="tarifs">
         <div class="container">
             <h2 class="section-title">Tarifs de l'Accompagnement</h2>
@@ -949,55 +953,73 @@
                 toujours en complément de votre suivi médical.
             </p>
             
-            <div class="pricing-grid">
+            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
                 <div class="pricing-card">
-                    <div class="pricing-title">Consultation Découverte</div>
-                    <div class="pricing-price">100€</div>
+                    <div class="pricing-title">🆓 Découverte Gratuite</div>
+                    <div class="pricing-price">0€</div>
+                    <p style="font-size: 0.9em; color: var(--text-gray); margin-bottom: 20px;">Appel téléphonique • 30min</p>
                     <ul class="pricing-features">
-                        <li>Première rencontre (1h30)</li>
-                        <li>Écoute de votre parcours de maladie</li>
-                        <li>Présentation de mon approche</li>
+                        <li>Échange personnalisé sur votre maladie</li>
+                        <li>Compréhension de vos défis</li>
+                        <li>Explication de mon protocole épigénétique</li>
                         <li>Évaluation de la compatibilité</li>
-                        <li>Réponses à vos questions</li>
-                        <li>Aucun engagement</li>
+                        <li>Plan d'accompagnement sur mesure</li>
+                        <li>Aucun engagement requis</li>
                     </ul>
-                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-decouverte'});return false;" class="pricing-cta">
-                        Réserver une Découverte
+                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/decouverte-gratuite-chronique'});return false;" class="pricing-cta">
+                        Appel Découverte Gratuit
                     </button>
                 </div>
                 
                 <div class="pricing-card featured">
-                    <div class="pricing-badge">🤝 Accompagnement Complet</div>
-                    <div class="pricing-title">Suivi Personnalisé</div>
-                    <div class="pricing-price">1650€</div>
+                    <div class="pricing-badge">🤝 Le plus demandé</div>
+                    <div class="pricing-title">🌿 Séance Accompagnement</div>
+                    <div class="pricing-price">80€</div>
+                    <p style="font-size: 0.9em; color: var(--text-gray); margin-bottom: 20px;">Cabinet ou visio • 60min</p>
                     <ul class="pricing-features">
-                        <li>15 séances d'accompagnement</li>
-                        <li>Suivi sur 6 mois</li>
-                        <li>Hypnothérapie adaptée</li>
+                        <li>Bilan complet de votre situation</li>
+                        <li>Séance d'hypnothérapie adaptée</li>
                         <li>Techniques de gestion personnalisées</li>
-                        <li>Support entre les séances</li>
-                        <li>Coordination avec votre équipe médicale</li>
-                        <li>Outils d'autonomie</li>
-                        <li>Paiement échelonné possible</li>
+                        <li>Protocole épigénétique ciblé</li>
+                        <li>Outils d'auto-gestion</li>
+                        <li>Suivi entre les séances</li>
                     </ul>
-                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/accompagnement-complet'});return false;" class="pricing-cta featured">
-                        🤝 Commencer l'Accompagnement
+                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/seance-chronique'});return false;" class="pricing-cta featured">
+                        Réserver ma Séance
                     </button>
                 </div>
                 
                 <div class="pricing-card">
-                    <div class="pricing-title">Séances Ponctuelles</div>
-                    <div class="pricing-price">85€</div>
+                    <div class="pricing-title">🚀 Programme Transformation</div>
+                    <div class="pricing-price">500€</div>
+                    <p style="font-size: 0.9em; color: var(--text-gray); margin-bottom: 20px;">8 séances sur 3 mois</p>
                     <ul class="pricing-features">
-                        <li>Séance d'accompagnement (1h)</li>
-                        <li>Hypnothérapie ou coaching</li>
-                        <li>Techniques de relaxation</li>
-                        <li>Gestion d'une période difficile</li>
-                        <li>Flexibilité des rendez-vous</li>
-                        <li>En présentiel ou visio</li>
+                        <li>Accompagnement complet sur 3 mois</li>
+                        <li>8 séances d'hypnothérapie</li>
+                        <li>Protocole épigénétique personnalisé</li>
+                        <li>Techniques EMDR si nécessaire</li>
+                        <li>Méditation adaptée à votre maladie</li>
+                        <li>Transformation profonde et durable</li>
                     </ul>
-                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/seance-ponctuelle'});return false;" class="pricing-cta">
-                        Réserver une Séance
+                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/programme-chronique'});return false;" class="pricing-cta">
+                        Commencer ma Transformation
+                    </button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-title">👑 Accompagnement VIP</div>
+                    <div class="pricing-price">1449€</div>
+                    <p style="font-size: 0.9em; color: var(--text-gray); margin-bottom: 20px;">16 séances sur 6 mois</p>
+                    <ul class="pricing-features">
+                        <li>Suivi premium intensif sur 6 mois</li>
+                        <li>16 séances d'accompagnement</li>
+                        <li>Accès direct par WhatsApp</li>
+                        <li>Protocole épigénétique avancé</li>
+                        <li>Coordination avec votre équipe médicale</li>
+                        <li>Suivi post-thérapie 3 mois offert</li>
+                    </ul>
+                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/accompagnement-vip-chronique'});return false;" class="pricing-cta">
+                        Accompagnement VIP Premium
                     </button>
                 </div>
             </div>
@@ -1006,8 +1028,8 @@
                 <h3 style="color: var(--primary-color); margin-bottom: 20px;">🎯 Mon Engagement Professionnel</h3>
                 <p style="margin: 0; font-size: 1.1em; line-height: 1.6;">
                     <strong>Je m'engage à vous accompagner</strong> dans l'amélioration de votre qualité de vie 
-                    avec votre maladie chronique. Si après 2 séances vous n'êtes pas satisfait(e) 
-                    de notre collaboration, je vous rembourse intégralement ces 2 premières séances.
+                    avec votre maladie chronique. Mon protocole épigénétique, développé grâce à mon expérience personnelle,
+                    vise à optimiser votre bien-être en complément de votre suivi médical.
                 </p>
             </div>
         </div>
@@ -1127,33 +1149,38 @@
                     <h3 style="margin-bottom: 25px; color: white;">🚀 Réservation</h3>
                     
                     <div class="calendly-option">
-                        <h4 style="color: white;">💙 Consultation Découverte</h4>
-                        <p style="color: #ccc;"><strong>Première rencontre • 1h30 • 100€</strong></p>
-                        <p style="color: #ccc;">Écoute de votre parcours<br>
-                        Présentation de mon approche • Évaluation</p>
-                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-decouverte'});return false;" class="calendly-btn">
-                            📅 DÉCOUVRIR L'APPROCHE
+                        <h4 style="color: white;">🆓 Découverte Gratuite</h4>
+                        <p style="color: #ccc;"><strong>Appel gratuit • 30min • 0€</strong></p>
+                        <p style="color: #ccc;">Échange sur votre maladie<br>
+                        Protocole épigénétique • Sans engagement</p>
+                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/decouverte-gratuite-chronique'});return false;" class="calendly-btn">
+                            📞 APPEL GRATUIT
                         </button>
                     </div>
                     
                     <div class="calendly-option">
-                        <h4 style="color: white;">🎯 Accompagnement Complet</h4>
-                        <p style="color: #ccc;"><strong>Suivi personnalisé • 15 séances • 1650€</strong></p>
-                        <p style="color: #ccc;">Accompagnement sur 6 mois<br>
-                        Paiement échelonné possible</p>
-                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/accompagnement-complet'});return false;" class="calendly-btn">
-                            🤝 COMMENCER L'ACCOMPAGNEMENT
+                        <h4 style="color: white;">🌿 Séance Accompagnement</h4>
+                        <p style="color: #ccc;"><strong>Hypnothérapie • 60min • 80€</strong></p>
+                        <p style="color: #ccc;">Cabinet ou visio<br>
+                        Protocole personnalisé</p>
+                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/seance-chronique'});return false;" class="calendly-btn">
+                            🤝 RÉSERVER SÉANCE
                         </button>
                     </div>
                     
                     <div class="calendly-option">
-                        <h4 style="color: white;">🔧 Séance Ponctuelle</h4>
-                        <p style="color: #ccc;"><strong>Séance individuelle • 1h • 85€</strong></p>
-                        <p style="color: #ccc;">Hypnothérapie ou accompagnement<br>
-                        Présentiel ou visio</p>
-                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/seance-ponctuelle'});return false;" class="calendly-btn">
-                            📝 RÉSERVER UNE SÉANCE
-                        </button>
+                        <h4 style="color: white;">🚀 Programme VIP</h4>
+                        <p style="color: #ccc;"><strong>Suivi premium • 6 mois • 1449€</strong></p>
+                        <p style="color: #ccc;">16 séances + WhatsApp<br>
+                        Coordination équipe médicale</p>
+                        <div style="display: flex; gap: 8px; margin-top: 10px;">
+                            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/accompagnement-vip-6-mois'});return false;" class="calendly-btn" style="flex: 1; font-size: 12px;">
+                                💻 Visio
+                            </button>
+                            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/vip-6-mois-cabinet'});return false;" class="calendly-btn" style="flex: 1; font-size: 12px;">
+                                🏥 Cabinet
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1216,12 +1243,14 @@
         // Tracking clics Calendly
         document.querySelectorAll('[onclick*="Calendly"]').forEach(btn => {
             btn.addEventListener('click', () => {
-                if (btn.textContent.includes('DÉCOUVRIR')) {
-                    trackConversion('decouverte_click', 100);
-                } else if (btn.textContent.includes('ACCOMPAGNEMENT')) {
-                    trackConversion('accompagnement_click', 1650);
-                } else if (btn.textContent.includes('SÉANCE')) {
-                    trackConversion('seance_click', 85);
+                if (btn.textContent.includes('GRATUIT') || btn.textContent.includes('gratuit')) {
+                    trackConversion('decouverte_click', 0);
+                } else if (btn.textContent.includes('SÉANCE') || btn.textContent.includes('Séance')) {
+                    trackConversion('seance_click', 80);
+                } else if (btn.textContent.includes('Transformation')) {
+                    trackConversion('programme_click', 500);
+                } else if (btn.textContent.includes('VIP')) {
+                    trackConversion('vip_click', 1449);
                 }
             });
         });
