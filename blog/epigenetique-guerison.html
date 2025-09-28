@@ -13,6 +13,10 @@
     
     <title>Épigénétique et Guérison : Quand l'Esprit Influence nos Gènes | Blog Hypnose Joffrey</title>
     
+    <!-- Calendly Integration -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
     <style>
         * {
             margin: 0;
@@ -379,7 +383,7 @@
         <div class="cta-section">
             <h3>🌟 Prêt à Explorer votre Potentiel Épigénétique ?</h3>
             <p>Découvrez comment l'hypnose peut vous aider à réécrire positivement l'expression de vos gènes vers plus de santé et de bien-être.</p>
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="cta-button">Prendre Rendez-vous</a>
+            <a href="../index.html#contact" onclick="if(typeof Calendly !== 'undefined') { Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'}); return false; } else { return true; }" class="cta-button">Prendre Rendez-vous</a>
         </div>
     </div>
     
