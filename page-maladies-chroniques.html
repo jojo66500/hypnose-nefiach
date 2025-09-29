@@ -508,6 +508,44 @@
             background: #e85a2b;
         }
         
+        /* Blog Section */
+        .blog-section {
+            background: white;
+        }
+        
+        .blog-article {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #f8f9fa;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .blog-article h3 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        .blog-meta {
+            color: var(--text-gray);
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .blog-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .blog-content h4 {
+            color: var(--primary-color);
+            margin: 30px 0 15px;
+            font-size: 1.3em;
+        }
+        
         /* FAQ */
         .faq-container {
             max-width: 800px;
@@ -597,10 +635,57 @@
             transform: translateY(-1px);
         }
         
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .story-grid,
-            .contact-grid {
+            .contact-grid,
+            .footer-content {
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
@@ -631,6 +716,10 @@
             .pricing-card.featured {
                 transform: none;
             }
+            
+            .blog-article {
+                padding: 30px 20px;
+            }
         }
         
         /* Animations */
@@ -657,6 +746,7 @@
                 <a href="index.html" class="nav-link">Accueil</a>
                 <a href="#protocole" class="nav-link">Mon Approche</a>
                 <a href="#maladies" class="nav-link">Maladies</a>
+                <a href="#blog" class="nav-link">Blog</a>
                 <a href="#tarifs" class="nav-link">Tarifs</a>
                 <a href="#contact" class="nav-cta">Consultation</a>
             </div>
@@ -783,14 +873,14 @@
                     du suivi médical traditionnel.</p>
                     
                     <div class="story-highlight">
-                        <h4>🧬 Mon Protocole Épigénétique Multi-Outils :</h4>
+                        <h4>Les 7 Phases de Votre Transformation</h4>
                         <p><strong>Phase 1 :</strong> Analyse complète et compréhension de votre maladie chronique<br>
                         <strong>Phase 2 :</strong> Mise en place du protocole épigénétique personnalisé<br>
                         <strong>Phase 3 :</strong> Hypnose thérapeutique pour la gestion des symptômes et le mieux-être<br>
                         <strong>Phase 4 :</strong> EMDR pour traiter les traumatismes liés au diagnostic et aux épreuves<br>
                         <strong>Phase 5 :</strong> Méditation adaptée et techniques de pleine conscience spécifiques<br>
                         <strong>Phase 6 :</strong> Coordination respectueuse avec votre équipe médicale<br>
-                        <strong>Phase 7 :</strong> Autonomisation et outils d'auto-gestion durables</p>
+                        <strong>Phase 7 :</strong> Bilan post-accompagnement (Autonomie du patient + Boîte à outils clé en main)</p>
                     </div>
                     
                     <p><strong>Ma conviction :</strong> Chaque parcours avec une maladie chronique est unique. 
@@ -939,6 +1029,47 @@
                         <li>Troubles du sommeil chroniques</li>
                         <li>Et autres selon évaluation</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Blog Épigénétique -->
+    <section class="section blog-section" id="blog">
+        <div class="container">
+            <h2 class="section-title">Comprendre l'Épigénétique</h2>
+            <p class="section-subtitle">
+                Comment l'environnement émotionnel peut influencer l'expression de vos gènes
+            </p>
+            
+            <div class="blog-article">
+                <h3>L'Épigénétique : La Science qui Transforme Notre Compréhension des Maladies Chroniques</h3>
+                <div class="blog-meta">Par Joffrey Ros • Hypnothérapeute spécialisé maladies chroniques • Janvier 2025</div>
+                
+                <div class="blog-content">
+                    <p>L'épigénétique est une révolution scientifique qui bouleverse notre compréhension des maladies chroniques. Contrairement à ce que l'on pensait autrefois, nos gènes ne sont pas notre destinée. L'épigénétique nous enseigne que l'expression de nos gènes peut être modulée par notre environnement, nos émotions et nos expériences de vie.</p>
+                    
+                    <h4>Qu'est-ce que l'Épigénétique ?</h4>
+                    <p>Le terme "épigénétique" signifie littéralement "au-dessus de la génétique". Il s'agit de modifications qui affectent l'expression des gènes sans modifier la séquence d'ADN elle-même. Imaginez vos gènes comme un livre : l'épigénétique détermine quelles pages sont lues et lesquelles restent fermées.</p>
+                    
+                    <h4>Le Lien avec les Maladies Chroniques</h4>
+                    <p>Les recherches scientifiques montrent que les maladies chroniques comme la maladie de Crohn, la fibromyalgie, l'endométriose ou les maladies auto-immunes ont une composante épigénétique significative. Le stress chronique, les traumatismes émotionnels et l'environnement psychologique peuvent influencer l'activité de certains gènes liés à l'inflammation et à la réponse immunitaire.</p>
+                    
+                    <h4>Mon Approche Épigénétique</h4>
+                    <p>Fort de mon expérience personnelle avec la maladie de Crohn et de ma formation spécialisée, j'ai développé un protocole épigénétique multi-outils qui combine :</p>
+                    
+                    <p><strong>L'hypnothérapie</strong> pour modifier les schémas de stress et favoriser des états de relaxation profonde qui peuvent influencer positivement l'expression génétique.</p>
+                    
+                    <p><strong>L'EMDR</strong> pour traiter les traumatismes émotionnels qui peuvent avoir créé des empreintes épigénétiques négatives.</p>
+                    
+                    <p><strong>La méditation et la pleine conscience</strong> qui ont démontré leur capacité à modifier l'expression de gènes liés à l'inflammation et au stress.</p>
+                    
+                    <h4>Une Perspective d'Espoir</h4>
+                    <p>L'épigénétique offre une perspective d'espoir pour les personnes vivant avec des maladies chroniques. Elle nous enseigne que nous ne sommes pas prisonniers de notre génétique et que des changements positifs dans notre environnement émotionnel et psychologique peuvent avoir un impact réel sur notre santé.</p>
+                    
+                    <p><strong>Important :</strong> Cette approche épigénétique ne remplace jamais le suivi médical traditionnel. Elle le complète en agissant sur les facteurs psychologiques et émotionnels qui peuvent influencer l'évolution de la maladie chronique.</p>
+                    
+                    <p style="font-style: italic; color: var(--primary-color); margin-top: 30px;">Si vous souhaitez explorer comment l'approche épigénétique peut vous aider dans votre parcours avec une maladie chronique, je vous invite à prendre rendez-vous pour une consultation découverte gratuite.</p>
                 </div>
             </div>
         </div>
@@ -1183,18 +1314,59 @@
     </section>
 
     <!-- Footer -->
-    <footer style="background: #1a1a1a; color: white; padding: 40px 0; text-align: center;">
+    <footer>
         <div class="container">
-            <p><strong>&copy; 2025 Joffrey Ros - Hypnothérapeute Spécialisé Maladies Chroniques</strong></p>
-            <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
-                Expérience personnelle maladie chronique • Cabinet Néfiach (66170) • 
-                Consultations visio France entière • Accompagnement complémentaire • 
-                Amélioration qualité de vie
-            </p>
-            <p style="margin-top: 10px; font-size: 0.8em; color: #666;">
-                <strong>SEO :</strong> Hypnose maladies chroniques Perpignan • MICI hypnothérapie 66 • 
-                Fibromyalgie hypnose France • Endométriose accompagnement • Maladies inflammatoires visio
-            </p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>À Propos</h4>
+                    <p style="color: #ccc; line-height: 1.8;">
+                        <strong>Joffrey Ros</strong> - Hypnothérapeute spécialisé dans l'accompagnement 
+                        des maladies chroniques. Cabinet à Néfiach (66) et consultations en visioconférence 
+                        pour toute la France.
+                    </p>
+                    <p style="color: #999; font-size: 0.9em; margin-top: 15px;">
+                        Expérience personnelle maladie de Crohn • Formation spécialisée 2023-2025 • 
+                        Approche complémentaire respectueuse du suivi médical
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="#protocole">Mon Approche</a></li>
+                        <li><a href="#maladies">Maladies Accompagnées</a></li>
+                        <li><a href="#blog">Blog Épigénétique</a></li>
+                        <li><a href="#tarifs">Tarifs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Informations Légales</h4>
+                    <ul class="footer-links">
+                        <li><a href="/mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="/politique-confidentialite.html">Politique de Confidentialité (RGPD)</a></li>
+                        <li><a href="/conditions-generales.html">Conditions Générales</a></li>
+                        <li><a href="/cookies.html">Gestion des Cookies</a></li>
+                    </ul>
+                    <p style="color: #999; font-size: 0.85em; margin-top: 15px;">
+                        🔒 Vos données sont protégées conformément au RGPD
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p><strong>&copy; 2025 Joffrey Ros - Hypnothérapeute Spécialisé Maladies Chroniques</strong></p>
+                <p style="margin-top: 10px; font-size: 0.9em;">
+                    Cabinet Néfiach (66170) • Consultations visio France entière • 
+                    Accompagnement complémentaire maladies chroniques • Protocole épigénétique
+                </p>
+                <p style="margin-top: 10px; font-size: 0.8em; color: #666;">
+                    <strong>SEO :</strong> Hypnose maladies chroniques Perpignan • MICI hypnothérapie 66 • 
+                    Fibromyalgie hypnose France • Endométriose accompagnement • Maladies inflammatoires visio • 
+                    Protocole épigénétique Pyrénées-Orientales
+                </p>
+            </div>
         </div>
     </footer>
 
@@ -1233,6 +1405,14 @@
         // Tracking conversions
         function trackConversion(action, value) {
             console.log('Conversion tracked:', action, value);
+            // Intégration Google Analytics 4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'conversion', {
+                    'action': action,
+                    'value': value,
+                    'currency': 'EUR'
+                });
+            }
         }
 
         // Tracking clics Calendly
