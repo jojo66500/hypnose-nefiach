@@ -609,8 +609,8 @@
         }
         
         .calendly-option {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 20px;
@@ -618,8 +618,21 @@
             transition: all 0.3s;
         }
         
+        .calendly-option h4 {
+            color: white !important;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .calendly-option p {
+            color: white !important;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        
         .calendly-option:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.2);
             border-color: var(--accent-color);
         }
         
@@ -627,18 +640,21 @@
             width: 100%;
             background: var(--accent-color);
             color: white;
-            padding: 12px;
+            padding: 15px;
             border: none;
             border-radius: 8px;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.1em;
             cursor: pointer;
             margin-top: 15px;
             transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
         }
         
         .calendly-btn:hover {
             background: #e85a2b;
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
         }
         
         /* Footer */
@@ -748,7 +764,7 @@
                 <a href="index.html" class="nav-link">Accueil</a>
                 <a href="#protocole" class="nav-link">Mon Approche</a>
                 <a href="#maladies" class="nav-link">Maladies</a>
-                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="blog/index.html" class="nav-link">Blog</a>
                 <a href="#tarifs" class="nav-link">Tarifs</a>
                 <a href="#contact" class="nav-cta">Consultation</a>
             </div>
@@ -1046,7 +1062,7 @@
                     Découvrez comment l'environnement émotionnel peut influencer votre santé 
                     et apprenez des techniques pratiques pour votre mieux-être.
                 </p>
-                <a href="blog.html" class="blog-cta">
+                <a href="blog/index.html" class="blog-cta">
                     <span>Lire les Articles</span>
                     <span>→</span>
                 </a>
@@ -1236,7 +1252,7 @@
                     
                     <div style="margin: 25px 0;">
                         <strong style="color: var(--accent-color);">📱 Contact Direct :</strong><br>
-                        <a href="tel:+33759684359" style="color: white; font-size: 1.2em; font-weight: bold;">07 59 68 43 59</a><br>
+                        <a href="tel:+33759684359" style="color: white; font-size: 1.2em; font-weight: bold; text-decoration: none;">07 59 68 43 59</a><br>
                         <small>Réponse sous 24h</small>
                     </div>
                     
@@ -1293,59 +1309,26 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer style="background: #1a1a1a; color: white; padding: 40px 0; text-align: center;">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>À Propos</h4>
-                    <p style="color: #ccc; line-height: 1.8;">
-                        <strong>Joffrey Ros</strong> - Hypnothérapeute spécialisé dans l'accompagnement 
-                        des maladies chroniques. Cabinet à Néfiach (66) et consultations en visioconférence 
-                        pour toute la France.
-                    </p>
-                    <p style="color: #999; font-size: 0.9em; margin-top: 15px;">
-                        Expérience personnelle maladie de Crohn • Formation spécialisée 2023-2025 • 
-                        Approche complémentaire respectueuse du suivi médical
-                    </p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Liens Rapides</h4>
-                    <ul class="footer-links">
-                        <li><a href="#protocole">Mon Approche</a></li>
-                        <li><a href="#maladies">Maladies Accompagnées</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#tarifs">Tarifs</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Informations Légales</h4>
-                    <ul class="footer-links">
-                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
-                        <li><a href="politique-confidentialite.html">Politique de Confidentialité (RGPD)</a></li>
-                        <li><a href="conditions-generales.html">Conditions Générales</a></li>
-                        <li><a href="cookies.html">Gestion des Cookies</a></li>
-                    </ul>
-                    <p style="color: #999; font-size: 0.85em; margin-top: 15px;">
-                        🔒 Vos données sont protégées conformément au RGPD
-                    </p>
-                </div>
-            </div>
+            <p><strong>&copy; 2025 Joffrey Ros - Hypnothérapeute Spécialisé Maladies Chroniques</strong></p>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
+                Expérience personnelle maladie chronique • Cabinet Néfiach (66170) • 
+                Consultations visio France entière • Accompagnement complémentaire • 
+                Amélioration qualité de vie
+            </p>
             
-            <div class="footer-bottom">
-                <p><strong>&copy; 2025 Joffrey Ros - Hypnothérapeute Spécialisé Maladies Chroniques</strong></p>
-                <p style="margin-top: 10px; font-size: 0.9em;">
-                    Cabinet Néfiach (66170) • Consultations visio France entière • 
-                    Accompagnement complémentaire maladies chroniques • Protocole épigénétique
-                </p>
-                <p style="margin-top: 10px; font-size: 0.8em; color: #666;">
-                    <strong>SEO :</strong> Hypnose maladies chroniques Perpignan • MICI hypnothérapie 66 • 
-                    Fibromyalgie hypnose France • Endométriose accompagnement • Maladies inflammatoires visio • 
-                    Protocole épigénétique Pyrénées-Orientales
-                </p>
-            </div>
+            <p style="margin-top: 20px; font-size: 0.9em;">
+                <a href="mentions-legales.html" style="color: #ccc; text-decoration: none; margin: 0 15px; transition: color 0.3s;">Mentions Légales</a> • 
+                <a href="politique-confidentialite.html" style="color: #ccc; text-decoration: none; margin: 0 15px; transition: color 0.3s;">Politique de Confidentialité (RGPD)</a> • 
+                <a href="conditions-generales.html" style="color: #ccc; text-decoration: none; margin: 0 15px; transition: color 0.3s;">Conditions Générales</a> • 
+                <a href="cookies.html" style="color: #ccc; text-decoration: none; margin: 0 15px; transition: color 0.3s;">Cookies</a>
+            </p>
+            
+            <p style="margin-top: 10px; font-size: 0.8em; color: #666;">
+                <strong>SEO :</strong> Hypnose maladies chroniques Perpignan • MICI hypnothérapie 66 • 
+                Fibromyalgie hypnose France • Endométriose accompagnement • Maladies inflammatoires visio
+            </p>
         </div>
     </footer>
 
