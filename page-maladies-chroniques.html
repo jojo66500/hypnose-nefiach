@@ -365,6 +365,50 @@
             font-size: 1.2em;
         }
         
+        /* Blog Teaser Section */
+        .blog-teaser {
+            background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .blog-teaser-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .blog-teaser h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        
+        .blog-teaser p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .blog-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: white;
+            color: var(--primary-color);
+            padding: 18px 35px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .blog-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        }
+        
         /* Maladies concernées */
         .conditions-grid {
             display: grid;
@@ -506,44 +550,6 @@
         
         .pricing-cta.featured:hover {
             background: #e85a2b;
-        }
-        
-        /* Blog Section */
-        .blog-section {
-            background: white;
-        }
-        
-        .blog-article {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #f8f9fa;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-        }
-        
-        .blog-article h3 {
-            color: var(--primary-color);
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        
-        .blog-meta {
-            color: var(--text-gray);
-            font-size: 0.9em;
-            margin-bottom: 30px;
-            font-style: italic;
-        }
-        
-        .blog-content p {
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-        
-        .blog-content h4 {
-            color: var(--primary-color);
-            margin: 30px 0 15px;
-            font-size: 1.3em;
         }
         
         /* FAQ */
@@ -716,10 +722,6 @@
             .pricing-card.featured {
                 transform: none;
             }
-            
-            .blog-article {
-                padding: 30px 20px;
-            }
         }
         
         /* Animations */
@@ -746,7 +748,7 @@
                 <a href="index.html" class="nav-link">Accueil</a>
                 <a href="#protocole" class="nav-link">Mon Approche</a>
                 <a href="#maladies" class="nav-link">Maladies</a>
-                <a href="#blog" class="nav-link">Blog</a>
+                <a href="blog.html" class="nav-link">Blog</a>
                 <a href="#tarifs" class="nav-link">Tarifs</a>
                 <a href="#contact" class="nav-cta">Consultation</a>
             </div>
@@ -1034,48 +1036,25 @@
         </div>
     </section>
 
-    <!-- Article Blog Épigénétique -->
-    <section class="section blog-section" id="blog">
+    <!-- Blog Teaser -->
+    <section class="blog-teaser">
         <div class="container">
-            <h2 class="section-title">Comprendre l'Épigénétique</h2>
-            <p class="section-subtitle">
-                Comment l'environnement émotionnel peut influencer l'expression de vos gènes
-            </p>
-            
-            <div class="blog-article">
-                <h3>L'Épigénétique : La Science qui Transforme Notre Compréhension des Maladies Chroniques</h3>
-                <div class="blog-meta">Par Joffrey Ros • Hypnothérapeute spécialisé maladies chroniques • Janvier 2025</div>
-                
-                <div class="blog-content">
-                    <p>L'épigénétique est une révolution scientifique qui bouleverse notre compréhension des maladies chroniques. Contrairement à ce que l'on pensait autrefois, nos gènes ne sont pas notre destinée. L'épigénétique nous enseigne que l'expression de nos gènes peut être modulée par notre environnement, nos émotions et nos expériences de vie.</p>
-                    
-                    <h4>Qu'est-ce que l'Épigénétique ?</h4>
-                    <p>Le terme "épigénétique" signifie littéralement "au-dessus de la génétique". Il s'agit de modifications qui affectent l'expression des gènes sans modifier la séquence d'ADN elle-même. Imaginez vos gènes comme un livre : l'épigénétique détermine quelles pages sont lues et lesquelles restent fermées.</p>
-                    
-                    <h4>Le Lien avec les Maladies Chroniques</h4>
-                    <p>Les recherches scientifiques montrent que les maladies chroniques comme la maladie de Crohn, la fibromyalgie, l'endométriose ou les maladies auto-immunes ont une composante épigénétique significative. Le stress chronique, les traumatismes émotionnels et l'environnement psychologique peuvent influencer l'activité de certains gènes liés à l'inflammation et à la réponse immunitaire.</p>
-                    
-                    <h4>Mon Approche Épigénétique</h4>
-                    <p>Fort de mon expérience personnelle avec la maladie de Crohn et de ma formation spécialisée, j'ai développé un protocole épigénétique multi-outils qui combine :</p>
-                    
-                    <p><strong>L'hypnothérapie</strong> pour modifier les schémas de stress et favoriser des états de relaxation profonde qui peuvent influencer positivement l'expression génétique.</p>
-                    
-                    <p><strong>L'EMDR</strong> pour traiter les traumatismes émotionnels qui peuvent avoir créé des empreintes épigénétiques négatives.</p>
-                    
-                    <p><strong>La méditation et la pleine conscience</strong> qui ont démontré leur capacité à modifier l'expression de gènes liés à l'inflammation et au stress.</p>
-                    
-                    <h4>Une Perspective d'Espoir</h4>
-                    <p>L'épigénétique offre une perspective d'espoir pour les personnes vivant avec des maladies chroniques. Elle nous enseigne que nous ne sommes pas prisonniers de notre génétique et que des changements positifs dans notre environnement émotionnel et psychologique peuvent avoir un impact réel sur notre santé.</p>
-                    
-                    <p><strong>Important :</strong> Cette approche épigénétique ne remplace jamais le suivi médical traditionnel. Elle le complète en agissant sur les facteurs psychologiques et émotionnels qui peuvent influencer l'évolution de la maladie chronique.</p>
-                    
-                    <p style="font-style: italic; color: var(--primary-color); margin-top: 30px;">Si vous souhaitez explorer comment l'approche épigénétique peut vous aider dans votre parcours avec une maladie chronique, je vous invite à prendre rendez-vous pour une consultation découverte gratuite.</p>
-                </div>
+            <div class="blog-teaser-content">
+                <h2>📚 Découvrez Mon Blog sur l'Épigénétique</h2>
+                <p>
+                    Explorez mes articles sur l'épigénétique et les maladies chroniques. 
+                    Découvrez comment l'environnement émotionnel peut influencer votre santé 
+                    et apprenez des techniques pratiques pour votre mieux-être.
+                </p>
+                <a href="blog.html" class="blog-cta">
+                    <span>Lire les Articles</span>
+                    <span>→</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Tarifs - NOUVELLES OFFRES -->
+    <!-- Tarifs -->
     <section class="section pricing-chronic" id="tarifs">
         <div class="container">
             <h2 class="section-title">Tarifs de l'Accompagnement</h2>
@@ -1084,7 +1063,7 @@
                 toujours en complément de votre suivi médical.
             </p>
             
-            <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+            <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-title">🆓 Découverte Gratuite</div>
                     <div class="pricing-price">0€</div>
@@ -1335,7 +1314,7 @@
                     <ul class="footer-links">
                         <li><a href="#protocole">Mon Approche</a></li>
                         <li><a href="#maladies">Maladies Accompagnées</a></li>
-                        <li><a href="#blog">Blog Épigénétique</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="#tarifs">Tarifs</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -1344,10 +1323,10 @@
                 <div class="footer-section">
                     <h4>Informations Légales</h4>
                     <ul class="footer-links">
-                        <li><a href="/mentions-legales.html">Mentions Légales</a></li>
-                        <li><a href="/politique-confidentialite.html">Politique de Confidentialité (RGPD)</a></li>
-                        <li><a href="/conditions-generales.html">Conditions Générales</a></li>
-                        <li><a href="/cookies.html">Gestion des Cookies</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de Confidentialité (RGPD)</a></li>
+                        <li><a href="conditions-generales.html">Conditions Générales</a></li>
+                        <li><a href="cookies.html">Gestion des Cookies</a></li>
                     </ul>
                     <p style="color: #999; font-size: 0.85em; margin-top: 15px;">
                         🔒 Vos données sont protégées conformément au RGPD
