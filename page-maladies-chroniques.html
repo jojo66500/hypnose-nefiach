@@ -601,18 +601,42 @@
             padding: 30px;
         }
         
+        .contact-info h3 {
+            color: var(--accent-color) !important;
+            font-size: 1.8em !important;
+        }
+        
+        .contact-info p,
+        .contact-info div {
+            color: white !important;
+        }
+        
+        .contact-info strong {
+            color: var(--accent-color) !important;
+            font-size: 1.1em;
+        }
+        
+        .contact-info a {
+            color: white !important;
+        }
+        
         .contact-calendly {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 30px;
         }
         
+        .contact-calendly h3 {
+            color: white !important;
+            font-size: 1.6em !important;
+        }
+        
         .calendly-option {
-            background: rgba(255, 255, 255, 0.15);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.4);
             border-radius: 15px;
-            padding: 25px;
+            padding: 30px;
             margin-bottom: 20px;
             text-align: center;
             transition: all 0.3s;
@@ -620,7 +644,7 @@
         
         .calendly-option h4 {
             color: white !important;
-            font-size: 1.3em;
+            font-size: 1.4em !important;
             margin-bottom: 15px;
             font-weight: 700;
         }
@@ -629,11 +653,13 @@
             color: white !important;
             line-height: 1.8;
             margin-bottom: 10px;
+            font-size: 1.05em;
         }
         
         .calendly-option:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.25);
             border-color: var(--accent-color);
+            transform: translateY(-3px);
         }
         
         .calendly-btn {
@@ -1062,10 +1088,16 @@
                     Découvrez comment l'environnement émotionnel peut influencer votre santé 
                     et apprenez des techniques pratiques pour votre mieux-être.
                 </p>
-                <a href="blog/index.html" class="blog-cta">
-                    <span>Lire les Articles</span>
-                    <span>→</span>
-                </a>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+                    <a href="blog/epigenetique-guerison.html" class="blog-cta">
+                        <span>📖 Article : Épigénétique et Guérison</span>
+                        <span>→</span>
+                    </a>
+                    <a href="blog/index.html" class="blog-cta" style="background: var(--primary-color);">
+                        <span>Tous les Articles</span>
+                        <span>→</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -1263,8 +1295,8 @@
                     </div>
                     
                     <div style="background: rgba(76, 175, 80, 0.2); padding: 20px; border-radius: 10px; margin-top: 30px;">
-                        <p style="margin: 0; font-weight: 600;">
-                        ✅ <strong>Accompagnement Complémentaire :</strong><br>
+                        <p style="margin: 0; font-weight: 600; color: #1a252f !important;">
+                        ✅ <strong style="color: #2e7d32 !important;">Accompagnement Complémentaire :</strong><br>
                         Amélioration de la qualité de vie avec votre maladie chronique<br>
                         Toujours en respect de votre suivi médical
                         </p>
