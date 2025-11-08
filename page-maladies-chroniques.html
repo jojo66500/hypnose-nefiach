@@ -137,6 +137,64 @@
             transform: translateY(-2px);
         }
         
+        /* Menu hamburger */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+        
+        .mobile-menu {
+            display: none;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .mobile-nav-link {
+            display: block;
+            padding: 15px 20px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.3s;
+        }
+        
+        .mobile-nav-link:hover {
+            background: #f8f9fa;
+            color: var(--primary-color);
+        }
+        
+        .mobile-nav-cta {
+            background: var(--accent-color);
+            color: white !important;
+            font-weight: 600;
+            margin: 10px 20px;
+            border-radius: 8px;
+            border-bottom: none;
+        }
+        
+        .mobile-nav-cta:hover {
+            background: #e85a2b !important;
+        }
+        
         /* Bannière d'accompagnement */
         .support-banner {
             background: linear-gradient(45deg, #2e7d32, #4caf50);
@@ -874,17 +932,154 @@
             }
         }
         
-        /* Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 0.6s ease forwards;
+        /* Responsive */
+        @media (max-width: 768px) {
+            .story-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .protocol-grid,
+            .pricing-grid,
+            .conditions-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .hero-chronic {
+                padding: 60px 0;
+            }
+            
+            .hero-chronic h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 50px 0;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            /* Navigation mobile */
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .nav-logo {
+                font-size: 1.1em;
+            }
+            
+            /* Contact responsive amélioré */
+            #contact .container > div {
+                max-width: 100% !important;
+                padding: 0 10px;
+            }
+            
+            #contact .container > div > div:first-child {
+                grid-template-columns: 1fr !important;
+                gap: 25px !important;
+            }
+            
+            #contact .container > div > div > div {
+                padding: 25px !important;
+                margin: 0;
+            }
+            
+            #contact h3 {
+                font-size: 1.3em !important;
+                margin-bottom: 20px !important;
+            }
+            
+            /* Amélioration des cartes contact mobile */
+            #contact div[style*="display: flex; align-items: center; gap: 15px"] {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 10px !important;
+                margin-bottom: 20px !important;
+                padding: 15px !important;
+            }
+            
+            #contact div[style*="margin-bottom: 20px; padding: 20px"] {
+                margin-bottom: 15px !important;
+                padding: 18px !important;
+            }
+            
+            /* Boutons contact mobile */
+            #contact div[style*="display: flex; gap: 10px; justify-content: center"] {
+                flex-direction: column !important;
+                gap: 12px !important;
+                align-items: center !important;
+            }
+            
+            #contact div[style*="display: flex; gap: 10px; justify-content: center"] > a {
+                width: 200px !important;
+                text-align: center !important;
+                display: block !important;
+            }
+            
+            /* Titre et sous-titre mobile */
+            .section-title {
+                font-size: 1.8em !important;
+                margin-bottom: 20px !important;
+            }
+            
+            .section-subtitle {
+                font-size: 1em !important;
+                margin-bottom: 30px !important;
+                padding: 0 10px;
+            }
+            
+            /* Engagement mobile */
+            #contact .container > div > div:last-child {
+                margin-top: 30px !important;
+                padding: 20px !important;
+            }
+            
+            #contact .container > div > div:last-child h3 {
+                font-size: 1.2em !important;
+                margin-bottom: 10px !important;
+            }
+            
+            #contact .container > div > div:last-child p {
+                font-size: 0.95em !important;
+                line-height: 1.5 !important;
+            }
         }
         
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
+        @media (max-width: 480px) {
+            .nav-logo {
+                font-size: 1em;
+            }
+            
+            .hero-chronic h1 {
+                font-size: 1.8em;
+            }
+            
+            .expertise-box {
+                padding: 20px;
+                margin: 25px auto;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+            
+            #contact .container > div > div > div {
+                padding: 20px !important;
+            }
+            
+            .section-title {
+                font-size: 1.6em !important;
+            }
+            
+            .container {
+                padding: 0 15px;
             }
         }
     </style>
@@ -902,6 +1097,21 @@
                 <a href="#tarifs" class="nav-link">Tarifs</a>
                 <a href="#contact" class="nav-cta">Consultation</a>
             </div>
+            <!-- Menu hamburger pour mobile -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Menu mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">🏠 Accueil</a>
+            <a href="#protocole" class="mobile-nav-link">🎯 Mon Approche</a>
+            <a href="#maladies" class="mobile-nav-link">🏥 Maladies</a>
+            <a href="blog/index.html" class="mobile-nav-link">📚 Blog</a>
+            <a href="#tarifs" class="mobile-nav-link">💰 Tarifs</a>
+            <a href="#contact" class="mobile-nav-link mobile-nav-cta">📞 Consultation</a>
         </div>
     </nav>
 
@@ -1488,6 +1698,19 @@
     </footer>
 
     <script>
+        // Menu mobile
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+        
+        // Fermer le menu mobile quand on clique sur un lien
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.remove('active');
+            });
+        });
+        
         // Animations au scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
