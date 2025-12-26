@@ -603,9 +603,9 @@
             <div class="nav-content">
                 <a href="/" class="nav-logo">🧠 Hypnose Joffrey</a>
                 <div class="nav-links">
-                    <a href="/" class="nav-link">Accueil</a>
-                    <a href="/blog" class="nav-link">Blog</a>
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                    <a href="index.html" class="nav-link">Blog</a>
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
                     <a href="#rdv" class="nav-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/decouverte-maladie-chronique'});return false;">Prendre RDV</a>
                 </div>
             </div>
@@ -1265,10 +1265,10 @@
                     Cabinet MSP Néfiach, Pyrénées-Orientales (66)
                 </p>
                 <div style="margin: 25px 0;">
-                    <a href="/" style="color: white; margin: 0 15px; text-decoration: none;">Accueil</a>
-                    <a href="/blog" style="color: white; margin: 0 15px; text-decoration: none;">Blog</a>
-                    <a href="/mentions-legales" style="color: white; margin: 0 15px; text-decoration: none;">Mentions Légales</a>
-                    <a href="/rgpd" style="color: white; margin: 0 15px; text-decoration: none;">RGPD</a>
+                    <a href="../index.html" style="color: white; margin: 0 15px; text-decoration: none;">Accueil</a>
+                    <a href="index.html" style="color: white; margin: 0 15px; text-decoration: none;">Blog</a>
+                    <a href="../mentions-legales.html" style="color: white; margin: 0 15px; text-decoration: none;">Mentions Légales</a>
+                    <a href="../rgpd.html" style="color: white; margin: 0 15px; text-decoration: none;">RGPD</a>
                 </div>
                 <p style="font-size: 0.9em; opacity: 0.8; margin-top: 20px;">
                     Tous droits réservés © 2025 - Fait avec ❤️ à Néfiach
@@ -1287,4 +1287,14 @@
                 // Fermer tous les autres items
                 document.querySelectorAll('.faq-item').forEach(item => {
                     item.classList.remove('active');
-             
+                            });
+                
+                // Ouvrir celui-ci si il n'était pas déjà ouvert
+                if (!wasActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
