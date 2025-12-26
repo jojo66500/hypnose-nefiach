@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Hypnothérapie - Articles, guides pratiques et conseils par Joffrey Ros, hypnothérapeute à Néfiach. Découvrez l'hypnose, la gestion du stress et les médecines douces.">
+    <title>Blog Hypnothérapie | Joffrey Ros - Articles & Guides Pratiques</title>
+    
+    <!-- SEO -->
+    <meta name="keywords" content="blog hypnothérapie, articles hypnose, guide bien-être, conseils anxiété, médecines douces, remboursement mutuelle hypnose">
+    <meta name="geo.region" content="FR-66">
+    <meta name="geo.placename" content="Néfiach, Pyrénées-Orientales">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog Hypnothérapie | Joffrey Ros - Articles & Conseils">
+    <meta property="og:description" content="Découvrez nos articles spécialisés sur l'hypnothérapie, la gestion du stress et les thérapies complémentaires. Guides pratiques et conseils d'expert.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hypnosejoffrey.fr/blog/">
+    
+    <!-- Calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <style>
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #4CAF50;
+            --accent-color: #FF6B35;
+            --purple-gradient: linear-gradient(45deg, #667eea, #764ba2);
+            --text-dark: #2c3e50;
+            --text-gray: #7f8c8d;
+            --bg-light: #f8f9fa;
+            --shadow: 0 4px 20px rgba(0,0,0,0.1);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation */
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-cta {
+            background: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Blog */
+        .hero-blog {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-blog::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="8" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="60" r="12" fill="rgba(255,255,255,0.08)"/></svg>');
+            background-size: 200px 200px;
+            opacity: 0.7;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-blog h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Articles Grid */
+        .articles-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+        
+        .section-intro h2 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .section-intro p {
+            color: var(--text-gray);
+            font-size: 1.1em;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 220px;
+            background: var(--purple-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5em;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0px, rgba(255,255,255,0.1) 2px, transparent 2px, transparent 10px);
+            opacity: 0.3;
+        }
+        
+        .article-icon {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .article-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 700;
+            z-index: 2;
+        }
+        
+        .article-content {
+            padding: 30px;
+        }
+        
+        .article-category {
+            color: var(--accent-color);
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .article-title {
+            font-size: 1.6em;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .article-excerpt {
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .article-cta {
+            display: inline-block;
+            background: var(--purple-gradient);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .article-cta:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* Article à venir */
+        .article-card.coming-soon {
+            opacity: 0.7;
+            border: 2px dashed #ddd;
+        }
+        
+        .article-card.coming-soon:hover {
+            transform: none;
+            border-color: #ddd;
+        }
+        
+        .coming-soon-label {
+            background: #999;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        /* CTA Newsletter */
+        .newsletter-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 80px 0;
+        }
+        
+        .newsletter-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .newsletter-content h2 {
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .newsletter-content p {
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .newsletter-cta {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s;
+        }
+        
+        .newsletter-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-blog {
+                padding: 60px 0 40px;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .article-image {
+                height: 180px;
+                font-size: 4em;
+            }
+            
+            .newsletter-content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="../index.html" class="nav-logo">🧠 Hypnose Joffrey</a>
+                <div class="nav-links">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                    <a href="index.html" class="nav-link">Blog</a>
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                    <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="nav-cta">Prendre RDV</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Blog -->
+    <section class="hero-blog">
+        <div class="container">
+            <div class="hero-content">
+                <h1>📚 Blog Hypnothérapie</h1>
+                <p class="hero-subtitle">
+                    Découvrez nos articles, guides pratiques et conseils d'expert sur l'hypnothérapie, 
+                    la gestion du stress et les médecines complémentaires
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Articles & Guides Pratiques</h2>
+                <p>
+                    Des contenus de qualité pour vous aider à mieux comprendre l'hypnothérapie 
+                    et optimiser votre bien-être au quotidien
+                </p>
+            </div>
+            
+            <div class="articles-grid">
+                
+                <!-- Article 1 : Remboursement Mutuelle -->
+                <article class="article-card">
+                    <div class="article-image">
+                        <div class="article-badge">💡 NOUVEAU 2025</div>
+                        <span class="article-icon">💰</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-category">Guide Pratique</div>
+                        <h3 class="article-title">Remboursement Mutuelle Hypnothérapie : Guide Complet 2025</h3>
+                        <p class="article-excerpt">
+                            Découvrez comment obtenir jusqu'à 500€ de remboursement par an pour vos séances 
+                            d'hypnothérapie. Liste complète des mutuelles, démarches détaillées et conseils d'expert.
+                        </p>
+                        <div class="article-meta">
+                            <span class="meta-item">📅 15 Jan 2025</span>
+                            <span class="meta-item">⏱️ 12 min</span>
+                        </div>
+                        <a href="remboursement-mutuelle-hypnotherapie.html" class="article-cta">
+                            Lire l'article →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 2 : Épigénétique -->
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(45deg, #4caf50, #45a049);">
+                        <div class="article-badge">🧬 SCIENCE</div>
+                        <span class="article-icon">🧬</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-category">Approche Scientifique</div>
+                        <h3 class="article-title">Épigénétique et Guérison : Comment l'Esprit Influence nos Gènes</h3>
+                        <p class="article-excerpt">
+                            Découvrez comment l'esprit influence nos gènes et ouvre de nouvelles voies de guérison. 
+                            Une approche scientifique révolutionnaire validée par la recherche.
+                        </p>
+                        <div class="article-meta">
+                            <span class="meta-item">📅 10 Jan 2025</span>
+                            <span class="meta-item">⏱️ 15 min</span>
+                        </div>
+                        <a href="epigenetique-guerison.html" class="article-cta">
+                            Lire l'article →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 3 : À venir - Anxiété -->
+                <article class="article-card coming-soon">
+                    <div class="article-image" style="background: linear-gradient(45deg, #ff9800, #ff5722);">
+                        <span class="article-icon">😰</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="coming-soon-label">À VENIR</span>
+                        <div class="article-category">Guide Pratique</div>
+                        <h3 class="article-title">7 Techniques pour Gérer l'Anxiété au Quotidien</h3>
+                        <p class="article-excerpt">
+                            Des exercices pratiques issus de l'hypnose et de la TCC pour retrouver 
+                            votre sérénité rapidement. Guide étape par étape.
+                        </p>
+                        <div class="article-meta">
+                            <span class="meta-item">📅 Prochainement</span>
+                            <span class="meta-item">⏱️ 10 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 : À venir - Comment fonctionne l'hypnose -->
+                <article class="article-card coming-soon">
+                    <div class="article-image" style="background: linear-gradient(45deg, #2196f3, #1976d2);">
+                        <span class="article-icon">🧠</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="coming-soon-label">À VENIR</span>
+                        <div class="article-category">Comprendre l'Hypnose</div>
+                        <h3 class="article-title">Comment l'Hypnose Agit sur le Cerveau</h3>
+                        <p class="article-excerpt">
+                            Découvrez les mécanismes neurologiques de l'hypnothérapie et son efficacité 
+                            scientifiquement prouvée. Explications claires et accessibles.
+                        </p>
+                        <div class="article-meta">
+                            <span class="meta-item">📅 Prochainement</span>
+                            <span class="meta-item">⏱️ 8 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 : À venir - Burn-out -->
+                <article class="article-card coming-soon">
+                    <div class="article-image" style="background: linear-gradient(45deg, #9c27b0, #7b1fa2);">
+                        <span class="article-icon">💔</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="coming-soon-label">À VENIR</span>
+                        <div class="article-category">Santé au Travail</div>
+                        <h3 class="article-title">Burn-out : Signes Précurseurs et Solutions</h3>
+                        <p class="article-excerpt">
+                            Identifiez les signaux d'alerte du burn-out et découvrez comment l'hypnothérapie 
+                            peut vous aider à retrouver votre équilibre professionnel.
+                        </p>
+                        <div class="article-meta">
+                            <span class="meta-item">📅 Prochainement</span>
+                            <span class="meta-item">⏱️ 12 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 : À venir - EMDR -->
+                <article class="article-card coming-soon">
+                    <div class="article-image" style="background: linear-gradient(45deg, #f44336, #d32f2f);">
+                        <span class="article-icon">💥</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="coming-soon-label">À VENIR</span>
+                        <div class="article-category">Thérapie Traumatismes</div>
+                        <h3 class="article-title">EMDR et Traumatismes : Comment ça Marche ?</h3>
+                        <p class="article-excerpt">
+                            Tout savoir sur l'EMDR, cette thérapie reconnue pour le traitement des traumatismes. 
+                            Explications détaillées et témoignages.
+                        </p>
+                        <div class="article-meta">
+                            <span class="meta-item">📅 Prochainement</span>
+                            <span class="meta-item">⏱️ 10 min</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>🎯 Besoin d'un Accompagnement Personnalisé ?</h2>
+                <p>
+                    Les articles sont utiles, mais rien ne remplace un accompagnement sur-mesure. 
+                    Réservez votre première consultation pour un bilan complet de votre situation.
+                </p>
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="newsletter-cta">
+                    📅 Réserver ma Consultation
+                </a>
+                <p style="margin-top: 20px; font-size: 0.9em; color: var(--text-gray);">
+                    ✅ Première consultation • 💻 Cabinet ou Visio • 🎯 Bilan personnalisé
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p style="margin-bottom: 15px;">
+                <strong>🧠 Cabinet Hypnose Joffrey Ros</strong><br/>
+                Hypnothérapie • EMDR • Médecines Douces<br/>
+                Cabinet MSP Néfiach, Pyrénées-Orientales (66)
+            </p>
+            <div style="margin: 25px 0;">
+                <a href="../index.html">Accueil</a>
+                <a href="index.html">Blog</a>
+                <a href="../mentions-legales.html">Mentions Légales</a>
+                <a href="../rgpd.html">RGPD</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <p style="font-size: 0.9em; opacity: 0.8; margin-top: 20px;">
+                © 2025 Joffrey Ros - Hypnothérapeute Certifié - Néfiach
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
