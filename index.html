@@ -137,7 +137,7 @@
             padding: 0 20px;
         }
 
-        /* Navigation Menu - Nouveau */
+        /* Navigation Menu */
         .main-nav {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -920,7 +920,7 @@
             transform: scale(1.02);
         }
         
-        /* Section Blog - Version responsive corrigée */
+        /* Section Blog */
         .blog-section {
             background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             padding: 80px 0;
@@ -1295,21 +1295,27 @@
                     </div>
                 </li>
                 
+                <!-- MODIF 2 : Ajout "Voir tous les articles" en haut du menu Blog -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         Blog & Ressources
                         <span class="nav-arrow">▼</span>
                     </a>
                     <div class="dropdown">
+                        <a href="blog/" class="dropdown-item" style="background: rgba(102, 126, 234, 0.1); border-left-color: #667eea; font-weight: 600;">📚 Voir tous les articles</a>
+                        <div style="height: 1px; background: rgba(95, 158, 160, 0.2); margin: 8px 0;"></div>
+
                         <div class="dropdown-header">Articles spécialisés</div>
                         <a href="blog/epigenetique-guerison.html" class="dropdown-item">🧬 Épigénétique et Guérison</a>
                         <a href="#" class="dropdown-item">📝 Comment gérer une crise d'angoisse</a>
                         <a href="#" class="dropdown-item">📝 L'hypnose contre l'anxiété : guide complet</a>
                         <a href="#" class="dropdown-item">📝 Burn-out : signes et solutions</a>
                         <a href="#" class="dropdown-item">📝 EMDR et traumatismes : comment ça marche</a>
+
                         <div class="dropdown-header">Outils gratuits</div>
                         <a href="#" class="dropdown-item">🎧 Audio d'auto-hypnose gratuit</a>
                         <a href="#" class="dropdown-item">📊 Test d'anxiété en ligne</a>
+
                         <div class="dropdown-header">Informations légales</div>
                         <a href="rgpd.html" class="dropdown-item">🔒 Politique RGPD</a>
                         <a href="conditions-utilisation.html" class="dropdown-item">📋 Conditions d'utilisation</a>
@@ -1368,10 +1374,10 @@
         </div>
     </nav>
 
-    <!-- Bannière d'urgence - CORRIGÉE AVEC DATE ACTUELLE -->
+    <!-- MODIF 1 : Bannière d'urgence (texte intemporel) -->
     <div class="urgency-banner">
         <div class="container">
-            <span class="urgency-text">🔥 NOVEMBRE 2024 : Créneaux d'urgence anxiété + maladies chroniques disponibles cette semaine</span>
+            <span class="urgency-text">🔥 Créneaux d'urgence anxiété + maladies chroniques disponibles cette semaine</span>
             <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-urgence'});return false;" class="urgency-cta">Réserver maintenant</a>
         </div>
     </div>
@@ -1430,6 +1436,53 @@
                 <div class="trust-item">
                     <div class="icon">⚡</div>
                     <p><strong>Résultats Rapides</strong><br>3 à 8 séances • 85% de réussite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODIF 4 : Encart Remboursement Mutuelle (inséré entre Trust-bar et Spécialisations) -->
+    <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 50px 0;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                <div style="display: grid; grid-template-columns: 80px 1fr; gap: 30px; align-items: center;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 4em;">💰</div>
+                    </div>
+                    <div>
+                        <div style="background: linear-gradient(45deg, #667eea, #764ba2); color: white; display: inline-block; padding: 6px 15px; border-radius: 20px; font-size: 0.85em; font-weight: bold; margin-bottom: 10px;">
+                            💡 NOUVEAU GUIDE 2025
+                        </div>
+                        <h3 style="color: #667eea; font-size: 1.8em; margin-bottom: 15px;">
+                            Remboursement Mutuelle Hypnothérapie
+                        </h3>
+                        <p style="color: #666; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Saviez-vous que vous pouvez récupérer jusqu'à 500€/an</strong> pour vos séances d'hypnothérapie ? 
+                            Découvrez notre guide complet 2025 avec la liste des mutuelles qui remboursent, les démarches détaillées 
+                            et nos conseils d'expert pour maximiser votre prise en charge.
+                        </p>
+                        <ul style="list-style: none; padding: 0; margin: 20px 0; color: #555;">
+                            <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                                Tableau comparatif de 15 mutuelles majeures
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                                Procédure étape par étape pour obtenir vos remboursements
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                                Conseils pour maximiser votre prise en charge
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 25px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #667eea; font-weight: bold;">✓</span>
+                                Exemples concrets de remboursement
+                            </li>
+                        </ul>
+                        <a href="blog/remboursement-mutuelle-hypnotherapie.html" style="display: inline-block; background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; transition: all 0.3s ease; font-size: 1.1em;">
+                            📖 Lire le Guide Complet →
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1505,7 +1558,7 @@
                 </div>
             </div>
             
-            <!-- NOUVEAU BLOC SPÉCIALISÉ MALADIES CHRONIQUES -->
+            <!-- BLOC SPÉCIALISÉ MALADIES CHRONIQUES -->
             <h3 class="section-title" style="text-align: center; font-size: 2em; margin: 60px auto 30px; color: #2e7d32;">Expert en Maladies Chroniques</h3>
             <p style="text-align: center; max-width: 900px; margin: 0 auto 50px; font-size: 1.1em; color: #666;">
                 Accompagnement spécialisé pour les maladies chroniques. Grâce à mon expérience personnelle 
@@ -1649,7 +1702,7 @@
         </div>
     </section>
 
-    <!-- Section Blog - VERSION CORRIGÉE RESPONSIVE -->
+    <!-- Section Blog -->
     <section class="section blog-section">
         <div class="container">
             <h2 class="section-title">Blog & Ressources</h2>
@@ -1660,7 +1713,6 @@
             
             <div class="blog-content">
                 <div class="blog-article-card">
-                    <!-- Badge NOUVEAU -->
                     <div class="blog-badge">
                         🧬 NOUVEAU
                     </div>
@@ -1686,7 +1738,6 @@
                         
                         <div class="blog-visual">
                             <div class="blog-icon-container">
-                                <!-- Pattern ADN en arrière-plan -->
                                 <div class="blog-icon-pattern"></div>
                                 <div class="blog-icon">🧬</div>
                             </div>
@@ -1697,7 +1748,6 @@
                     </div>
                 </div>
                 
-                <!-- Autres articles à venir -->
                 <div class="blog-coming-soon">
                     <p>Plus d'articles spécialisés bientôt disponibles</p>
                     <div class="blog-coming-soon-grid">
@@ -1727,7 +1777,6 @@
             
             <div class="about-content">
                 <div class="about-image">
-                    <!-- VOTRE PHOTO SERA ICI - Uploadez joffrey-ros-photo.jpg dans le dossier images/ -->
                     <img src="images/joffrey-ros-photo.jpg" 
                          alt="Joffrey Ros - Hypnothérapeute spécialisé en troubles anxieux" 
                          class="profile-photo"
@@ -1761,7 +1810,6 @@
                         sans être limité par l'anxiété."
                     </p>
                     
-                    <!-- Mentions déontologiques obligatoires -->
                     <div style="background: #f0f8ff; padding: 20px; border-radius: 10px; margin-top: 30px; border-left: 4px solid #5f9ea0;">
                         <h4 style="color: #5f9ea0; margin-bottom: 15px;">⚖️ Mentions déontologiques importantes</h4>
                         <p style="font-size: 0.95em; line-height: 1.6; margin-bottom: 10px;">
@@ -1868,7 +1916,6 @@
                         <strong>Réservation instantanée 24h/24.</strong>
                     </div>
                     
-                    <!-- Types de consultations Calendly -->
                     <div class="calendly-options">
                         <div class="calendly-option urgent">
                             <h4>🚨 Consultation d'Urgence</h4>
@@ -1906,7 +1953,6 @@
                         ✅ <strong>Sécurisé :</strong> Paiement en ligne ou sur place
                     </div>
                     
-                    <!-- Contact traditionnel en backup -->
                     <div style="text-align: center; margin-top: 25px; padding-top: 25px; border-top: 2px solid #e0e0e0;">
                         <p style="color: #666; margin-bottom: 15px;"><strong>Préférez-vous être rappelé ?</strong></p>
                         <a href="tel:+33759684359" class="calendly-btn primary-btn" style="display: inline-block; width: auto; padding: 15px 30px; margin-right: 10px;">
@@ -1937,7 +1983,6 @@
                     📞 <a href="tel:+33759684359">07 59 68 43 59</a>
                     </p>
                     
-                    <!-- Avis Google -->
                     <div style="margin-top: 20px; padding: 15px; background: rgba(95,158,160,0.1); border-radius: 8px;">
                         <p style="margin: 0; font-size: 0.9em;">
                             ⭐⭐⭐⭐⭐ <strong>5/5</strong> sur Google<br>
@@ -2075,9 +2120,7 @@
         // Close mobile menu when clicking outside
         document.addEventListener('click', (e) => {
             const mobileMenu = document.getElementById('mobileMenu');
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             const nav = document.querySelector('.main-nav');
-            
             if (!nav.contains(e.target)) {
                 mobileMenu.classList.remove('active');
             }
