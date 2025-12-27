@@ -1,155 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joffrey Ros – Hypnothérapeute spécialisé anxiété & maladies chroniques</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Joffrey Ros, Hypnothérapeute spécialisé anxiété et maladies chroniques à Néfiach. Hypnose, EMDR, TCC. Cabinet MSP & visio.">
+<title>Joffrey Ros – Hypnothérapeute Anxiété & Maladies Chroniques</title>
 
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-    <style>
-        body { margin:0; font-family:Arial, sans-serif; background:#f9f9f9; color:#333; }
-        .container { max-width:1200px; margin:auto; padding:0 20px; }
-        a { text-decoration:none; }
+<style>
+/* === BASE === */
+body{margin:0;font-family:Arial,sans-serif;background:#f9f9f9;color:#333}
+.container{max-width:1200px;margin:auto;padding:0 20px}
+a{text-decoration:none;color:inherit}
 
-        /* NAV */
-        .main-nav { background:white; border-bottom:1px solid #eee; position:sticky; top:0; z-index:1000; }
-        .nav-container { display:flex; justify-content:space-between; align-items:center; height:70px; }
-        .nav-logo { font-weight:bold; color:#5f9ea0; }
-        .nav-menu { list-style:none; display:flex; gap:30px; }
-        .nav-item { position:relative; }
-        .nav-link { color:#333; }
-        .dropdown {
-            position:absolute; top:100%; left:0;
-            background:white; min-width:260px;
-            box-shadow:0 10px 30px rgba(0,0,0,0.15);
-            opacity:0; visibility:hidden; transform:translateY(-10px);
-            transition:.3s;
-        }
-        .nav-item:hover .dropdown { opacity:1; visibility:visible; transform:translateY(0); }
-        .dropdown-item { display:block; padding:12px 18px; color:#333; }
-        .dropdown-item:hover { background:#f0f8ff; color:#5f9ea0; }
+/* === NAV === */
+.main-nav{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:1000}
+.nav-container{display:flex;justify-content:space-between;align-items:center;height:70px}
+.nav-logo{font-size:1.4em;font-weight:bold;color:#5f9ea0}
+.nav-menu{list-style:none;display:flex;gap:30px}
+.nav-item{position:relative}
+.nav-link{color:#333;font-weight:500}
+.dropdown{position:absolute;top:100%;left:0;background:#fff;min-width:260px;box-shadow:0 10px 30px rgba(0,0,0,.15);opacity:0;visibility:hidden;transform:translateY(-10px);transition:.3s}
+.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.dropdown-item{display:block;padding:12px 18px}
+.dropdown-item:hover{background:#f0f8ff;color:#5f9ea0}
 
-        /* URGENCY */
-        .urgency-banner {
-            background:linear-gradient(45deg,#ff6b6b,#ff8e53);
-            color:white; padding:15px 0; text-align:center;
-        }
-        .urgency-cta {
-            background:white; color:#ff6b6b;
-            padding:8px 20px; border-radius:20px; font-weight:bold;
-        }
+/* === URGENCY === */
+.urgency-banner{background:linear-gradient(45deg,#ff6b6b,#ff8e53);color:#fff;padding:15px 0;text-align:center}
+.urgency-cta{background:#fff;color:#ff6b6b;padding:8px 20px;border-radius:20px;font-weight:bold;margin-left:15px}
 
-        /* HERO */
-        .hero {
-            background:linear-gradient(135deg,#5f9ea0,#4682b4);
-            color:white; padding:90px 0; text-align:center;
-        }
+/* === HERO === */
+.hero{background:linear-gradient(135deg,#5f9ea0,#4682b4);color:#fff;padding:90px 0;text-align:center}
 
-        /* BLOG CARD */
-        .blog-section { background:#eef2f5; padding:80px 0; }
-        .blog-card {
-            background:white; border-radius:20px; padding:40px;
-            box-shadow:0 10px 30px rgba(0,0,0,0.1);
-        }
-        .blog-cta {
-            display:inline-block;
-            background:linear-gradient(45deg,#667eea,#764ba2);
-            color:white; padding:14px 28px;
-            border-radius:25px; font-weight:bold;
-        }
+/* === TRUST === */
+.trust-bar{background:#fff;padding:40px 0}
+.trust-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;text-align:center}
 
-        /* MUTUELLE */
-        .mutuelle-section {
-            background:linear-gradient(135deg,#667eea,#764ba2);
-            padding:60px 0;
-        }
-        .mutuelle-box {
-            background:white; padding:40px; border-radius:20px;
-            max-width:900px; margin:auto;
-        }
+/* === MUTUELLE === */
+.mutuelle-section{background:linear-gradient(135deg,#667eea,#764ba2);padding:60px 0}
+.mutuelle-box{background:#fff;padding:40px;border-radius:20px;max-width:900px;margin:auto}
+.blog-cta{display:inline-block;background:linear-gradient(45deg,#667eea,#764ba2);color:#fff;padding:14px 28px;border-radius:25px;font-weight:bold}
 
-        footer { background:#2c3e50; color:white; padding:40px 0; margin-top:80px; }
-    </style>
+/* === BLOG === */
+.blog-section{background:#eef2f5;padding:80px 0}
+.blog-card{background:#fff;border-radius:20px;padding:40px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+
+/* === FOOTER === */
+footer{background:#2c3e50;color:#fff;padding:40px 0;margin-top:80px;text-align:center}
+</style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav class="main-nav">
-    <div class="container nav-container">
-        <div class="nav-logo">Joffrey Ros – Hypnothérapeute</div>
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
+<div class="container nav-container">
+<div class="nav-logo">Joffrey Ros – Hypnothérapeute</div>
+<ul class="nav-menu">
+<li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
 
-            <li class="nav-item">
-                <a href="#" class="nav-link">Blog</a>
-                <div class="dropdown">
-                    <a href="blog/blog-index.html" class="dropdown-item"><strong>📚 Blog</strong></a>
-                    <a href="blog/épigénétique-guerison.html" class="dropdown-item">🧬 Épigénétique & guérison</a>
-                    <a href="blog/remboursement-mutuelle-hypnothérapie.html" class="dropdown-item">💰 Remboursement mutuelle</a>
-                </div>
-            </li>
+<li class="nav-item">
+<a href="#" class="nav-link">Blog</a>
+<div class="dropdown">
+<a href="blog/blog-index.html" class="dropdown-item"><strong>📚 Blog</strong></a>
+<a href="blog/épigénétique-guerison.html" class="dropdown-item">🧬 Épigénétique & guérison</a>
+<a href="blog/remboursement-mutuelle-hypnothérapie.html" class="dropdown-item">💰 Remboursement mutuelle</a>
+</div>
+</li>
 
-            <li class="nav-item">
-                <button onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;"
-                        style="background:#5f9ea0;color:white;border:none;padding:10px 20px;border-radius:20px;">
-                    📅 Réserver
-                </button>
-            </li>
-        </ul>
-    </div>
+<li class="nav-item">
+<button onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;"
+style="background:#5f9ea0;color:#fff;border:none;padding:10px 20px;border-radius:20px">
+📅 Réserver
+</button>
+</li>
+</ul>
+</div>
 </nav>
 
-<!-- URGENCY -->
 <div class="urgency-banner">
-    <span>🔥 Créneaux d'urgence anxiété & maladies chroniques disponibles cette semaine</span>
-    <a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-hypnosejoffrey/consultation-urgence'});return false;"
-       class="urgency-cta">Réserver maintenant</a>
+🔥 Créneaux d'urgence anxiété & maladies chroniques disponibles cette semaine
+<a href="#" onclick="Calendly.initPopupWidget({url:'https://calendly.com/contact-hypnosejoffrey/consultation-urgence'});return false;"
+class="urgency-cta">Réserver maintenant</a>
 </div>
 
-<!-- HERO -->
 <section class="hero">
-    <div class="container">
-        <h1>Spécialiste anxiété & maladies chroniques</h1>
-        <p>Hypnose • EMDR • Approche intégrative</p>
-    </div>
+<div class="container">
+<h1>Spécialiste anxiété & maladies chroniques</h1>
+<p>Hypnose • EMDR • TCC • Cabinet MSP Néfiach & Visio</p>
+</div>
 </section>
 
-<!-- MUTUELLE -->
+<section class="trust-bar">
+<div class="container">
+<div class="trust-items">
+<div>🎯 <strong>Spécialiste anxiété</strong></div>
+<div>🏥 Cabinet MSP</div>
+<div>🎓 Hypnose • EMDR • TCC</div>
+<div>⭐ Avis Google 5/5</div>
+</div>
+</div>
+</section>
+
 <section class="mutuelle-section">
-    <div class="mutuelle-box">
-        <h2>💰 Remboursement Mutuelle Hypnothérapie</h2>
-        <p><strong>Jusqu’à 500 € / an</strong> peuvent être remboursés selon votre mutuelle.</p>
-
-        <a href="blog/remboursement-mutuelle-hypnothérapie.html" class="blog-cta">
-            📖 Lire le guide complet →
-        </a>
-    </div>
+<div class="mutuelle-box">
+<h2>💰 Remboursement Mutuelle Hypnothérapie</h2>
+<p><strong>Jusqu’à 500 € / an</strong> peuvent être remboursés selon votre mutuelle.</p>
+<a href="blog/remboursement-mutuelle-hypnothérapie.html" class="blog-cta">
+📖 Lire le guide complet →
+</a>
+</div>
 </section>
 
-<!-- BLOG -->
 <section class="blog-section">
-    <div class="container">
-        <div class="blog-card">
-            <h2>🧬 Épigénétique et guérison</h2>
-            <p>
-                Comment l’hypnose peut influencer l’expression génétique
-                et soutenir les processus de guérison.
-            </p>
-
-            <a href="blog/épigénétique-guerison.html" class="blog-cta">
-                Lire l’article complet →
-            </a>
-        </div>
-    </div>
+<div class="container">
+<div class="blog-card">
+<h2>🧬 Épigénétique et guérison</h2>
+<p>Comment l’hypnose peut influencer l’expression génétique et soutenir les processus de guérison.</p>
+<a href="blog/épigénétique-guerison.html" class="blog-cta">
+Lire l’article complet →
+</a>
+</div>
+</div>
 </section>
 
 <footer>
-    <div class="container">
-        <p>© Joffrey Ros – Hypnothérapeute</p>
-    </div>
+<div class="container">
+<p>© 2025 – Joffrey Ros – Hypnothérapeute</p>
+</div>
 </footer>
 
 </body>
