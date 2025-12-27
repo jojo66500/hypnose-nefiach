@@ -87,26 +87,14 @@
       "review": [
         {
           "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Marie L."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5"
-          },
+          "author": { "@type": "Person", "name": "Marie L." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
           "reviewBody": "Après 3 séances, mes crises d'angoisse ont complètement disparu. Approche bienveillante et efficace."
         },
         {
-          "@type": "Review", 
-          "author": {
-            "@type": "Person",
-            "name": "Thomas B."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5"
-          },
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Thomas B." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
           "reviewBody": "Grâce à l'hypnose, j'ai surmonté mon burn-out. Accompagnement professionnel remarquable."
         }
       ]
@@ -212,6 +200,7 @@
             border-bottom: 1px solid rgba(95, 158, 160, 0.1);
             margin-bottom: 4px;
         }
+
         .cta-nav {
             background: linear-gradient(45deg, #5f9ea0, #4682b4);
             color: white !important;
@@ -281,7 +270,7 @@
             background-size: 20px 20px;
             animation: drift 20s linear infinite;
         }
-        @keyframes drift { from { transform: translate(0, 0); } to { transform: translate(20px, 20px); } }
+        @keyframes drift { from { transform: translate(0,0); } to { transform: translate(20px,20px); } }
         .hero-content { position: relative; z-index: 1; }
         .hero-logo { margin-bottom: 30px; }
         .hero-logo img {
@@ -392,7 +381,7 @@
         .specialization-card li { margin: 12px 0; padding-left: 30px; position: relative; line-height: 1.5; }
         .specialization-card li::before { content: '✓'; position: absolute; left: 0; color: #5f9ea0; font-weight: bold; font-size: 1.2em; }
 
-        /* Nouvelle carte spéciale Maladies Chroniques */
+        /* Carte Maladies chroniques */
         .specialization-card.chronic-card { background: linear-gradient(135deg, #e8f5e8, #ffffff); border: 2px solid #4caf50; position: relative; }
         .specialization-card.chronic-card::before {
             content: '🧬 NOUVEAU';
@@ -423,7 +412,7 @@
         }
         .chronic-cta:hover { background: linear-gradient(45deg, #45a049, #388e3c); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3); }
 
-        /* Témoignages clients */
+        /* Témoignages */
         .testimonials-section { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 80px 0; }
         .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 50px; }
         .testimonial-card {
@@ -453,12 +442,11 @@
         }
         .testimonials-link:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(95, 158, 160, 0.4); }
 
-        /* Section À propos */
+        /* About */
         .about-content { display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: center; }
         .about-image { text-align: center; }
         .profile-photo {
-            width: 280px;
-            height: 280px;
+            width: 280px; height: 280px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid #5f9ea0;
@@ -472,7 +460,7 @@
         .about-text p { margin-bottom: 20px; font-size: 1.1em; line-height: 1.7; }
         .quote { font-style: italic; color: #5f9ea0; font-size: 1.2em; border-left: 4px solid #5f9ea0; padding-left: 20px; margin-top: 30px; }
 
-        /* Section Contact */
+        /* Contact */
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
         .contact-info, .contact-form { background: white; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         .contact-info h3, .contact-form h3 { color: #5f9ea0; margin-bottom: 30px; font-size: 1.6em; }
@@ -480,6 +468,7 @@
         .contact-item .icon { color: #5f9ea0; font-size: 1.8em; margin-top: 5px; }
         .contact-item strong { display: block; margin-bottom: 5px; color: #333; }
         .contact-item a { color: #5f9ea0; text-decoration: none; font-weight: bold; }
+
         .urgency-box { background: #ffe6e6; padding: 20px; border-radius: 10px; margin-bottom: 25px; border-left: 5px solid #ff6b6b; }
         .guarantees { background: #e6f7ff; padding: 20px; border-radius: 10px; margin-bottom: 25px; font-size: 0.95em; }
 
@@ -500,7 +489,7 @@
         .follow-btn { background: linear-gradient(45deg, #28a745, #20c997); color: white; }
         .follow-btn:hover { background: linear-gradient(45deg, #20c997, #17a2b8); transform: scale(1.02); }
 
-        /* Section Blog */
+        /* Blog */
         .blog-section { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 80px 0; }
         .blog-content { max-width: 900px; margin: 0 auto; }
         .blog-article-card {
@@ -559,15 +548,13 @@
         }
         .blog-icon-pattern {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0px, rgba(255,255,255,0.1) 2px, transparent 2px, transparent 10px);
             opacity: 0.3;
         }
         .blog-icon { position: relative; z-index: 1; font-size: 4em; }
         .blog-quote { margin-top: 15px; font-size: 0.9em; color: #666; font-style: italic; font-weight: 500; }
+
         .blog-coming-soon { text-align: center; margin-top: 40px; }
         .blog-coming-soon p { color: #666; margin-bottom: 20px; }
         .blog-coming-soon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
@@ -594,7 +581,6 @@
             .hero-logo img { height: 90px; }
             .hero-name { font-size: 1.5em; letter-spacing: 1px; }
             .hero h1 { font-size: 2.2em; }
-            .hero-logo img { height: 60px; width: auto; }
             .testimonials-grid { grid-template-columns: 1fr; gap: 20px; }
             .testimonial-card { padding: 20px; }
             .about-content, .contact-grid { grid-template-columns: 1fr; gap: 30px; }
@@ -606,7 +592,9 @@
             .urgency-banner .container { flex-direction: column; gap: 10px; }
             .calendly-options { grid-template-columns: 1fr; }
             .calendly-option { padding: 20px; }
-            .blog-article-content { display: block; grid-template-columns: none; }
+
+            /* Blog responsive */
+            .blog-article-content { display: block; }
             .blog-visual { margin-top: 30px; text-align: center; }
             .blog-icon-container { width: 200px; height: 150px; margin: 0 auto; }
             .blog-icon { font-size: 3em; }
@@ -663,24 +651,20 @@
                     </div>
                 </li>
                 
-                <!-- MODIF 2 : Ajout "Voir tous les articles" en haut du menu Blog -->
+                <!-- Blog dropdown -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         Blog & Ressources
                         <span class="nav-arrow">▼</span>
                     </a>
                     <div class="dropdown">
-                        <!-- ✅ CORRIGÉ : blog index -->
+                        <!-- ✅ Voir tous les articles -->
                         <a href="blog/blog-index.html" class="dropdown-item" style="background: rgba(102, 126, 234, 0.1); border-left-color: #667eea; font-weight: 600;">📚 Voir tous les articles</a>
                         <div style="height: 1px; background: rgba(95, 158, 160, 0.2); margin: 8px 0;"></div>
 
                         <div class="dropdown-header">Articles spécialisés</div>
-                        <!-- ✅ CORRIGÉ : nom de fichier avec accents -->
+                        <!-- ✅ Épigénétique -->
                         <a href="blog/épigénétique-guerison.html" class="dropdown-item">🧬 Épigénétique et Guérison</a>
-                        <a href="#" class="dropdown-item">📝 Comment gérer une crise d'angoisse</a>
-                        <a href="#" class="dropdown-item">📝 L'hypnose contre l'anxiété : guide complet</a>
-                        <a href="#" class="dropdown-item">📝 Burn-out : signes et solutions</a>
-                        <a href="#" class="dropdown-item">📝 EMDR et traumatismes : comment ça marche</a>
 
                         <div class="dropdown-header">Outils gratuits</div>
                         <a href="#" class="dropdown-item">🎧 Audio d'auto-hypnose gratuit</a>
@@ -720,7 +704,7 @@
                     <a href="#" class="mobile-nav-link">Accueil</a>
                 </div>
                 <div class="mobile-nav-item">
-                    <!-- ✅ CORRIGÉ : nom de fichier avec accents -->
+                    <!-- ✅ Épigénétique -->
                     <a href="blog/épigénétique-guerison.html" class="mobile-nav-link">🧬 Blog Épigénétique</a>
                 </div>
                 <div class="mobile-nav-item">
@@ -745,7 +729,7 @@
         </div>
     </nav>
 
-    <!-- MODIF 1 : Bannière d'urgence (texte intemporel) -->
+    <!-- Bannière d'urgence -->
     <div class="urgency-banner">
         <div class="container">
             <span class="urgency-text">🔥 Créneaux d'urgence anxiété + maladies chroniques disponibles cette semaine</span>
@@ -753,24 +737,19 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-logo">
-                    <img src="images/logo-joffrey-ros-photo-blanc.png" 
-                         alt="Logo Joffrey Ros Hypnothérapeute" 
-                         onerror="this.style.display='none'">
+                    <img src="images/logo-joffrey-ros-photo-blanc.png" alt="Logo Joffrey Ros Hypnothérapeute" onerror="this.style.display='none'">
                 </div>
-                
                 <h2 class="hero-name">JOFFREY ROS</h2>
-                
                 <h1>Spécialiste des Troubles Anxieux et Maladies Chroniques</h1>
                 <p class="tagline">"Retrouvez votre équilibre émotionnel et votre sérénité"</p>
                 <p class="subtitle">
                     Expert en anxiété, dépression, burn-out, traumatismes, gestion des émotions, deuils, phobies<br>
-                    Hypnose Ericksonienne • EMDR • TCC • Approche intégrative<br>
-                    <br>
+                    Hypnose Ericksonienne • EMDR • TCC • Approche intégrative<br><br>
                     <strong>📍 Mon cabinet se situe à Néfiach (66170) • 💻 Consultations Visio disponibles</strong>
                 </p>
                 <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="cta-button">Libérez-vous de l'Anxiété</a>
@@ -778,39 +757,21 @@
         </div>
     </section>
 
-    <!-- Indicateurs de confiance -->
+    <!-- Trust -->
     <section class="trust-bar">
         <div class="container">
             <div class="trust-items">
-                <div class="trust-item">
-                    <div class="icon">🎯</div>
-                    <p><strong>Spécialiste Anxiété</strong><br>+200 patients accompagnés</p>
-                </div>
-                <div class="trust-item">
-                    <div class="icon">🏥</div>
-                    <p><strong>Cabinet MSP Agréé</strong><br>3 rue de Verdun, Néfiach (66)</p>
-                </div>
-                <div class="trust-item">
-                    <div class="icon">🎓</div>
-                    <p><strong>Formations Certifiées</strong><br>Hypnose • EMDR • TCC</p>
-                </div>
-                <div class="trust-item">
-                    <div class="icon">⭐</div>
-                    <p><strong>Avis Clients Excellents</strong><br>5/5 sur Google • 15+ avis</p>
-                </div>
-                <div class="trust-item">
-                    <div class="icon">🧬</div>
-                    <p><strong>Protocole Révolutionnaire</strong><br>Approche épigénétique innovante</p>
-                </div>
-                <div class="trust-item">
-                    <div class="icon">⚡</div>
-                    <p><strong>Résultats Rapides</strong><br>3 à 8 séances • 85% de réussite</p>
-                </div>
+                <div class="trust-item"><div class="icon">🎯</div><p><strong>Spécialiste Anxiété</strong><br>+200 patients accompagnés</p></div>
+                <div class="trust-item"><div class="icon">🏥</div><p><strong>Cabinet MSP Agréé</strong><br>3 rue de Verdun, Néfiach (66)</p></div>
+                <div class="trust-item"><div class="icon">🎓</div><p><strong>Formations Certifiées</strong><br>Hypnose • EMDR • TCC</p></div>
+                <div class="trust-item"><div class="icon">⭐</div><p><strong>Avis Clients Excellents</strong><br>5/5 sur Google • 15+ avis</p></div>
+                <div class="trust-item"><div class="icon">🧬</div><p><strong>Protocole Révolutionnaire</strong><br>Approche épigénétique innovante</p></div>
+                <div class="trust-item"><div class="icon">⚡</div><p><strong>Résultats Rapides</strong><br>3 à 8 séances • 85% de réussite</p></div>
             </div>
         </div>
     </section>
 
-    <!-- MODIF 4 : Encart Remboursement Mutuelle -->
+    <!-- Encart Mutuelle -->
     <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 50px 0;">
         <div class="container">
             <div style="max-width: 900px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
@@ -848,8 +809,10 @@
                                 Exemples concrets de remboursement
                             </li>
                         </ul>
-                        <!-- ✅ CORRIGÉ : nom de fichier avec accents -->
-                        <a href="blog/remboursement-mutuelle-hypnothérapie.html" style="display: inline-block; background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; transition: all 0.3s ease; font-size: 1.1em;">
+
+                        <!-- ✅ BOUTON 1 (capture) : Guide complet -->
+                        <a href="blog/remboursement-mutuelle-hypnothérapie.html"
+                           style="display: inline-block; background: linear-gradient(45deg, #667eea, #764ba2); color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; transition: all 0.3s ease; font-size: 1.1em;">
                             📖 Lire le Guide Complet →
                         </a>
                     </div>
@@ -868,7 +831,7 @@
                 je vous accompagne vers un mieux-être durable avec des techniques éprouvées. 
                 Spécialiste également en gestion des émotions, accompagnement du deuil et traitement des phobies.
             </p>
-            
+
             <div class="specializations-grid">
                 <div class="specialization-card">
                     <h3>Anxiété Généralisée</h3>
@@ -881,7 +844,7 @@
                         <li>Irritabilité</li>
                     </ul>
                 </div>
-                
+
                 <div class="specialization-card">
                     <h3>Anxiété Post-Traumatique</h3>
                     <ul>
@@ -893,7 +856,7 @@
                         <li>Réactions de sursaut</li>
                     </ul>
                 </div>
-                
+
                 <div class="specialization-card">
                     <h3>Anxiété liée au Burn-out</h3>
                     <ul>
@@ -905,7 +868,7 @@
                         <li>Dévalorisation de soi</li>
                     </ul>
                 </div>
-                
+
                 <div class="specialization-card chronic-card">
                     <h3>🧬 Maladies Chroniques</h3>
                     <ul>
@@ -926,14 +889,14 @@
                     </a>
                 </div>
             </div>
-            
+
             <h3 class="section-title" style="text-align: center; font-size: 2em; margin: 60px auto 30px; color: #2e7d32;">Expert en Maladies Chroniques</h3>
             <p style="text-align: center; max-width: 900px; margin: 0 auto 50px; font-size: 1.1em; color: #666;">
                 Accompagnement spécialisé pour les maladies chroniques. Grâce à mon expérience personnelle 
                 et ma formation thérapeutique, je propose un soutien complémentaire adapté à votre parcours 
                 de vie avec une maladie chronique, toujours en complément de votre suivi médical.
             </p>
-            
+
             <div class="specializations-grid">
                 <div class="specialization-card">
                     <h3>Maladies Inflammatoires</h3>
@@ -946,7 +909,7 @@
                         <li>Accompagnement épigénétique spécialisé</li>
                     </ul>
                 </div>
-                
+
                 <div class="specialization-card">
                     <h3>Maladies Auto-immunes</h3>
                     <ul>
@@ -958,7 +921,7 @@
                         <li>Soutien psychologique adapté</li>
                     </ul>
                 </div>
-                
+
                 <div class="specialization-card">
                     <h3>Syndromes Douloureux Chroniques</h3>
                     <ul>
@@ -974,7 +937,7 @@
         </div>
     </section>
 
-    <!-- Témoignages clients -->
+    <!-- Témoignages -->
     <section class="testimonials-section">
         <div class="container">
             <h2 class="section-title">Témoignages de Mes Patients</h2>
@@ -982,7 +945,7 @@
                 Découvrez les retours authentiques de patients ayant bénéficié d'un accompagnement en hypnothérapie.
                 <strong>Tous les témoignages respectent l'anonymat et le secret professionnel.</strong>
             </p>
-            
+
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
@@ -996,7 +959,7 @@
                         <span class="testimonial-problem">Anxiété</span>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
@@ -1009,7 +972,7 @@
                         <span class="testimonial-problem">Burn-out</span>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
@@ -1022,7 +985,7 @@
                         <span class="testimonial-problem">Confiance en soi</span>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
@@ -1035,7 +998,7 @@
                         <span class="testimonial-problem">Bien-être</span>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
@@ -1048,7 +1011,7 @@
                         <span class="testimonial-problem">Stress</span>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <div class="testimonial-text">
@@ -1061,7 +1024,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="testimonials-cta">
                 <a href="https://www.google.com/search?q=hypnosejoffrey+avis" target="_blank" class="testimonials-link">
                     ⭐ Voir tous nos avis Google (5/5) - 15+ témoignages
@@ -1070,7 +1033,7 @@
         </div>
     </section>
 
-    <!-- Section Blog -->
+    <!-- Blog -->
     <section class="section blog-section">
         <div class="container">
             <h2 class="section-title">Blog & Ressources</h2>
@@ -1078,13 +1041,11 @@
                 Découvrez mes articles spécialisés sur l'hypnose, la gestion du stress et les dernières avancées scientifiques 
                 en thérapies corps-esprit. Des ressources pratiques pour mieux comprendre votre bien-être.
             </p>
-            
+
             <div class="blog-content">
                 <div class="blog-article-card">
-                    <div class="blog-badge">
-                        🧬 NOUVEAU
-                    </div>
-                    
+                    <div class="blog-badge">🧬 NOUVEAU</div>
+
                     <div class="blog-article-content">
                         <div class="blog-text">
                             <h3>Épigénétique et Guérison</h3>
@@ -1099,39 +1060,29 @@
                                 <li>Recherches scientifiques récentes (CNRS, Inserm)</li>
                                 <li>Applications pratiques pour les maladies chroniques</li>
                             </ul>
-                            <!-- ✅ CORRIGÉ : nom de fichier avec accents -->
+
+                            <!-- ✅ BOUTON 2 (capture) : Article complet -->
                             <a href="blog/épigénétique-guerison.html" class="blog-cta">
                                 Lire l'article complet →
                             </a>
                         </div>
-                        
+
                         <div class="blog-visual">
                             <div class="blog-icon-container">
                                 <div class="blog-icon-pattern"></div>
                                 <div class="blog-icon">🧬</div>
                             </div>
-                            <p class="blog-quote">
-                                "Vous n'êtes pas prisonniers de vos gènes"
-                            </p>
+                            <p class="blog-quote">"Vous n'êtes pas prisonniers de vos gènes"</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="blog-coming-soon">
                     <p>Plus d'articles spécialisés bientôt disponibles</p>
                     <div class="blog-coming-soon-grid">
-                        <div class="blog-coming-soon-item">
-                            <h4>À venir</h4>
-                            <p>L'hypnose contre l'anxiété : guide complet</p>
-                        </div>
-                        <div class="blog-coming-soon-item">
-                            <h4>À venir</h4>
-                            <p>EMDR et traumatismes : comment ça marche</p>
-                        </div>
-                        <div class="blog-coming-soon-item">
-                            <h4>À venir</h4>
-                            <p>Burn-out : signes et solutions</p>
-                        </div>
+                        <div class="blog-coming-soon-item"><h4>À venir</h4><p>L'hypnose contre l'anxiété : guide complet</p></div>
+                        <div class="blog-coming-soon-item"><h4>À venir</h4><p>EMDR et traumatismes : comment ça marche</p></div>
+                        <div class="blog-coming-soon-item"><h4>À venir</h4><p>Burn-out : signes et solutions</p></div>
                     </div>
                 </div>
 
@@ -1143,7 +1094,7 @@
     <section class="section" id="about">
         <div class="container">
             <h2 class="section-title">Votre Thérapeute</h2>
-            
+
             <div class="about-content">
                 <div class="about-image">
                     <img src="images/joffrey-ros-photo.jpg" 
@@ -1157,7 +1108,7 @@
                         <span class="certification-badge">Formation TCC</span>
                     </div>
                 </div>
-                
+
                 <div class="about-text">
                     <h3>Joffrey Ros - Votre Allié Contre l'Anxiété</h3>
                     <p>
@@ -1178,7 +1129,7 @@
                         "Mon objectif : vous aider à retrouver votre liberté intérieure et à vivre pleinement, 
                         sans être limité par l'anxiété."
                     </p>
-                    
+
                     <div style="background: #f0f8ff; padding: 20px; border-radius: 10px; margin-top: 30px; border-left: 4px solid #5f9ea0;">
                         <h4 style="color: #5f9ea0; margin-bottom: 15px;">⚖️ Mentions déontologiques importantes</h4>
                         <p style="font-size: 0.95em; line-height: 1.6; margin-bottom: 10px;">
@@ -1203,11 +1154,11 @@
     <section class="section" id="contact">
         <div class="container">
             <h2 class="section-title">Commencez Votre Transformation</h2>
-            
+
             <div class="contact-grid">
                 <div class="contact-info">
                     <h3>Informations Pratiques</h3>
-                    
+
                     <div class="contact-item">
                         <span class="icon">📍</span>
                         <div>
@@ -1217,7 +1168,7 @@
                             <small>Proche Prades et Perpignan</small>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <span class="icon">📞</span>
                         <div>
@@ -1226,7 +1177,7 @@
                             <small>Urgences anxiété : réponse en 2h max</small>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <span class="icon">💬</span>
                         <div>
@@ -1235,7 +1186,7 @@
                             <small>Réponse en moins de 1h</small>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <span class="icon">📧</span>
                         <div>
@@ -1243,7 +1194,7 @@
                             contact@hypnosejoffrey.fr
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <span class="icon">🕐</span>
                         <div>
@@ -1253,7 +1204,7 @@
                             <small>Urgences anxiété : créneaux prioritaires</small>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <span class="icon">💰</span>
                         <div>
@@ -1265,7 +1216,7 @@
                             <small>Possibilité de paiement échelonné</small>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <span class="icon">⚖️</span>
                         <div>
@@ -1276,15 +1227,15 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="contact-form">
                     <h3>🚨 Réservation Immédiate</h3>
-                    
+
                     <div class="urgency-box">
                         <strong>⏰ URGENCE ANXIÉTÉ :</strong> Créneaux d'urgence disponibles cette semaine pour crises d'angoisse sévères. 
                         <strong>Réservation instantanée 24h/24.</strong>
                     </div>
-                    
+
                     <div class="calendly-options">
                         <div class="calendly-option urgent">
                             <h4>🚨 Consultation d'Urgence</h4>
@@ -1294,7 +1245,7 @@
                                 🔥 RÉSERVER URGENCE - Cette semaine
                             </button>
                         </div>
-                        
+
                         <div class="calendly-option primary">
                             <h4>💙 Première Consultation</h4>
                             <p><strong>Découverte</strong> • 1h30 • 80€</p>
@@ -1303,7 +1254,7 @@
                                 📅 RÉSERVER MA PREMIÈRE CONSULTATION
                             </button>
                         </div>
-                        
+
                         <div class="calendly-option follow">
                             <h4>🔄 Séance de Suivi</h4>
                             <p><strong>Patients actuels</strong> • 1h • 60€</p>
@@ -1321,7 +1272,7 @@
                         ✅ <strong>Modification facile :</strong> Reprogrammation en 1 clic<br>
                         ✅ <strong>Sécurisé :</strong> Paiement en ligne ou sur place
                     </div>
-                    
+
                     <div style="text-align: center; margin-top: 25px; padding-top: 25px; border-top: 2px solid #e0e0e0;">
                         <p style="color: #666; margin-bottom: 15px;"><strong>Préférez-vous être rappelé ?</strong></p>
                         <a href="tel:+33759684359" class="calendly-btn primary-btn" style="display: inline-block; width: auto; padding: 15px 30px; margin-right: 10px;">
@@ -1345,91 +1296,26 @@
                     <p><strong>Joffrey Ros</strong><br>
                     Hypnothérapeute Spécialisé Anxiété<br>
                     SIRET : 978 278 216 00012</p>
-                    
+
                     <p style="margin-top: 15px;">
                     📍 3 rue de Verdun<br>
                     MSP 66170 Néfiach<br>
                     📞 <a href="tel:+33759684359">07 59 68 43 59</a>
                     </p>
-                    
-                    <div style="margin-top: 20px; padding: 15px; background: rgba(95,158,160,0.1); border-radius: 8px;">
-                        <p style="margin: 0; font-size: 0.9em;">
-                            ⭐⭐⭐⭐⭐ <strong>5/5</strong> sur Google<br>
-                            <a href="https://www.google.com/search?client=ms-android-samsung-ss&sca_esv=3865a5c24f38e491&sxsrf=AE3TifNSiC_nCU1ZHGmpY1d7iAWMm4H7og%3A1749464290666&q=hypnosejoffrey&stick=H4sIAAAAAAAAAONgU1I1qDA0SjIwNDS1sLQwNjQyNzC2MqgwNzBKMTEwN7VINko1TjJPXcTKl1FZkJdfnJqVn5ZWlFoJAEpqWyM6AAAA&mat=CWEuHeE8yMUY&ved=2ahUKEwi1rN6sjuSNAxVTKvsDHd1-OVsQrMcEegQIfxAC#mpd=~1785052991122648673/customers/reviews" target="_blank" style="color: #5f9ea0; font-size: 0.85em;">
-                                Voir tous les avis clients
-                            </a>
-                        </p>
-                    </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h4>Spécialisations</h4>
-                    <ul>
-                        <li>Hypnose contre l'anxiété</li>
-                        <li>Thérapie des crises d'angoisse</li>
-                        <li>EMDR pour traumatismes</li>
-                        <li>Traitement du burn-out</li>
-                        <li>TCC pour dépression</li>
-                        <li>Hypnose Ericksonienne</li>
-                        <li>Gestion des émotions</li>
-                        <li>Accompagnement du deuil</li>
-                        <li>Traitement des phobies</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Zone d'Intervention Pyrénées-Orientales</h4>
-                    <ul>
-                        <li><strong>Néfiach (66170)</strong> - Cabinet principal</li>
-                        <li>Perpignan (66000) - 15 min</li>
-                        <li>Prades (66500) - 10 min</li>
-                        <li>Thuir (66300) - 20 min</li>
-                        <li>Céret (66400) - 25 min</li>
-                        <li>Ille-sur-Têt (66130) - 12 min</li>
-                        <li>Olette (66360) - 30 min</li>
-                        <li><em>+ Toute la région Occitanie en visio</em></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p><strong>Consultations :</strong><br>
-                    Lundi au Vendredi : 9h-19h<br>
-                    Samedi : 9h-13h<br>
-                    <em>Créneaux d'urgence disponibles</em></p>
-                    
-                    <p style="margin-top: 15px;">
-                    📧 contact@hypnosejoffrey.fr<br>
-                    💬 <a href="https://wa.me/33759684359">WhatsApp</a><br>
-                    🌐 Votre site GitHub
-                    </p>
-                </div>
-                
+
                 <div class="footer-section">
                     <h4>Informations Légales</h4>
                     <ul>
                         <li><a href="rgpd.html">Politique de Confidentialité (RGPD)</a></li>
                         <li><a href="conditions-utilisation.html">Conditions d'Utilisation</a></li>
                         <li><a href="mentions-legales.html">Mentions Légales</a></li>
-                        <li><a href="#" style="color: #95a5a6;">Cookies (Aucun cookie utilisé)</a></li>
                     </ul>
-                    
-                    <p style="margin-top: 15px; font-size: 0.85em; color: #95a5a6;">
-                        <strong>Déontologie :</strong><br>
-                        Membre du Syndicat National des Hypnothérapeutes<br>
-                        Respect du code de déontologie professionnel
-                    </p>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2024 Joffrey Ros - Hypnothérapeute Spécialisé Troubles Anxieux Néfiach (66170)</p>
-                <p style="margin-top: 10px; font-size: 0.9em; color: #95a5a6;">
-                    <strong>Mots-clés :</strong> Hypnose Anxiété Néfiach • EMDR Burn-out Perpignan • TCC Dépression Prades • 
-                    Hypnothérapeute Thuir • Thérapie Traumatisme Céret • Crise Angoisse Ille-sur-Têt • 
-                    Consultation Visio Pyrénées-Orientales • Cabinet MSP Occitanie • Gestion Émotions • 
-                    Accompagnement Deuil • Traitement Phobies Néfiach
-                </p>
             </div>
         </div>
     </footer>
@@ -1445,19 +1331,12 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
         });
 
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1476,8 +1355,7 @@
 
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => {
-                const mobileMenu = document.getElementById('mobileMenu');
-                mobileMenu.classList.remove('active');
+                document.getElementById('mobileMenu').classList.remove('active');
             });
         });
 
