@@ -86,15 +86,16 @@
             padding: 0 20px;
         }
         
-        /* Navigation */
+        /* Navigation Modern */
         .nav-bar {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid #e0e0e0;
-            padding: 15px 0;
+            border-bottom: 1px solid rgba(44, 90, 160, 0.1);
+            padding: 12px 0;
+            transition: all 0.3s ease;
         }
         
         .nav-content {
@@ -104,15 +105,20 @@
         }
         
         .nav-logo {
-            font-size: 1.3em;
-            font-weight: 700;
+            font-size: 1.4em;
+            font-weight: 800;
             color: var(--primary-color);
             text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav-logo:hover {
+            transform: scale(1.05);
         }
         
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 30px;
             align-items: center;
         }
         
@@ -120,25 +126,234 @@
             color: var(--text-dark);
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s;
+            font-size: 1rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
         }
         
         .nav-link:hover {
             color: var(--primary-color);
         }
         
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
         .nav-cta {
-            background: var(--accent-color);
+            background: linear-gradient(135deg, var(--accent-color) 0%, #e55a2b 100%);
             color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
+            padding: 12px 24px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.3s;
+            font-weight: 700;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
         
         .nav-cta:hover {
             transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.4);
+        }
+        
+        /* Menu Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            z-index: 1001;
+        }
+        
+        .hamburger:hover {
+            background-color: rgba(44, 90, 160, 0.1);
+        }
+        
+        .hamburger-line {
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 3px 0;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+        
+        /* Animation menu hamburger */
+        .hamburger.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+        
+        .hamburger.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+        
+        /* Menu Mobile Full Screen */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e4088 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .mobile-menu.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .mobile-menu::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="8" fill="rgba(255,255,255,0.03)"/><circle cx="80" cy="60" r="12" fill="rgba(255,255,255,0.02)"/></svg>');
+            background-size: 150px 150px;
+            opacity: 0.5;
+        }
+        
+        .mobile-menu-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 0 20px;
+        }
+        
+        .mobile-menu-logo {
+            font-size: 2em;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+            animation-delay: 0.1s;
+        }
+        
+        .mobile-menu-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 50px 0;
+        }
+        
+        .mobile-menu-item {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .mobile-menu-item:nth-child(1) { animation-delay: 0.2s; }
+        .mobile-menu-item:nth-child(2) { animation-delay: 0.3s; }
+        .mobile-menu-item:nth-child(3) { animation-delay: 0.4s; }
+        .mobile-menu-item:nth-child(4) { animation-delay: 0.5s; }
+        .mobile-menu-item:nth-child(5) { animation-delay: 0.6s; }
+        
+        .mobile-menu-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .mobile-menu-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .mobile-menu-link i {
+            font-size: 1.2em;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .mobile-menu-cta {
+            background: linear-gradient(135deg, var(--accent-color) 0%, #e55a2b 100%);
+            padding: 18px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+            font-size: 1.2rem;
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
+            animation-delay: 0.7s;
+            display: inline-block;
+        }
+        
+        .mobile-menu-cta:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(255, 107, 53, 0.5);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Overlay pour fermer le menu */
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
         }
         
         /* Hero Article */
@@ -294,13 +509,18 @@
         }
         
         /* Tableaux Mutuelles */
+        .table-container {
+            overflow-x: auto;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: var(--shadow-sm);
+        }
+        
         .mutuelle-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 30px 0;
-            box-shadow: var(--shadow-sm);
-            border-radius: 10px;
-            overflow: hidden;
+            min-width: 600px;
+            background: white;
         }
         
         .mutuelle-table thead {
@@ -554,29 +774,79 @@
         
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
             .main-content {
                 padding: 30px 20px;
                 margin: -30px 15px 30px;
+                border-radius: 10px;
             }
             
+            /* Navigation mobile */
             .nav-links {
                 display: none;
             }
             
+            .nav-logo {
+                font-size: 1.1em;
+            }
+            
+            .nav-cta {
+                padding: 8px 16px;
+                font-size: 0.9em;
+                border-radius: 20px;
+            }
+            
+            /* Hero responsive */
             .article-hero {
-                padding: 60px 0 40px;
+                padding: 50px 0 40px;
             }
             
             .article-hero h1 {
-                font-size: 1.8rem;
+                font-size: clamp(1.5rem, 5vw, 2.2rem);
+                line-height: 1.3;
+                margin-bottom: 15px;
             }
             
+            .article-subtitle {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            
+            .article-meta {
+                flex-direction: column;
+                gap: 10px;
+                font-size: 0.9em;
+            }
+            
+            .article-category {
+                font-size: 13px;
+                padding: 6px 15px;
+            }
+            
+            /* Grilles et cartes */
             .mutuelle-grid {
                 grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .mutuelle-card {
+                padding: 20px;
+            }
+            
+            /* Tableaux responsive */
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 20px -20px;
+                padding: 0 20px;
             }
             
             .mutuelle-table {
-                font-size: 0.9em;
+                font-size: 0.85em;
+                min-width: 500px;
             }
             
             .mutuelle-table th,
@@ -584,33 +854,240 @@
                 padding: 12px 10px;
             }
             
+            /* Process steps mobile */
             .process-step {
-                padding: 20px 20px 20px 70px;
+                padding: 20px 15px 20px 65px;
+                margin-bottom: 20px;
             }
             
             .process-step::before {
-                width: 40px;
-                height: 40px;
-                font-size: 1.2em;
+                width: 35px;
+                height: 35px;
+                font-size: 1.1em;
+                left: 15px;
             }
+            
+            .process-step h4 {
+                font-size: 1.1em;
+                margin-bottom: 8px;
+            }
+            
+            .process-step ul {
+                margin-left: 15px;
+            }
+            
+            /* Alertes et boxes */
+            .alert-info, .alert-success {
+                padding: 20px 15px;
+                margin: 25px 0;
+            }
+            
+            .info-box, .warning-box {
+                padding: 15px 20px;
+                margin: 20px 0;
+            }
+            
+            /* CTA mobile */
+            .cta-section {
+                padding: 40px 20px;
+                margin: 40px 0;
+            }
+            
+            .cta-section h3 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+            
+            .cta-section p {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+            
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1rem;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                max-width: 280px;
+            }
+            
+            /* FAQ mobile */
+            .faq-question {
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+            
+            .faq-answer {
+                padding: 0 20px 15px;
+            }
+            
+            /* Titres mobile */
+            .main-content h2 {
+                font-size: 1.5em;
+                margin: 40px 0 20px;
+            }
+            
+            .main-content h3 {
+                font-size: 1.3em;
+                margin: 30px 0 15px;
+            }
+            
+            .main-content h4 {
+                font-size: 1.1em;
+                margin: 20px 0 12px;
+            }
+            
+            /* Texte mobile */
+            .main-content p {
+                font-size: 1rem;
+                line-height: 1.7;
+                margin-bottom: 18px;
+            }
+            
+            .main-content ul, .main-content ol {
+                margin-left: 20px;
+                font-size: 1rem;
+            }
+            
+            .main-content li {
+                margin-bottom: 10px;
+            }
+        }
+        
+        /* Très petits écrans */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            .main-content {
+                padding: 25px 15px;
+                margin: -25px 10px 25px;
+            }
+            
+            .article-hero {
+                padding: 40px 0 30px;
+            }
+            
+            .mutuelle-card {
+                padding: 15px;
+            }
+            
+            .process-step {
+                padding: 15px 10px 15px 55px;
+            }
+            
+            .process-step::before {
+                width: 30px;
+                height: 30px;
+                font-size: 1em;
+                left: 10px;
+            }
+            
+            .cta-section {
+                padding: 30px 15px;
+            }
+            
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 0.95em;
+            }
+        }
+        
+        /* Optimisations Performance */
+        .table-container::-webkit-scrollbar {
+            height: 6px;
+        }
+        
+        .table-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        
+        .table-container::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 3px;
+        }
+        
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background: #1e4088;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation Modern -->
     <nav class="nav-bar">
         <div class="container">
             <div class="nav-content">
                 <a href="/" class="nav-logo">🧠 Hypnose Joffrey</a>
+                
+                <!-- Navigation Desktop -->
                 <div class="nav-links">
                     <a href="../index.html" class="nav-link">Accueil</a>
                     <a href="blog-index.html" class="nav-link">Blog</a>
                     <a href="../index.html#contact" class="nav-link">Contact</a>
-                    <a href="#rdv" class="nav-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/decouverte-maladie-chronique'});return false;">Prendre RDV</a>
+                    <button class="nav-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/decouverte-maladie-chronique'});return false;">
+                        Prendre RDV
+                    </button>
+                </div>
+                
+                <!-- Menu Hamburger -->
+                <div class="hamburger" onclick="toggleMobileMenu()">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Menu Mobile Full Screen -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-logo">🧠 Hypnose Joffrey</div>
+            
+            <ul class="mobile-menu-links">
+                <li class="mobile-menu-item">
+                    <a href="../index.html" class="mobile-menu-link" onclick="closeMobileMenu()">
+                        <i>🏠</i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="../index.html#services" class="mobile-menu-link" onclick="closeMobileMenu()">
+                        <i>🧘‍♂️</i>
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="blog-index.html" class="mobile-menu-link" onclick="closeMobileMenu()">
+                        <i>📚</i>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="../index.html#about" class="mobile-menu-link" onclick="closeMobileMenu()">
+                        <i>👨‍⚕️</i>
+                        <span>À propos</span>
+                    </a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="../index.html#contact" class="mobile-menu-link" onclick="closeMobileMenu()">
+                        <i>📞</i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <button class="mobile-menu-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/decouverte-maladie-chronique'});return false; closeMobileMenu();">
+                📅 Prendre Rendez-vous
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay pour fermer le menu -->
+    <div class="menu-overlay" id="menuOverlay" onclick="closeMobileMenu()"></div>
 
     <!-- Hero Article -->
     <section class="article-hero">
@@ -688,108 +1165,110 @@
                 le remboursement de l'hypnothérapie et des médecines douces :
             </p>
             
-            <table class="mutuelle-table">
-                <thead>
-                    <tr>
-                        <th>Mutuelle</th>
-                        <th>Remboursement par séance</th>
-                        <th>Forfait annuel</th>
-                        <th>Nombre de séances</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Harmonie Mutuelle</strong></td>
-                        <td>25€ à 40€</td>
-                        <td>Jusqu'à 200€</td>
-                        <td>5 à 8 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>MGEN</strong></td>
-                        <td>30€ à 60€</td>
-                        <td>Jusqu'à 300€</td>
-                        <td>5 à 10 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mutuelle Générale</strong></td>
-                        <td>25€ à 50€</td>
-                        <td>Jusqu'à 250€</td>
-                        <td>5 à 10 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>MAAF Santé</strong></td>
-                        <td>30€ à 45€</td>
-                        <td>Jusqu'à 300€</td>
-                        <td>6 à 10 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>AG2R La Mondiale</strong></td>
-                        <td>25€ à 55€</td>
-                        <td>Jusqu'à 350€</td>
-                        <td>6 à 12 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Groupe Apicil</strong></td>
-                        <td>30€ à 50€</td>
-                        <td>Jusqu'à 300€</td>
-                        <td>6 à 10 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>April</strong></td>
-                        <td>20€ à 40€</td>
-                        <td>Jusqu'à 200€</td>
-                        <td>5 à 10 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>SwissLife</strong></td>
-                        <td>30€ à 60€</td>
-                        <td>Jusqu'à 400€</td>
-                        <td>7 à 13 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Allianz</strong></td>
-                        <td>25€ à 50€</td>
-                        <td>Jusqu'à 300€</td>
-                        <td>6 à 12 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>AXA</strong></td>
-                        <td>30€ à 55€</td>
-                        <td>Jusqu'à 350€</td>
-                        <td>6 à 11 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Malakoff Humanis</strong></td>
-                        <td>25€ à 45€</td>
-                        <td>Jusqu'à 270€</td>
-                        <td>6 à 10 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Macif</strong></td>
-                        <td>20€ à 40€</td>
-                        <td>Jusqu'à 240€</td>
-                        <td>6 à 12 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>MAIF</strong></td>
-                        <td>25€ à 50€</td>
-                        <td>Jusqu'à 300€</td>
-                        <td>6 à 12 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Matmut</strong></td>
-                        <td>20€ à 35€</td>
-                        <td>Jusqu'à 200€</td>
-                        <td>5 à 10 séances</td>
-                    </tr>
-                    <tr>
-                        <td><strong>GMF</strong></td>
-                        <td>25€ à 40€</td>
-                        <td>Jusqu'à 250€</td>
-                        <td>6 à 10 séances</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-container">
+                <table class="mutuelle-table">
+                    <thead>
+                        <tr>
+                            <th>Mutuelle</th>
+                            <th>Remboursement par séance</th>
+                            <th>Forfait annuel</th>
+                            <th>Nombre de séances</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Harmonie Mutuelle</strong></td>
+                            <td>25€ à 40€</td>
+                            <td>Jusqu'à 200€</td>
+                            <td>5 à 8 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MGEN</strong></td>
+                            <td>30€ à 60€</td>
+                            <td>Jusqu'à 300€</td>
+                            <td>5 à 10 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mutuelle Générale</strong></td>
+                            <td>25€ à 50€</td>
+                            <td>Jusqu'à 250€</td>
+                            <td>5 à 10 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MAAF Santé</strong></td>
+                            <td>30€ à 45€</td>
+                            <td>Jusqu'à 300€</td>
+                            <td>6 à 10 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AG2R La Mondiale</strong></td>
+                            <td>25€ à 55€</td>
+                            <td>Jusqu'à 350€</td>
+                            <td>6 à 12 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Groupe Apicil</strong></td>
+                            <td>30€ à 50€</td>
+                            <td>Jusqu'à 300€</td>
+                            <td>6 à 10 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>April</strong></td>
+                            <td>20€ à 40€</td>
+                            <td>Jusqu'à 200€</td>
+                            <td>5 à 10 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SwissLife</strong></td>
+                            <td>30€ à 60€</td>
+                            <td>Jusqu'à 400€</td>
+                            <td>7 à 13 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Allianz</strong></td>
+                            <td>25€ à 50€</td>
+                            <td>Jusqu'à 300€</td>
+                            <td>6 à 12 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AXA</strong></td>
+                            <td>30€ à 55€</td>
+                            <td>Jusqu'à 350€</td>
+                            <td>6 à 11 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Malakoff Humanis</strong></td>
+                            <td>25€ à 45€</td>
+                            <td>Jusqu'à 270€</td>
+                            <td>6 à 10 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Macif</strong></td>
+                            <td>20€ à 40€</td>
+                            <td>Jusqu'à 240€</td>
+                            <td>6 à 12 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MAIF</strong></td>
+                            <td>25€ à 50€</td>
+                            <td>Jusqu'à 300€</td>
+                            <td>6 à 12 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Matmut</strong></td>
+                            <td>20€ à 35€</td>
+                            <td>Jusqu'à 200€</td>
+                            <td>5 à 10 séances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GMF</strong></td>
+                            <td>25€ à 40€</td>
+                            <td>Jusqu'à 250€</td>
+                            <td>6 à 10 séances</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             
             <div class="warning-box">
                 <div class="warning-box-title">⚠️ Attention</div>
@@ -1075,98 +1554,6 @@
                 </p>
             </div>
 
-            <h2>🏥 Mon Engagement en tant qu'Hypnothérapeute</h2>
-            
-            <p>
-                En tant qu'hypnothérapeute certifié exerçant au <strong>Cabinet MSP de Néfiach</strong> dans 
-                les Pyrénées-Orientales, je m'engage à vous accompagner dans vos démarches de remboursement :
-            </p>
-            
-            <div class="info-box">
-                <div class="info-box-title">✨ Ce que je vous propose</div>
-                <ul>
-                    <li><strong>Factures conformes</strong> systématiquement délivrées après chaque séance</li>
-                    <li><strong>Conseils personnalisés</strong> sur les démarches auprès de votre mutuelle</li>
-                    <li><strong>Attestations professionnelles</strong> (diplômes, certifications, assurance RC pro)</li>
-                    <li><strong>Flexibilité de paiement</strong> pour faciliter votre budget</li>
-                    <li><strong>Séances en cabinet ou en visioconférence</strong> selon votre préférence</li>
-                    <li><strong>Protocole épigénétique personnalisé</strong> pour des résultats durables</li>
-                </ul>
-            </div>
-
-            <h2>📊 Tableau Récapitulatif : Combien Pouvez-vous Récupérer ?</h2>
-            
-            <p>
-                Voici un tableau de simulation pour vous aider à <strong>estimer vos remboursements potentiels</strong> 
-                selon différents profils de mutuelles :
-            </p>
-            
-            <table class="mutuelle-table">
-                <thead>
-                    <tr>
-                        <th>Formule mutuelle</th>
-                        <th>Accompagnement 500€<br/>(7 séances × 71€)</th>
-                        <th>Accompagnement 1449€<br/>(16 séances × 90€)</th>
-                        <th>Reste à charge</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Formule Base</strong><br/>(25€/séance, max 150€/an)</td>
-                        <td>150€ remboursés</td>
-                        <td>150€ remboursés</td>
-                        <td>350€ ou 1299€</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Formule Confort</strong><br/>(40€/séance, max 300€/an)</td>
-                        <td>280€ remboursés</td>
-                        <td>300€ remboursés</td>
-                        <td>220€ ou 1149€</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Formule Premium</strong><br/>(55€/séance, max 500€/an)</td>
-                        <td>385€ remboursés</td>
-                        <td>500€ remboursés</td>
-                        <td>115€ ou 949€</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <p>
-                <em>* Les montants sont donnés à titre indicatif et peuvent varier selon votre contrat spécifique.</em>
-            </p>
-
-            <h2>🎓 L'Importance de Choisir un Praticien Qualifié</h2>
-            
-            <p>
-                Pour optimiser vos chances de remboursement, il est essentiel de consulter un 
-                <strong>hypnothérapeute certifié et reconnu</strong>. Voici les critères à vérifier :
-            </p>
-            
-            <ul>
-                <li><strong>Certification professionnelle</strong> d'un organisme de formation reconnu (300h minimum de formation)</li>
-                <li><strong>Numéro SIRET</strong> en activité</li>
-                <li><strong>Assurance Responsabilité Civile Professionnelle</strong> à jour</li>
-                <li><strong>Adhésion à un syndicat professionnel</strong> (SNH, FFHTB, Psynapse, etc.)</li>
-                <li><strong>Formation continue</strong> régulière dans les techniques thérapeutiques</li>
-                <li><strong>Respect du code de déontologie</strong> des hypnothérapeutes</li>
-            </ul>
-            
-            <div class="info-box">
-                <div class="info-box-title">👨‍⚕️ Mon parcours professionnel</div>
-                <p>
-                    <strong>Joffrey Ros, Hypnothérapeute Certifié</strong>
-                </p>
-                <ul>
-                    <li>Certifié en Hypnose Ericksonienne (420h de formation)</li>
-                    <li>Formation EMDR (Eye Movement Desensitization and Reprocessing)</li>
-                    <li>Formation en TCC (Thérapies Cognitivo-Comportementales)</li>
-                    <li>Spécialisation en gestion de l'anxiété et des troubles chroniques</li>
-                    <li>Cabinet situé en Maison de Santé Pluriprofessionnelle à Néfiach (66)</li>
-                    <li>Membre du réseau professionnel des thérapeutes des Pyrénées-Orientales</li>
-                </ul>
-            </div>
-
             <div class="cta-section">
                 <h3>🎯 Prêt à Investir dans Votre Bien-Être ?</h3>
                 <p>
@@ -1179,61 +1566,6 @@
                 </a>
                 <p style="font-size: 0.9em; margin-top: 20px; opacity: 0.9;">
                     ✅ Sans engagement • ⏱️ 30 minutes • 📍 Cabinet Néfiach ou Visio • 💰 100% Gratuit
-                </p>
-            </div>
-
-            <h2>📞 Besoin d'Aide pour vos Démarches ?</h2>
-            
-            <p>
-                Je suis à votre disposition pour vous accompagner dans toutes vos démarches de remboursement. 
-                N'hésitez pas à me contacter pour :
-            </p>
-            
-            <ul>
-                <li>Vérifier la conformité de vos factures</li>
-                <li>Obtenir des attestations complémentaires</li>
-                <li>Comprendre les spécificités de votre mutuelle</li>
-                <li>Optimiser votre stratégie de remboursement</li>
-                <li>Échelonner vos paiements en fonction de vos remboursements</li>
-            </ul>
-            
-            <div class="info-box">
-                <div class="info-box-title">📬 Coordonnées du Cabinet</div>
-                <p>
-                    <strong>Cabinet MSP Néfiach</strong><br/>
-                    Maison de Santé Pluriprofessionnelle<br/>
-                    66170 Néfiach, Pyrénées-Orientales<br/><br/>
-                    
-                    📧 Email : <a href="/cdn-cgi/l/email-protection#6d0e0203190c0e192d05141d03021e0807020b0b1f0814430b1f"><span class="__cf_email__" data-cfemail="d8bbb7b6acb9bbac98b0a1a8b6b7abbdb2b7bebeaabda1f6beaa">[email&#160;protected]</span></a><br/>
-                    📱 Téléphone : <a href="tel:+33612345678">06 12 34 56 78</a><br/>
-                    🌐 Site web : <a href="https://www.hypnosejoffrey.fr">www.hypnosejoffrey.fr</a><br/><br/>
-                    
-                    <strong>Horaires d'ouverture :</strong><br/>
-                    Lundi - Vendredi : 9h00 - 19h00<br/>
-                    Samedi : Sur rendez-vous<br/>
-                    Dimanche : Fermé
-                </p>
-            </div>
-
-            <h2>🔗 Ressources Utiles</h2>
-            
-            <p>
-                Pour aller plus loin dans vos recherches sur le remboursement des médecines douces :
-            </p>
-            
-            <ul>
-                <li><strong><a href="https://www.ameli.fr" target="_blank" rel="noopener">Ameli.fr</a></strong> - Site officiel de l'Assurance Maladie</li>
-                <li><strong><a href="https://www.service-public.fr" target="_blank" rel="noopener">Service-Public.fr</a></strong> - Informations sur les complémentaires santé</li>
-                <li><strong><a href="https://www.60millions-mag.com" target="_blank" rel="noopener">60 Millions de Consommateurs</a></strong> - Comparatifs mutuelles</li>
-                <li><strong>Annuaires professionnels</strong> - SNH, FFHTB pour trouver des praticiens certifiés</li>
-            </ul>
-
-            <div class="alert-info">
-                <h3>🔄 Article Mis à Jour Régulièrement</h3>
-                <p style="margin-bottom: 0;">
-                    Les conditions de remboursement des mutuelles évoluent régulièrement. Cet article est 
-                    <strong>mis à jour chaque trimestre</strong> pour vous garantir les informations les plus 
-                    récentes et fiables. Dernière mise à jour : <strong>Janvier 2025</strong>.
                 </p>
             </div>
 
@@ -1278,7 +1610,7 @@
     </footer>
 
     <!-- Script FAQ -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const faqItem = question.parentElement;
@@ -1287,7 +1619,7 @@
                 // Fermer tous les autres items
                 document.querySelectorAll('.faq-item').forEach(item => {
                     item.classList.remove('active');
-                            });
+                });
                 
                 // Ouvrir celui-ci si il n'était pas déjà ouvert
                 if (!wasActive) {
