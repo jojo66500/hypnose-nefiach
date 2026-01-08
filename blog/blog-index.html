@@ -235,6 +235,18 @@
             z-index: 2;
         }
         
+        .article-badge.new {
+            background: linear-gradient(45deg, #ff4757, #ff3742);
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
+        }
+        
         .article-content {
             padding: 30px;
         }
@@ -447,10 +459,33 @@
             
             <div class="articles-grid">
                 
-                <!-- Article 1 : Remboursement Mutuelle -->
+                <!-- Article 1 : Anxiété - NOUVEAU (mis en premier pour plus de visibilité) -->
+                <article class="article-card">
+                    <div class="article-image" style="background: linear-gradient(45deg, #ff9800, #ff5722);">
+                        <div class="article-badge new">🔥 NOUVEAU</div>
+                        <span class="article-icon">🧘</span>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-category">Guide Pratique</div>
+                        <h3 class="article-title">7 Techniques pour Gérer l'Anxiété au Quotidien</h3>
+                        <p class="article-excerpt">
+                            Des exercices pratiques issus de l'hypnose et de la TCC pour retrouver 
+                            votre sérénité rapidement. Guide étape par étape avec techniques immédiatement applicables.
+                        </p>
+                        <div class="article-meta">
+                            <span class="meta-item">📅 8 Jan 2025</span>
+                            <span class="meta-item">⏱️ 10 min</span>
+                        </div>
+                        <a href="7-techniques-gerer-anxiete-quotidien.html" class="article-cta">
+                            Lire l'article →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 2 : Remboursement Mutuelle -->
                 <article class="article-card">
                     <div class="article-image">
-                        <div class="article-badge">💡 NOUVEAU 2025</div>
+                        <div class="article-badge">💡 GUIDE 2025</div>
                         <span class="article-icon">💰</span>
                     </div>
                     <div class="article-content">
@@ -470,7 +505,7 @@
                     </div>
                 </article>
 
-                <!-- Article 2 : Épigénétique -->
+                <!-- Article 3 : Épigénétique -->
                 <article class="article-card">
                     <div class="article-image" style="background: linear-gradient(45deg, #4caf50, #45a049);">
                         <div class="article-badge">🧬 SCIENCE</div>
@@ -490,26 +525,6 @@
                         <a href="epigenetique-guerison.html" class="article-cta">
                             Lire l'article →
                         </a>
-                    </div>
-                </article>
-
-                <!-- Article 3 : À venir - Anxiété -->
-                <article class="article-card coming-soon">
-                    <div class="article-image" style="background: linear-gradient(45deg, #ff9800, #ff5722);">
-                        <span class="article-icon">😰</span>
-                    </div>
-                    <div class="article-content">
-                        <span class="coming-soon-label">À VENIR</span>
-                        <div class="article-category">Guide Pratique</div>
-                        <h3 class="article-title">7 Techniques pour Gérer l'Anxiété au Quotidien</h3>
-                        <p class="article-excerpt">
-                            Des exercices pratiques issus de l'hypnose et de la TCC pour retrouver 
-                            votre sérénité rapidement. Guide étape par étape.
-                        </p>
-                        <div class="article-meta">
-                            <span class="meta-item">📅 Prochainement</span>
-                            <span class="meta-item">⏱️ 10 min</span>
-                        </div>
                     </div>
                 </article>
 
