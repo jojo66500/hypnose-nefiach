@@ -866,13 +866,22 @@
         }
         
         .footer-section p, .footer-section a {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
             line-height: 1.6;
         }
         
+        .footer-section a {
+            color: white !important;
+            text-decoration: underline;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+        
         .footer-section a:hover {
-            color: var(--accent-gold);
+            color: var(--accent-gold) !important;
+            opacity: 1;
+            text-decoration: underline;
         }
         
         .footer-bottom {
@@ -1115,7 +1124,7 @@
             </div>
             
             <div class="author-info">
-                <img src="../images/joffrey-ros-photo.webp" alt="Joffrey Ros, hypnothérapeute" class="author-avatar">
+                <img src="../images/joffrey-ros-photo.jpg" alt="Joffrey Ros, hypnothérapeute" class="author-avatar" onerror="this.src='https://via.placeholder.com/60x60/2d5a3d/ffffff?text=JR'">
                 <div class="author-details">
                     <h4>Joffrey Ros</h4>
                     <p>Hypnothérapeute spécialisé troubles anxieux • Néfiach (66)</p>
@@ -1433,7 +1442,7 @@
                 Je vous propose un accompagnement sur-mesure pour vaincre définitivement votre anxiété.
             </p>
             <div class="cta-buttons">
-                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation-anxiete'});return false;" class="cta-button">
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="cta-button">
                     <span>🗓️</span>
                     <span>Consultation gratuite 30min</span>
                 </a>
@@ -1548,8 +1557,8 @@
         
         <div class="footer-bottom">
             <p>&copy; 2025 Joffrey Ros - Hypnothérapeute Néfiach. Tous droits réservés. | 
-            <a href="/mentions-legales.html">Mentions légales</a> | 
-            <a href="/politique-confidentialite.html">Politique de confidentialité</a></p>
+            <a href="../mentions-legales.html">Mentions légales</a> | 
+            <a href="../rgpd.html">Politique RGPD</a></p>
         </div>
     </footer>
 
