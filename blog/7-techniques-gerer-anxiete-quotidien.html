@@ -1096,6 +1096,41 @@
                 border: 1px solid var(--neutral-medium);
             }
         }
+        
+        /* Responsive styles for share buttons */
+        @media (max-width: 768px) {
+            div[style*="justify-content: space-between"] {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 1.5rem !important;
+            }
+            
+            div[style*="display: flex; gap: 1rem; align-items: center"] {
+                width: 100% !important;
+                gap: 0.5rem !important;
+                justify-content: flex-start !important;
+                flex-wrap: wrap !important;
+            }
+            
+            div[style*="display: flex; gap: 1rem; align-items: center"] a {
+                font-size: 0.8rem !important;
+                padding: 6px 8px !important;
+                white-space: nowrap !important;
+                min-width: fit-content !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            div[style*="display: flex; gap: 1rem; align-items: center"] a span:last-child {
+                display: none !important;
+            }
+            
+            div[style*="display: flex; gap: 1rem; align-items: center"] a {
+                padding: 8px !important;
+                min-width: 36px !important;
+                justify-content: center !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1532,7 +1567,7 @@
 
         <!-- Article Navigation -->
         <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--neutral-medium); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-            <a href="/blog/" style="color: var(--primary-green); text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+            <a href="../blog/blog-index.html" style="color: var(--primary-green); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-weight: 500;">
                 <span>←</span>
                 <span>Retour au blog</span>
             </a>
