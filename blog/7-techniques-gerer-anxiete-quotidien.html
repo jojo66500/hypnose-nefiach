@@ -1536,9 +1536,23 @@
                 <span>←</span>
                 <span>Retour au blog</span>
             </a>
-            <div style="display: flex; gap: 1rem;">
-                <a href="#" onclick="navigator.share ? navigator.share({title: '7 Techniques pour Gérer l\\'Anxiété', url: window.location.href}) : window.open('https://twitter.com/intent/tweet?text=7%20Techniques%20pour%20G%C3%A9rer%20l%27Anxi%C3%A9t%C3%A9%20au%20Quotidien&url=' + encodeURIComponent(window.location.href), '_blank')" style="color: var(--primary-green); text-decoration: none;">Partager 📤</a>
-                <a href="#" onclick="window.print()" style="color: var(--primary-green); text-decoration: none;">Imprimer 🖨️</a>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="https://twitter.com/intent/tweet?text=7%20Techniques%20pour%20Gérer%20l%27Anxiété%20au%20Quotidien%20-%20Guide%20pratique%20par%20Joffrey%20Ros&url=https://www.hypnosejoffrey.fr/blog/7-techniques-gerer-anxiete-quotidien.html" target="_blank" style="color: var(--primary-green); text-decoration: none; padding: 8px 12px; border: 1px solid var(--primary-green); border-radius: 6px; display: flex; align-items: center; gap: 6px;">
+                    <span>📤</span>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.hypnosejoffrey.fr/blog/7-techniques-gerer-anxiete-quotidien.html" target="_blank" style="color: var(--primary-green); text-decoration: none; padding: 8px 12px; border: 1px solid var(--primary-green); border-radius: 6px; display: flex; align-items: center; gap: 6px;">
+                    <span>📘</span>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.hypnosejoffrey.fr/blog/7-techniques-gerer-anxiete-quotidien.html" target="_blank" style="color: var(--primary-green); text-decoration: none; padding: 8px 12px; border: 1px solid var(--primary-green); border-radius: 6px; display: flex; align-items: center; gap: 6px;">
+                    <span>💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" onclick="window.print()" style="color: var(--primary-green); text-decoration: none; padding: 8px 12px; border: 1px solid var(--primary-green); border-radius: 6px; display: flex; align-items: center; gap: 6px;">
+                    <span>🖨️</span>
+                    <span>Imprimer</span>
+                </a>
             </div>
         </div>
     </main>
@@ -1556,7 +1570,7 @@
                 <h4>Contact</h4>
                 <p>📍 3 rue de Verdun<br>Maison de Santé Pluridisciplinaire<br>66170 Néfiach</p>
                 <p>📞 <a href="tel:+33759684359">07 59 68 43 59</a></p>
-                <p>✉️ <a href="mailto:contact@hypnosejoffrey.fr">contact@hypnosejoffrey.fr</a></p>
+                <p>✉️ <a href="/cdn-cgi/l/email-protection#abc8c4c5dfcac8dfebc3d2dbc5c4d8cec1c4cdcdd9ced285cdd9"><span class="__cf_email__" data-cfemail="a9cac6c7ddc8cadde9c1d0d9c7c6daccc3c6cfcfdbccd087cfdb">[email&#160;protected]</span></a></p>
             </div>
             
             <div class="footer-section">
@@ -1585,7 +1599,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://assets.calendly.com/assets/external/widget.js" async></script>
     
     <script>
         // Mobile Menu Toggle
@@ -1763,13 +1777,3 @@
                                 url: calendlyUrl
                             });
                         } catch(err) {
-                            console.log('Calendly error, fallback to direct link');
-                            window.open(calendlyUrl, '_blank');
-                        }
-                    }
-                });
-            });
-        });
-       </script>
-</body>
-</html>
