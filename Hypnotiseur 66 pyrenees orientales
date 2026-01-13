@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypnotiseur 66 - Joffrey Ros | Pyrénées-Orientales Anxiété</title>
+    <meta name="description" content="Hypnotiseur expérimenté dans le 66 (Pyrénées-Orientales). Joffrey Ros, spécialiste anxiété, burn-out, traumatismes. Cabinet Néfiach + visio.">
+    <meta name="keywords" content="hypnotiseur 66, hypnose Pyrénées-Orientales, hypnothérapeute Perpignan, anxiété 66170, burn-out Néfiach, EMDR Prades">
+    <meta name="geo.region" content="FR-66">
+    <meta name="geo.placename" content="Néfiach, Pyrénées-Orientales">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hypnotiseur 66 - Spécialiste Anxiété Pyrénées-Orientales">
+    <meta property="og:description" content="Joffrey Ros, hypnotiseur expérimenté dans le 66. Accompagnement anxiété, burn-out, traumatismes. Cabinet Néfiach + consultations visio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hypnosejoffrey.fr/hypnotiseur-66-pyrenees-orientales.html">
+    <meta property="og:image" content="https://www.hypnosejoffrey.fr/images/joffrey-ros-photo.jpg">
+    
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Charte graphique Joffrey Ros */
+            --primary-blue: #2c5aa0;
+            --secondary-green: #4CAF50;
+            --accent-orange: #FF6B35;
+            --deep-teal: #5f9ea0;
+            --text-dark: #2c3e50;
+            --text-gray: #64748b;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+            --shadow-soft: 0 4px 20px rgba(44, 90, 160, 0.08);
+            --shadow-hover: 0 8px 30px rgba(44, 90, 160, 0.15);
+            --gradient-primary: linear-gradient(135deg, #2c5aa0 0%, #4CAF50 100%);
+            --gradient-soft: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+            overflow-x: hidden;
+        }
+        
+        /* NAVIGATION */
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-logo:hover {
+            color: var(--secondary-green);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-blue);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--primary-blue);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            cursor: pointer;
+        }
+        
+        /* HERO SECTION */
+        .hero {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 120px 0 80px;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.05"/><circle cx="75" cy="75" r="1.5" fill="white" opacity="0.03"/><circle cx="50" cy="10" r="0.8" fill="white" opacity="0.04"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
+            opacity: 0.1;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-weight: 300;
+            margin-bottom: 35px;
+            opacity: 0.95;
+            max-width: 700px;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: var(--primary-blue);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary-blue);
+        }
+        
+        /* CONTAINER GÉNÉRIQUE */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* PRESENTATION */
+        .presentation {
+            background: var(--bg-white);
+        }
+        
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 60px;
+            align-items: start;
+        }
+        
+        .bio-content p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+        
+        .bio-image {
+            position: relative;
+        }
+        
+        .profile-photo {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .profile-photo:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+        
+        .certification-badge {
+            background: var(--primary-blue);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        /* SPÉCIALISATIONS */
+        .specializations {
+            background: var(--gradient-soft);
+        }
+        
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .problem-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .problem-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+        
+        .problem-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        
+        /* PROCESSUS DE SÉANCE */
+        .session-process {
+            background: white;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+            counter-reset: step-counter;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+            padding-top: 70px;
+        }
+        
+        .step::before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .step h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            margin: 20px 0 15px;
+        }
+        
+        .step p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        
+        .session-info {
+            background: var(--gradient-soft);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 3px solid var(--secondary-green);
+        }
+        
+        .session-info p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        
+        /* AVANTAGES RÉGION 66 */
+        .advantages-list {
+            display: grid;
+            gap: 40px;
+        }
+        
+        .advantage {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 25px;
+            align-items: start;
+        }
+        
+        .advantage h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+        
+        .advantage p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        
+        /* LOCALISATION */
+        .locations {
+            background: var(--bg-white);
+        }
+        
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .main-location {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            position: relative;
+        }
+        
+        .main-location h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        
+        .main-location address {
+            font-style: normal;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .cities-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        
+        .city {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+        }
+        
+        .online-sessions {
+            grid-column: span 2;
+            background: var(--gradient-soft);
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+        
+        .online-sessions h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        
+        /* CTA SECTION */
+        .cta-section {
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .btn-white {
+            background: white;
+            color: var(--primary-blue);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .cta-sidebar {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: left;
+        }
+        
+        /* FAQ */
+        .faq {
+            background: white;
+        }
+        
+        .faq-items {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border: 2px solid var(--bg-light);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            border-color: var(--primary-blue);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .faq-item h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .faq-item p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        
+        /* FOOTER */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer p {
+            opacity: 0.8;
+        }
+        
+        .footer a {
+            color: var(--secondary-green);
+            text-decoration: none;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow-soft);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 100px 0 60px;
+                text-align: center;
+            }
+            
+            .bio-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .bio-image {
+                order: -1;
+            }
+            
+            .profile-photo {
+                height: 300px;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .step {
+                padding-top: 80px;
+            }
+            
+            .step::before {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+            
+            .location-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .online-sessions {
+                grid-column: span 1;
+            }
+            
+            .cities-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            
+            .advantages-list {
+                gap: 25px;
+            }
+            
+            .advantage {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 80px 0 50px;
+            }
+            
+            .section {
+                padding: 50px 0;
+            }
+            
+            .problem-card {
+                padding: 25px;
+            }
+            
+            .step {
+                padding-top: 70px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            .step::before {
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Joffrey Ros</a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Accueil</a>
+                <a href="/services" class="nav-link">Services</a>
+                <a href="/zones-intervention" class="nav-link">Zones d'intervention</a>
+                <a href="/contact" class="nav-link">Contact</a>
+                <a href="tel:+33759684359" class="btn btn-primary">📞 07.59.68.43.59</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Hypnotiseur dans le 66 - Spécialiste Troubles Anxieux Pyrénées-Orientales</h1>
+            <p class="hero-subtitle">
+                Hypnotiseur expérimenté basé à <strong>Néfiach (66170)</strong>, j'accompagne depuis plusieurs années 
+                les habitants des Pyrénées-Orientales vers un mieux-être durable. Spécialisé dans les 
+                <strong>troubles anxieux, le burn-out et l'accompagnement des traumatismes</strong>.
+            </p>
+            <div class="hero-cta">
+                <a href="tel:+33759684359" class="btn btn-primary">📞 Consultation Gratuite</a>
+                <a href="https://calendly.com/joffrey-ros" class="btn btn-outline">📅 Réserver en Ligne</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation -->
+    <section class="section presentation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Qui suis-je ? Votre Hypnotiseur dans le Département 66</h2>
+            </div>
+            <div class="bio-grid">
+                <div class="bio-content">
+                    <p>
+                        En tant qu'hypnotiseur installé dans les Pyrénées-Orientales, je comprends les défis 
+                        particuliers que peuvent rencontrer les habitants de notre belle région. 
+                        Ayant moi-même vécu des moments difficiles liés à la maladie entre mes 16 et 18 ans, 
+                        j'ai développé une approche empathique unique qui me distingue des autres praticiens.
+                    </p>
+                    
+                    <p>
+                        Mon parcours personnel m'a conduit vers l'<strong>hypnose ericksonienne, l'EMDR et les TCC</strong>, 
+                        des outils thérapeutiques que j'ai choisis pour leur efficacité prouvée. 
+                        Cette double perspective - celle du patient devenu thérapeute - me permet de vous 
+                        accompagner avec une compréhension profonde de ce que vous traversez.
+                    </p>
+                    
+                    <p>
+                        Installé en <strong>Maison de Santé Pluridisciplinaire à Néfiach</strong>, 
+                        je bénéficie d'un environnement médical rassurant qui facilite la coordination 
+                        avec d'autres professionnels de santé si nécessaire.
+                    </p>
+                </div>
+                
+                <div class="bio-image">
+                    <img src="images/joffrey-ros-photo.png" 
+                         alt="Joffrey Ros - Hypnothérapeute en consultation avec un patient dans son cabinet de Néfiach" 
+                         class="profile-photo"
+                         onerror="this.src='https://via.placeholder.com/350x350/2c5aa0/ffffff?text=Joffrey+Ros'"
+                         loading="lazy">
+                    <div class="certifications">
+                        <span class="certification-badge">Expert Anxiété</span>
+                        <span class="certification-badge">Hypnose Certifiée</span>
+                        <span class="certification-badge">Praticien EMDR</span>
+                        <span class="certification-badge">Formation TCC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spécialisations -->
+    <section class="section specializations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Problématiques Accompagnées par votre Hypnotiseur 66</h2>
+                <p class="section-subtitle">
+                    Une expertise reconnue pour traiter les troubles qui impactent votre quotidien
+                </p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>Troubles Anxieux</h3>
+                    <p>
+                        Anxiété généralisée, crises d'angoisse, attaques de panique, 
+                        anxiété sociale - des troubles particulièrement fréquents 
+                        dans notre société moderne.
+                    </p>
+                </div>
+                
+                <div class="problem-card">
+                    <h3>Burn-out et Épuisement</h3>
+                    <p>
+                        Accompagnement spécialisé pour retrouver l'équilibre après 
+                        un épuisement professionnel ou personnel. Reconstruction 
+                        progressive de vos ressources intérieures.
+                    </p>
+                </div>
+                
+                <div class="problem-card">
+                    <h3>Traumatismes (EMDR)</h3>
+                    <p>
+                        Traitement des chocs émotionnels, stress post-traumatique, 
+                        événements marquants grâce à l'EMDR, technique reconnue 
+                        par l'OMS et la Haute Autorité de Santé.
+                    </p>
+                </div>
+                
+                <div class="problem-card">
+                    <h3>Maladies Chroniques</h3>
+                    <p>
+                        Accompagnement complémentaire pour améliorer la qualité de vie 
+                        des personnes atteintes de pathologies chroniques (MICI, fibromyalgie, 
+                        endométriose, etc.).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processus de Séance -->
+    <section class="section session-process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Comment se Déroule une Séance d'Hypnose dans le 66 ?</h2>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <h3>Accueil et Échange</h3>
+                    <p>
+                        Nous commençons par un temps d'écoute pour comprendre votre situation, 
+                        vos attentes et définir ensemble les objectifs de la séance.
+                    </p>
+                </div>
+                
+                <div class="step">
+                    <h3>Induction Hypnotique</h3>
+                    <p>
+                        Grâce à des techniques douces d'hypnose ericksonienne, 
+                        je vous guide vers un état de détente profonde, naturel et sécurisant.
+                    </p>
+                </div>
+                
+                <div class="step">
+                    <h3>Travail Thérapeutique</h3>
+                    <p>
+                        Phase principale où nous travaillons sur vos problématiques 
+                        en utilisant les ressources de votre inconscient. 
+                        Approche personnalisée selon vos besoins.
+                    </p>
+                </div>
+                
+                <div class="step">
+                    <h3>Retour et Intégration</h3>
+                    <p>
+                        Émergence progressive et échange sur votre vécu de la séance. 
+                        Conseils pratiques pour prolonger les bénéfices à domicile.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="session-info">
+                <p>
+                    <strong>Durée totale :</strong> 1h15 à 1h30 &nbsp;•&nbsp; 
+                    <strong>Première consultation :</strong> Découverte gratuite de 30 minutes &nbsp;•&nbsp; 
+                    <strong>Tarif séance individuelle :</strong> 80€
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages Région 66 -->
+    <section class="section why-66" style="background: var(--gradient-soft);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pourquoi Consulter un Hypnotiseur dans les Pyrénées-Orientales ?</h2>
+            </div>
+            
+            <div class="advantages-list">
+                <div class="advantage">
+                    <div>
+                        <h3>🌅 Environnement Propice au Bien-être</h3>
+                        <p>
+                            Les Pyrénées-Orientales offrent un cadre naturel exceptionnel qui favorise 
+                            la détente et la guérison. Notre région méditerranéenne, entre mer et montagne, 
+                            crée une atmosphère apaisante idéale pour votre cheminement thérapeutique.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="advantage">
+                    <div>
+                        <h3>🏥 Réseau de Santé Coordonné</h3>
+                        <p>
+                            Le département bénéficie d'un excellent maillage de professionnels de santé. 
+                            Mon cabinet en MSP facilite les échanges avec médecins, kinésithérapeutes 
+                            et autres praticiens pour un suivi complet.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="advantage">
+                    <div>
+                        <h3>🎯 Expertise Locale Adaptée</h3>
+                        <p>
+                            Connaissant parfaitement les spécificités de notre territoire et de ses habitants, 
+                            je propose un accompagnement qui tient compte de votre environnement de vie 
+                            et de vos contraintes locales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localisation -->
+    <section class="section locations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cabinet et Zones d'Intervention dans le 66</h2>
+            </div>
+            
+            <div class="location-grid">
+                <div class="main-location">
+                    <h3>📍 Cabinet Principal - Néfiach (66170)</h3>
+                    <address>
+                        Maison de Santé Pluridisciplinaire<br>
+                        3 rue de Verdun<br>
+                        66170 Néfiach
+                    </address>
+                    <p>
+                        <strong>✓ Parking gratuit disponible</strong><br>
+                        ✓ Accessible aux personnes à mobilité réduite<br>
+                        ✓ Environnement médical sécurisant
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--primary-blue); font-family: 'Playfair Display', serif; margin-bottom: 30px;">
+                        🚗 Zones d'Intervention Faciles d'Accès
+                    </h3>
+                    <div class="cities-grid">
+                        <div class="city">
+                            <strong>Perpignan (66000)</strong><br>
+                            <em style="color: var(--secondary-green);">15 minutes par D900</em>
+                        </div>
+                        <div class="city">
+                            <strong>Prades (66500)</strong><br>
+                            <em style="color: var(--secondary-green);">10 minutes par D35</em>
+                        </div>
+                        <div class="city">
+                            <strong>Thuir (66300)</strong><br>
+                            <em style="color: var(--secondary-green);">20 minutes via D612</em>
+                        </div>
+                        <div class="city">
+                            <strong>Céret (66400)</strong><br>
+                            <em style="color: var(--secondary-green);">25 minutes par A9</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="online-sessions">
+                <h3>💻 Consultations Visio - Toute la France</h3>
+                <p>
+                    Pour les personnes éloignées géographiquement ou ayant des contraintes de déplacement, 
+                    je propose des <strong>séances d'hypnose en visioconférence</strong> tout aussi efficaces 
+                    que les consultations en présentiel.
+                </p>
+                <p style="margin-top: 15px;">
+                    <strong>Parfaitement adaptées pour :</strong><br>
+                    • L'anxiété sociale qui rend difficile le déplacement<br>
+                    • Les emplois du temps contraignants<br>
+                    • Les périodes de mobilité réduite<br>
+                    • Le suivi régulier à distance
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="section-title" style="color: white;">Prêt(e) à Franchir le Pas vers un Mieux-être ?</h2>
+                
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 20px;">Consultation Découverte Gratuite</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 0;">
+                    Avant de vous engager, je vous offre <strong>30 minutes gratuites</strong> 
+                    pour faire connaissance, comprendre vos besoins et répondre à toutes vos questions 
+                    sur l'hypnose et mon approche thérapeutique.
+                </p>
+                
+                <div class="contact-buttons">
+                    <a href="tel:+33759684359" class="btn btn-white">
+                        📞 Appeler : 07.59.68.43.59
+                    </a>
+                    
+                    <a href="https://calendly.com/joffrey-ros" class="btn btn-outline">
+                        📅 Réserver en Ligne
+                    </a>
+                    
+                    <a href="https://wa.me/33759684359" class="btn btn-whatsapp">
+                        💬 WhatsApp
+                    </a>
+                </div>
+                
+                <div class="cta-sidebar">
+                    <h4 style="margin-bottom: 15px; font-family: 'Playfair Display', serif;">Informations Pratiques</h4>
+                    <p style="font-size: 1rem; line-height: 1.6;">
+                        <strong>Horaires :</strong> Lundi à Vendredi 9h-19h, Samedi 9h-13h<br>
+                        <strong>Remboursement :</strong> Nombreuses mutuelles prennent en charge<br>
+                        <strong>Urgences :</strong> Créneaux d'urgence disponibles<br>
+                        <strong>Paiement :</strong> Espèces, CB, virement, échelonnement possible
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questions Fréquentes - Hypnotiseur 66</h2>
+            </div>
+            
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h3>L'hypnose est-elle efficace pour l'anxiété dans les Pyrénées-Orientales ?</h3>
+                    <p>
+                        Absolument. L'hypnose ericksonienne que je pratique est particulièrement efficace 
+                        pour les troubles anxieux. En tant qu'hypnotiseur expérimenté dans le 66, 
+                        j'observe des améliorations significatives dès les premières séances chez 85% de mes patients.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Combien de séances sont nécessaires avec un hypnotiseur ?</h3>
+                    <p>
+                        En moyenne, 3 à 8 séances suffisent pour obtenir des résultats durables. 
+                        Chaque parcours est unique et nous adaptons le nombre de séances à votre évolution 
+                        et à vos objectifs personnels.
+                    </p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Les consultations avec un hypnotiseur sont-elles remboursées dans le 66 ?</h3>
+                    <p>
+                        De nombreuses mutuelles remboursent partiellement ou totalement l'hypnothérapie. 
+                        Je vous fournis systématiquement une facture détaillée pour faciliter vos démarches 
+                        de remboursement auprès de votre complémentaire santé.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Joffrey Ros - Hypnothérapeute | Tous droits réservés</p>
+            <p>
+                Cabinet : 3 rue de Verdun, MSP - 66170 Néfiach | 
+                <a href="tel:+33759684359">07.59.68.43.59</a> | 
+                <a href="/cdn-cgi/l/email-protection#1f7c70716b7e7c6b5f77666f71706c7a757079796d7a6631796d"><span class="__cf_email__" data-cfemail="ff9c90918b9e9c8bbf97868f91908c9a959099998d9a86d1998d">[email&#160;protected]</span></a>
+            </p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Menu mobile
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Smooth scroll pour les liens internes
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animation des cartes au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observer les éléments à animer
+        document.querySelectorAll('.problem-card, .step, .faq-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+        
+        // Fermer le menu mobile quand on clique sur un lien
+        document.querySelectorAll('.nav-li
