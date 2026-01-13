@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque Audio d'Auto-Hypnose | Joffrey Ros - Hypnothérapeute Néfiach</title>
+    <meta name="description" content="Découvrez notre collection d'audios d'auto-hypnose gratuits. Sessions guidées pour la relaxation, la gestion du stress et la création de votre lieu ressource intérieur.">
+    <meta name="keywords" content="bibliothèque audio, auto-hypnose gratuit, relaxation, lieu ressource, méditation guidée, hypnose Néfiach">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bibliothèque Audio d'Auto-Hypnose Gratuite - Joffrey Ros">
+    <meta property="og:description" content="Collection complète d'audios d'auto-hypnose pour la relaxation et la gestion du stress. Sessions guidées par Joffrey Ros, hypnothérapeute à Néfiach.">
+    <meta property="og:image" content="https://www.hypnosejoffrey.fr/images/lieu-ressource.png">
+    <meta property="og:url" content="https://www.hypnosejoffrey.fr/audios-auto-hypnose">
+    
+    <!-- Calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <style>
+        :root {
+            /* Couleurs cohérentes avec le site principal */
+            --primary-color: #2c5aa0;
+            --secondary-color: #4CAF50;
+            --accent-color: #FF6B35;
+            --purple-gradient: linear-gradient(45deg, #667eea, #764ba2);
+            --text-dark: #2c3e50;
+            --text-gray: #7f8c8d;
+            --bg-light: #f8f9fa;
+            --shadow: 0 4px 20px rgba(0,0,0,0.1);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+            --border-radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation cohérente */
+        .nav-bar {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .cta-button {
+            background: var(--purple-gradient);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        /* Header Section */
+        .header-section {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        
+        .header-section h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .header-section .subtitle {
+            font-size: 1.3rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            line-height: 1.5;
+        }
+        
+        /* Featured Audio Section */
+        .featured-section {
+            margin: 60px 0;
+            padding: 0;
+        }
+        
+        .featured-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+        
+        .featured-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .featured-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .featured-content {
+            padding: 40px;
+        }
+        
+        .featured-badge {
+            background: var(--accent-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .featured-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .featured-description {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .audio-details {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+            color: var(--text-gray);
+        }
+        
+        .detail-icon {
+            font-size: 1.2rem;
+        }
+        
+        /* Player Section */
+        .player-section {
+            background: var(--bg-light);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin: 30px 0;
+            border: 2px solid #e8ecf4;
+        }
+        
+        .player-iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .player-instructions {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(44, 90, 160, 0.05);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .player-instructions h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .player-instructions p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        /* Benefits Grid */
+        .benefits-section {
+            margin: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto 50px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 35px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+        
+        .benefit-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--purple-gradient);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: var(--border-radius);
+            margin: 80px 0;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 13px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        /* Footer cohérent */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+        
+        .footer-content a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Collection Future (placeholder) */
+        .collection-preview {
+            margin: 60px 0;
+        }
+        
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .collection-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .collection-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .collection-placeholder {
+            height: 200px;
+            background: linear-gradient(135deg, #f0f2f5 0%, #e8ecf4 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            opacity: 0.5;
+        }
+        
+        .collection-content {
+            padding: 25px;
+        }
+        
+        .collection-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+        
+        .collection-description {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+        
+        .coming-soon {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .header-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header-section .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .featured-content {
+                padding: 30px;
+            }
+            
+            .featured-title {
+                font-size: 1.8rem;
+            }
+            
+            .audio-details {
+                gap: 15px;
+            }
+            
+            .player-iframe {
+                height: 300px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="nav-logo">🧠 Hypnose Joffrey</a>
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Accueil</a>
+                    <a href="/blog" class="nav-link">Blog</a>
+                    <a href="/ressources" class="nav-link">Ressources</a>
+                    <a href="/contact" class="nav-link">Contact</a>
+                    <a href="https://calendly.com/joffrey-ros/urgence-anxiete-48h" class="cta-button">📅 RDV Rapide</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="header-section">
+        <div class="container">
+            <h1>🎧 Bibliothèque Audio</h1>
+            <p class="subtitle">
+                Découvrez notre collection d'audios d'auto-hypnose gratuits pour la relaxation, 
+                la gestion du stress et le développement de vos ressources intérieures.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Audio -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-card">
+                <img src="/mnt/user-data/uploads/lieu_ressource.png" alt="Découvrez votre lieu ressource" class="featured-image">
+                
+                <div class="featured-content">
+                    <span class="featured-badge">🎯 À la Une</span>
+                    <h2 class="featured-title">Découvrez Votre Lieu Ressource</h2>
+                    <p class="featured-description">
+                        Une session d'auto-hypnose guidée pour créer votre sanctuaire intérieur de paix et de régénération. 
+                        Cette pratique vous permettra d'ancrer un espace mental sécurisé, accessible à tout moment pour vous ressourcer.
+                    </p>
+                    
+                    <div class="audio-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">⏱️</span>
+                            <span>Durée: 28 min 35 sec</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🎧</span>
+                            <span>Casque recommandé</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🧘‍♀️</span>
+                            <span>Relaxation profonde</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">✨</span>
+                            <span>Gratuit</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Player Section -->
+                    <div class="player-section">
+                        <iframe 
+                            src="https://drive.google.com/file/d/1iKDaPtV0sy5hEm2r39qrbuq7eHzV55xK/preview" 
+                            class="player-iframe"
+                            allow="autoplay; encrypted-media"
+                            allowfullscreen
+                            title="Audio Auto-Hypnose - Découvrez votre lieu ressource">
+                        </iframe>
+                        
+                        <div class="player-instructions">
+                            <h3>🎯 Comment profiter pleinement de cette session ?</h3>
+                            <p>
+                                Installez-vous confortablement dans un endroit calme, fermez les yeux, 
+                                et laissez-vous guider vers votre lieu ressource personnel. 
+                                L'utilisation d'un casque améliore significativement l'expérience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Pourquoi Pratiquer l'Auto-Hypnose ?</h2>
+            <p class="section-subtitle">
+                Découvrez les bienfaits scientifiquement prouvés de l'auto-hypnose 
+                sur votre bien-être mental et physique.
+            </p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">🧘‍♀️</span>
+                    <h3>Relaxation Profonde</h3>
+                    <p>Atteignez un état de détente complète et libérez les tensions accumulées dans votre corps et votre esprit grâce à des techniques éprouvées.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <span class="benefit-icon">🌿</span>
+                    <h3>Lieu Ressource Personnel</h3>
+                    <p>Créez votre sanctuaire intérieur, un espace mental sécurisé où vous pourrez vous ressourcer à tout moment, où que vous soyez.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <span class="benefit-icon">⚡</span>
+                    <h3>Gestion du Stress</h3>
+                    <p>Développez votre capacité naturelle à gérer l'anxiété et les situations stressantes avec des outils pratiques et efficaces.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <span class="benefit-icon">🎯</span>
+                    <h3>Ancrage Positif</h3>
+                    <p>Renforcez votre confiance en vous et créez des ressources mentales durables pour améliorer votre qualité de vie quotidienne.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Preview -->
+    <section class="collection-preview">
+        <div class="container">
+            <h2 class="section-title">Prochainement dans la Collection</h2>
+            <p class="section-subtitle">
+                D'autres sessions d'auto-hypnose seront bientôt disponibles pour enrichir votre pratique.
+            </p>
+            
+            <div class="collection-grid">
+                <div class="collection-card">
+                    <div class="collection-placeholder">😴</div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Sommeil Réparateur</h3>
+                        <p class="collection-description">Session dédiée à l'amélioration de la qualité du sommeil et à l'endormissement naturel.</p>
+                        <span class="coming-soon">Bientôt disponible</span>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <div class="collection-placeholder">💪</div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Confiance en Soi</h3>
+                        <p class="collection-description">Renforcez votre estime personnelle et développez une confiance inébranlable.</p>
+                        <span class="coming-soon">Bientôt disponible</span>
+                    </div>
+                </div>
+                
+                <div class="collection-card">
+                    <div class="collection-placeholder">🧠</div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Focus & Concentration</h3>
+                        <p class="collection-description">Améliorez votre capacité de concentration et votre efficacité mentale.</p>
+                        <span class="coming-soon">Bientôt disponible</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à Aller Plus Loin ?</h2>
+            <p>
+                Cette collection gratuite n'est qu'un aperçu de ce que l'hypnothérapie personnalisée peut vous apporter. 
+                Découvrez un accompagnement sur-mesure pour transformer durablement votre relation au stress et développer tout votre potentiel.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="https://calendly.com/joffrey-ros/urgence-anxiete-48h" class="btn-primary" onclick="trackConversion('calendly_audio_library', 120)">
+                    📅 Consultation Gratuite
+                </a>
+                <a href="tel:+33759684359" class="btn-secondary">
+                    📞 07 59 68 43 59
+                </a>
+            </div>
+            
+            <p style="margin-top: 30px; font-size: 1rem; opacity: 0.8;">
+                <strong>Première consultation gratuite de 30 minutes</strong><br>
+                Cabinet MSP Néfiach + Consultations visio partout en France
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p><strong>Joffrey Ros - Hypnothérapeute Spécialisé Anxiété</strong></p>
+                <p>Cabinet MSP, 3 rue de Verdun, 66170 Néfiach</p>
+                <p>
+                    <a href="tel:+33759684359">07 59 68 43 59</a> | 
+                    <a href="mailto:contact@hypnosejoffrey.fr">contact@hypnosejoffrey.fr</a>
+                </p>
+                <p style="margin-top: 20px; font-size: 0.9rem;">
+                    <a href="/mentions-legales">Mentions Légales</a> | 
+                    <a href="/conditions-utilisation">Conditions d'Utilisation</a> | 
+                    <a href="/politique-confidentialite">Politique de Confidentialité</a>
+                </p>
+                <p style="margin-top: 15px; font-size: 0.8rem; opacity: 0.7;">
+                    © 2025 Joffrey Ros - Tous droits réservés
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Analytics -->
+    <script>
+        // Google Analytics 4 - À configurer avec votre ID
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID'); // À remplacer
+
+        // Fonction de tracking des conversions
+        function trackConversion(eventName, value) {
+            gtag('event', eventName, {
+                'event_category': 'conversion',
+                'event_label': 'audio_library',
+                'value': value
+            });
+        }
+
+        // Tracking automatique des interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track lecture audio
+            const iframe = document.querySelector('.player-iframe');
+            if (iframe) {
+                iframe.addEventListener('click', function() {
+                    gtag('event', 'audio_interaction', {
+                        'event_category': 'engagement',
+                        'event_label': 'lieu_ressource_play'
+                    });
+                });
+            }
+
+            // Track scroll depth
+            let maxScroll = 0;
+            window.addEventListener('scroll', function() {
+                const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                if (scrollPercent > maxScroll && scrollPercent % 25 === 0) {
+                    maxScroll = scrollPercent;
+                    gtag('event', 'scroll_depth', {
+                        'event_category': 'engagement',
+                        'event_label': scrollPercent + '%'
+                    });
+                }
+            });
+
+            // Track time on page
+            let startTime = Date.now();
+            window.addEventListener('beforeunload', function() {
+                const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+                gtag('event', 'time_on_page', {
+                    'event_category': 'engagement',
+                    'event_label': 'audio_library',
+                    'value': timeOnPage
+                });
+            });
+        });
+    </script>
+</body>
+</html>
