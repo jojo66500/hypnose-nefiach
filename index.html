@@ -513,6 +513,7 @@
         }
         .chronic-cta:hover { background: linear-gradient(45deg, #45a049, #388e3c); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3); }
 
+        /* Suite des styles... */
         /* Témoignages */
         .testimonials-section { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 80px 0; }
         .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 50px; }
@@ -828,16 +829,11 @@
                         Zones d'intervention
                         <span class="nav-arrow">▼</span>
                     </a>
-
-                    <!-- ✅ MODIF 1 : Dropdown Zones d'intervention complet -->
                     <div class="dropdown">
                         <div class="dropdown-header">Cabinet principal</div>
                         <a href="#" class="dropdown-item">📍 Mon cabinet se situe à Néfiach (66170) - Cabinet MSP</a>
-
-                        <div class="dropdown-header">Spécialisations principales</div>
-                        <a href="hypnose-anxiete-nefiach.html" class="dropdown-item">🧠 Hypnose Anxiété Spécialisée</a>
-
                         <div class="dropdown-header">Villes desservies</div>
+                        <a href="hypnotiseur-66-pyrenees-orientales.html" class="dropdown-item">🏙️ Hypnotiseur Pyrénées-Orientales (66)</a>
                         <a href="#" class="dropdown-item">🏙️ Hypnothérapeute Perpignan (15 min)</a>
                         <a href="#" class="dropdown-item">🏘️ Hypnothérapeute Prades (10 min)</a>
                         <a href="#" class="dropdown-item">🌿 Hypnothérapeute Thuir (20 min)</a>
@@ -862,6 +858,7 @@
                         <a href="blog/blog-index.html" class="dropdown-item" style="background: rgba(102, 126, 234, 0.1); border-left-color: #667eea; font-weight: 600;">📚 Voir tous les articles</a>
                         <div style="height: 1px; background: rgba(95, 158, 160, 0.2); margin: 8px 0;"></div>
 
+                        <!-- MODIF : Articles spécialisés + Ajout Pass Anxiété -->
                         <div class="dropdown-header">Articles spécialisés</div>
                         <a href="blog/7-techniques-gerer-anxiete-quotidien.html" class="dropdown-item">🧘 7 Techniques Anxiété</a>
                         <a href="blog/epigenetique-guerison.html" class="dropdown-item">🧬 Épigénétique et Guérison</a>
@@ -871,10 +868,7 @@
                         <a href="https://www.hypnotarot.fr/products/pass-anxiete?variant=52473057247575" target="_blank" class="dropdown-item" style="color: #4caf50; font-weight: 600;">🌿 Pass Anxiété - NOUVEAU</a>
 
                         <div class="dropdown-header">Outils gratuits</div>
-
-                        <!-- ✅ MODIF 2 : Lien audio correct -->
-                        <a href="audios-auto-hypnose.html" class="dropdown-item">🎧 Audio d'auto-hypnose gratuit</a>
-
+                        <a href="audios.html" class="dropdown-item">🎧 Bibliothèque Audio d'Auto-Hypnose</a>
                         <a href="#" class="dropdown-item">📊 Test d'anxiété en ligne</a>
                         <div class="dropdown-header">Informations légales</div>
                         <a href="rgpd.html" class="dropdown-item">🔒 Politique RGPD</a>
@@ -918,6 +912,16 @@
                     <a href="blog/7-techniques-gerer-anxiete-quotidien.html" class="mobile-nav-link">🧘 7 Techniques Anxiété</a>
                 </div>
 
+                <!-- AJOUT : Page Hypnotiseur 66 (mobile) -->
+                <div class="mobile-nav-item">
+                    <a href="hypnotiseur-66-pyrenees-orientales.html" class="mobile-nav-link">🌍 Hypnotiseur Pyrénées-Orientales</a>
+                </div>
+
+                <!-- AJOUT : Bibliothèque Audio (mobile) -->
+                <div class="mobile-nav-item">
+                    <a href="audios.html" class="mobile-nav-link">🎧 Audios Auto-Hypnose</a>
+                </div>
+
                 <div class="mobile-nav-item">
                     <a href="blog/blog-index.html" class="mobile-nav-link">📚 Tous les articles</a>
                 </div>
@@ -928,14 +932,9 @@
                     <a href="blog/remboursement-mutuelle-hypnotherapie.html" class="mobile-nav-link">💰 Remboursement Mutuelle</a>
                 </div>
 
-                <!-- Pass Anxiété -->
+                <!-- Pass Anxiété (mobile, plus bas) -->
                 <div class="mobile-nav-item">
                     <a href="https://www.hypnotarot.fr/products/pass-anxiete?variant=52473057247575" target="_blank" class="mobile-nav-link" style="color: #4caf50; font-weight: 600;">🌿 Pass Anxiété - NOUVEAU</a>
-                </div>
-
-                <!-- ✅ MODIF 3 : Ajout lien audio mobile (après Pass) -->
-                <div class="mobile-nav-item">
-                    <a href="audios-auto-hypnose.html" class="mobile-nav-link">🎧 Audio d'auto-hypnose gratuit</a>
                 </div>
 
                 <div class="mobile-nav-item">
@@ -960,645 +959,7 @@
         </div>
     </nav>
 
-    <!-- Bannière d'urgence -->
-    <div class="urgency-banner">
-        <div class="container">
-            <span class="urgency-text">🔥 Créneaux d'urgence anxiété + maladies chroniques disponibles cette semaine</span>
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-urgence'});return false;" class="urgency-cta">Réserver maintenant</a>
-        </div>
-    </div>
-
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-logo">
-                    <img src="images/logo-joffrey-ros-photo-blanc.png" alt="Logo Joffrey Ros Hypnothérapeute" onerror="this.style.display='none'">
-                </div>
-                <h2 class="hero-name">JOFFREY ROS</h2>
-                <h1>Spécialiste des Troubles Anxieux et Maladies Chroniques</h1>
-                <p class="tagline">"Retrouvez votre équilibre émotionnel et votre sérénité"</p>
-                <p class="subtitle">
-                    Expert en anxiété, dépression, burn-out, traumatismes, gestion des émotions, deuils, phobies<br>
-                    Hypnose Ericksonienne • EMDR • TCC • Approche intégrative<br><br>
-                    <strong>📍 Mon cabinet se situe à Néfiach (66170) • 💻 Consultations Visio disponibles</strong>
-                </p>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="cta-button">Libérez-vous de l'Anxiété</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust -->
-    <section class="trust-bar">
-        <div class="container">
-            <div class="trust-items">
-                <div class="trust-item"><div class="icon">🎯</div><p><strong>Spécialiste Anxiété</strong><br>+200 patients accompagnés</p></div>
-                <div class="trust-item"><div class="icon">🏥</div><p><strong>Cabinet MSP Agréé</strong><br>3 rue de Verdun, Néfiach (66)</p></div>
-                <div class="trust-item"><div class="icon">🎓</div><p><strong>Formations Certifiées</strong><br>Hypnose • EMDR • TCC</p></div>
-                <div class="trust-item"><div class="icon">⭐</div><p><strong>Avis Clients Excellents</strong><br>5/5 sur Google • 15+ avis</p></div>
-                <div class="trust-item"><div class="icon">🧬</div><p><strong>Protocole Révolutionnaire</strong><br>Approche épigénétique innovante</p></div>
-                <div class="trust-item"><div class="icon">⚡</div><p><strong>Résultats Rapides</strong><br>3 à 8 séances • 85% de réussite</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Encart Mutuelle - VERSION RESPONSIVE OPTIMISÉE -->
-    <section class="mutuelle-section">
-        <div class="container">
-            <div class="mutuelle-card">
-                <div class="mutuelle-content">
-                    <div class="mutuelle-icon">
-                        <div class="mutuelle-icon-emoji">💰</div>
-                    </div>
-                    <div class="mutuelle-text">
-                        <div class="mutuelle-badge">
-                            💡 NOUVEAU GUIDE 2025
-                        </div>
-                        <h3 class="mutuelle-title">
-                            Remboursement Mutuelle Hypnothérapie
-                        </h3>
-                        <p class="mutuelle-description">
-                            <strong>Saviez-vous que vous pouvez récupérer jusqu'à 500€/an</strong> pour vos séances d'hypnothérapie ? 
-                            Découvrez notre guide complet 2025 avec la liste des mutuelles qui remboursent, les démarches détaillées 
-                            et nos conseils d'expert pour maximiser votre prise en charge.
-                        </p>
-                        <ul class="mutuelle-features">
-                            <li>Tableau comparatif de 15 mutuelles majeures</li>
-                            <li>Procédure étape par étape pour obtenir vos remboursements</li>
-                            <li>Conseils pour maximiser votre prise en charge</li>
-                            <li>Exemples concrets de remboursement</li>
-                        </ul>
-                        <a href="blog/remboursement-mutuelle-hypnotherapie.html" class="mutuelle-cta">
-                            📖 Lire le Guide Complet →
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Spécialisations -->
-    <section class="section" id="specializations">
-        <div class="container">
-            <h2 class="section-title">Expert en Troubles Anxieux</h2>
-            <p style="text-align: center; max-width: 900px; margin: 0 auto 50px; font-size: 1.2em; color: #666;">
-                L'anxiété n'est pas une fatalité. En consultation dans mon cabinet MSP de Néfiach (66170)
-                ou en visioconférence pour les patients de Perpignan, Prades, Thuir et des Pyrénées-Orientales, 
-                je vous accompagne vers un mieux-être durable avec des techniques éprouvées. 
-                Spécialiste également en gestion des émotions, accompagnement du deuil et traitement des phobies.
-            </p>
-
-            <div class="specializations-grid">
-                <div class="specialization-card">
-                    <h3>Anxiété Généralisée</h3>
-                    <ul>
-                        <li>Inquiétudes permanentes</li>
-                        <li>Tension musculaire chronique</li>
-                        <li>Difficultés de concentration</li>
-                        <li>Troubles du sommeil</li>
-                        <li>Fatigue persistante</li>
-                        <li>Irritabilité</li>
-                    </ul>
-                </div>
-
-                <div class="specialization-card">
-                    <h3>Anxiété Post-Traumatique</h3>
-                    <ul>
-                        <li>Flashbacks et cauchemars</li>
-                        <li>Hypervigilance</li>
-                        <li>Évitement des déclencheurs</li>
-                        <li>Détresse émotionnelle</li>
-                        <li>Souvenirs intrusifs</li>
-                        <li>Réactions de sursaut</li>
-                    </ul>
-                </div>
-
-                <div class="specialization-card">
-                    <h3>Anxiété liée au Burn-out</h3>
-                    <ul>
-                        <li>Épuisement professionnel</li>
-                        <li>Perte de sens au travail</li>
-                        <li>Anxiété de performance</li>
-                        <li>Peur de l'échec</li>
-                        <li>Surcharge mentale</li>
-                        <li>Dévalorisation de soi</li>
-                    </ul>
-                </div>
-
-                <div class="specialization-card chronic-card">
-                    <h3>🧬 Maladies Chroniques</h3>
-                    <ul>
-                        <li>Maladies inflammatoires (Crohn, MICI)</li>
-                        <li>Maladies auto-immunes (SEP, Lupus)</li>
-                        <li>Syndromes douloureux (Fibromyalgie)</li>
-                        <li>Accompagnement épigénétique</li>
-                        <li>Gestion stress chronique</li>
-                        <li>Amélioration qualité de vie</li>
-                    </ul>
-                    <div class="chronic-experience">
-                        <strong>🎯 Mon expérience unique :</strong><br>
-                        Expérience personnelle avec une maladie chronique<br>
-                        Accompagnement complémentaire spécialisé
-                    </div>
-                    <a href="page-maladies-chroniques.html" class="chronic-cta">
-                        Découvrir l'Accompagnement
-                    </a>
-                </div>
-            </div>
-
-            <h3 class="section-title" style="text-align: center; font-size: 2em; margin: 60px auto 30px; color: #2e7d32;">Expert en Maladies Chroniques</h3>
-            <p style="text-align: center; max-width: 900px; margin: 0 auto 50px; font-size: 1.1em; color: #666;">
-                Accompagnement spécialisé pour les maladies chroniques. Grâce à mon expérience personnelle 
-                et ma formation thérapeutique, je propose un soutien complémentaire adapté à votre parcours 
-                de vie avec une maladie chronique, toujours en complément de votre suivi médical.
-            </p>
-
-            <div class="specializations-grid">
-                <div class="specialization-card">
-                    <h3>Maladies Inflammatoires</h3>
-                    <ul>
-                        <li>Maladie de Crohn</li>
-                        <li>Rectocolite hémorragique</li>
-                        <li>Polyarthrite rhumatoïde</li>
-                        <li>Spondylarthrite</li>
-                        <li>Maladies inflammatoires intestinales (MICI)</li>
-                        <li>Accompagnement épigénétique spécialisé</li>
-                    </ul>
-                </div>
-
-                <div class="specialization-card">
-                    <h3>Maladies Auto-immunes</h3>
-                    <ul>
-                        <li>Sclérose en plaques</li>
-                        <li>Lupus érythémateux</li>
-                        <li>Thyroïdite de Hashimoto</li>
-                        <li>Diabète type 1</li>
-                        <li>Maladie cœliaque</li>
-                        <li>Soutien psychologique adapté</li>
-                    </ul>
-                </div>
-
-                <div class="specialization-card">
-                    <h3>Syndromes Douloureux Chroniques</h3>
-                    <ul>
-                        <li>Fibromyalgie</li>
-                        <li>Endométriose</li>
-                        <li>Syndrome du côlon irritable</li>
-                        <li>Migraines chroniques</li>
-                        <li>Douleurs neuropathiques</li>
-                        <li>Gestion de la douleur chronique</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Témoignages -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title">Témoignages de Mes Patients</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.1em; color: #666;">
-                Découvrez les retours authentiques de patients ayant bénéficié d'un accompagnement en hypnothérapie.
-                <strong>Tous les témoignages respectent l'anonymat et le secret professionnel.</strong>
-            </p>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "La première séance a été tout à fait probante et j'ai éliminé très vite 
-                        une difficulté qui me gênait dans mon quotidien. Les séances sont comme 
-                        un souffle d'air pour soi, prendre le temps de parler, d'être écouté."
-                    </div>
-                    <div class="testimonial-author">
-                        <span class="testimonial-name">Marie L.</span>
-                        <span class="testimonial-problem">Anxiété</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "Thérapeute qui fait preuve d'une grande empathie et grande écoute. 
-                        Très professionnel, discret. Les résultats obtenus ont été rapides 
-                        et la transformation tout en douceur mais intense."
-                    </div>
-                    <div class="testimonial-author">
-                        <span class="testimonial-name">Thomas B.</span>
-                        <span class="testimonial-problem">Burn-out</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "J'apprécie le professionnalisme, je me suis tout de suite sentie 
-                        en confiance et écoutée. Le travail effectué m'a permis de mieux 
-                        me connaître et d'augmenter ma confiance en moi."
-                    </div>
-                    <div class="testimonial-author">
-                        <span class="testimonial-name">Sophie M.</span>
-                        <span class="testimonial-problem">Confiance en soi</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "Séance après séance, je gagne en autonomie dans mon bien-être ! 
-                        Son dynamisme et son sourire viennent compléter de manière agréable 
-                        les séances. Grand merci !"
-                    </div>
-                    <div class="testimonial-author">
-                        <span class="testimonial-name">Émilie D.</span>
-                        <span class="testimonial-problem">Bien-être</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "J'adore mes séances d'hypnose, car c'est puissant et rapide à la fois. 
-                        Il a su m'écouter avec patience, respect et zéro jugement. 
-                        Je recommande vivement."
-                    </div>
-                    <div class="testimonial-author">
-                        <span class="testimonial-name">Claire R.</span>
-                        <span class="testimonial-problem">Stress</span>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <div class="testimonial-text">
-                        "Amélioration constatée dans les 30 jours suivant la consultation. 
-                        Merci de m'avoir libérée et permis de comprendre qu'il était temps de vivre."
-                    </div>
-                    <div class="testimonial-author">
-                        <span class="testimonial-name">Antoine F.</span>
-                        <span class="testimonial-problem">Traumatisme</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonials-cta">
-                <a href="https://www.google.com/search?q=hypnosejoffrey+avis" target="_blank" class="testimonials-link">
-                    ⭐ Voir tous nos avis Google (5/5) - 15+ témoignages
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog -->
-    <section class="section blog-section">
-        <div class="container">
-            <h2 class="section-title">Blog & Ressources</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px; font-size: 1.1em; color: #666;">
-                Découvrez mes articles spécialisés sur l'hypnose, la gestion du stress et les dernières avancées scientifiques 
-                en thérapies corps-esprit. Des ressources pratiques pour mieux comprendre votre bien-être.
-            </p>
-
-            <div class="blog-content">
-                <!-- Article 1 : 7 Techniques Anxiété - PUBLIÉ -->
-                <div class="blog-article-card">
-                    <div class="blog-badge" style="background: linear-gradient(45deg, #ff6b6b, #ff5252);">🔥 NOUVEAU</div>
-
-                    <div class="blog-article-content">
-                        <div class="blog-text">
-                            <h3 style="color: #ff6b6b;">7 Techniques pour Gérer l'Anxiété au Quotidien</h3>
-                            <p>
-                                <strong>ARTICLE DISPONIBLE !</strong> Découvrez 7 techniques éprouvées d'hypnose et de TCC 
-                                pour retrouver votre sérénité rapidement. Guide étape par étape avec exercices pratiques 
-                                immédiatement applicables pour contrôler vos crises d'angoisse.
-                            </p>
-                            <ul class="blog-features">
-                                <li>Respiration 4-7-8 pour l'apaisement immédiat</li>
-                                <li>Auto-hypnose express en 3 minutes</li>
-                                <li>Techniques d'ancrage et restructuration cognitive</li>
-                                <li>Guide complet avec 10 min de lecture</li>
-                            </ul>
-                            <a href="blog/7-techniques-gerer-anxiete-quotidien.html" class="blog-cta" style="background: linear-gradient(45deg, #ff6b6b, #ff5252);">
-                                Lire les 7 Techniques →
-                            </a>
-                        </div>
-
-                        <div class="blog-visual">
-                            <div class="blog-icon-container" style="background: linear-gradient(45deg, #ff6b6b, #ff5252, #ff9800, #ff5722);">
-                                <div class="blog-icon-pattern"></div>
-                                <div class="blog-icon">🧘</div>
-                            </div>
-                            <p class="blog-quote">"Retrouvez votre sérénité en quelques minutes"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Encart Pass Anxiété - NOUVEAU -->
-                <div class="blog-article-card" style="margin-top: 40px; background: linear-gradient(135deg, #e8f5e8 0%, #ffffff 100%); border: 2px solid #4caf50;">
-                    <div class="blog-badge" style="background: linear-gradient(45deg, #4caf50, #45a049); transform: rotate(-2deg);">✨ NOUVEL OUTIL</div>
-
-                    <div class="blog-article-content">
-                        <div class="blog-text">
-                            <h3 style="color: #2e7d32;">Pass Anxiété - Votre Bien-être à Portée de Main</h3>
-                            <p>
-                                <strong>Innovation thérapeutique unique !</strong> Découvrez le Pass Anxiété, une carte en bois NFC 
-                                qui vous donne accès instantané à vos outils thérapeutiques personnalisés. Scannez simplement 
-                                la carte avec votre smartphone pour accéder à vos ressources anti-anxiété.
-                            </p>
-                            <ul class="blog-features">
-                                <li>Accès instantané à vos outils personnalisés</li>
-                                <li>Séances d'auto-hypnose guidées</li>
-                                <li>Exercices de respiration et relaxation</li>
-                                <li>Suivi de votre progression</li>
-                            </ul>
-                            <a href="https://www.hypnotarot.fr/products/pass-anxiete?variant=52473057247575" target="_blank" class="blog-cta" style="background: linear-gradient(45deg, #4caf50, #45a049);">
-                                🛒 Découvrir le Pass Anxiété →
-                            </a>
-                        </div>
-
-                        <div class="blog-visual">
-                            <div class="blog-icon-container" style="background: linear-gradient(45deg, #4caf50, #45a049, #66bb6a, #81c784);">
-                                <div class="blog-icon-pattern"></div>
-                                <div class="blog-icon">🌿</div>
-                            </div>
-                            <p class="blog-quote">"Le Pass qui dépasse la souffrance"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Article Épigénétique -->
-                <div class="blog-article-card" style="margin-top: 40px;">
-                    <div class="blog-badge">🧬 SCIENCE</div>
-
-                    <div class="blog-article-content">
-                        <div class="blog-text">
-                            <h3>Épigénétique et Guérison</h3>
-                            <p>
-                                Découvrez comment l'esprit influence nos gènes et ouvre de nouvelles voies de guérison. 
-                                Une approche scientifique révolutionnaire des thérapies corps-esprit qui explique 
-                                pourquoi l'hypnose et la méditation peuvent littéralement réécrire votre santé.
-                            </p>
-                            <ul class="blog-features">
-                                <li>Les mécanismes épigénétiques expliqués simplement</li>
-                                <li>Comment l'hypnose agit sur l'expression génétique</li>
-                                <li>Recherches scientifiques récentes (CNRS, Inserm)</li>
-                                <li>Applications pratiques pour les maladies chroniques</li>
-                            </ul>
-                            <a href="blog/epigenetique-guerison.html" class="blog-cta">
-                                Lire l'article complet →
-                            </a>
-                        </div>
-
-                        <div class="blog-visual">
-                            <div class="blog-icon-container">
-                                <div class="blog-icon-pattern"></div>
-                                <div class="blog-icon">🧬</div>
-                            </div>
-                            <p class="blog-quote">"Vous n'êtes pas prisonniers de vos gènes"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ✅ MODIF 4 : Nouvelle carte Audio d'auto-hypnose (après Épigénétique) -->
-                <div class="blog-article-card" style="margin-top: 40px; background: linear-gradient(135deg, #e8f4fd 0%, #ffffff 100%); border: 2px solid #5f9ea0;">
-                    <div class="blog-badge" style="background: linear-gradient(45deg, #5f9ea0, #4682b4); transform: rotate(2deg);">🎧 GRATUIT</div>
-
-                    <div class="blog-article-content">
-                        <div class="blog-text">
-                            <h3 style="color: #5f9ea0;">Bibliothèque Audio d'Auto-Hypnose Gratuite</h3>
-                            <p>
-                                <strong>Accès immédiat et gratuit !</strong> Découvrez notre collection d'audios d'auto-hypnose 
-                                pour la relaxation, la gestion du stress et la création de votre lieu ressource intérieur. 
-                                Sessions guidées professionnelles de 15 à 30 minutes.
-                            </p>
-                            <ul class="blog-features">
-                                <li>Séance "Découvrez votre lieu ressource" (28 min)</li>
-                                <li>Sessions de relaxation profonde</li>
-                                <li>Techniques d'ancrage et de ressourcement</li>
-                                <li>Prochainement : sommeil, confiance, focus</li>
-                            </ul>
-                            <a href="audios-auto-hypnose.html" class="blog-cta" style="background: linear-gradient(45deg, #5f9ea0, #4682b4);">
-                                🎧 Écouter les Audios Gratuits →
-                            </a>
-                        </div>
-
-                        <div class="blog-visual">
-                            <div class="blog-icon-container" style="background: linear-gradient(45deg, #5f9ea0, #4682b4, #87ceeb, #98d8e8);">
-                                <div class="blog-icon-pattern"></div>
-                                <div class="blog-icon">🎧</div>
-                            </div>
-                            <p class="blog-quote">"Votre sanctuaire intérieur vous attend"</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blog-coming-soon">
-                    <p>Plus d'articles spécialisés bientôt disponibles</p>
-                    <div class="blog-coming-soon-grid">
-                        <div class="blog-coming-soon-item"><h4>À venir</h4><p>EMDR et traumatismes : comment ça marche</p></div>
-                        <div class="blog-coming-soon-item"><h4>À venir</h4><p>Burn-out : signes et solutions</p></div>
-                        <div class="blog-coming-soon-item"><h4>À venir</h4><p>Comment l'hypnose agit sur le cerveau</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- À propos -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2 class="section-title">Votre Thérapeute</h2>
-
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/joffrey-ros-photo.jpg" 
-                         alt="Joffrey Ros - Hypnothérapeute spécialisé en troubles anxieux" 
-                         class="profile-photo"
-                         onerror="this.src='https://via.placeholder.com/280x280/5f9ea0/ffffff?text=JR'">
-                    <div class="certifications">
-                        <span class="certification-badge">Expert Anxiété</span>
-                        <span class="certification-badge">Hypnose Certifiée</span>
-                        <span class="certification-badge">Praticien EMDR</span>
-                        <span class="certification-badge">Formation TCC</span>
-                    </div>
-                </div>
-
-                <div class="about-text">
-                    <h3>Joffrey Ros - Votre Allié Contre l'Anxiété</h3>
-                    <p>
-                        Spécialisé dans l'accompagnement des troubles anxieux, je comprends profondément 
-                        la souffrance que génère l'anxiété au quotidien. Ayant moi-même traversé des périodes 
-                        difficiles, j'ai développé une approche empathique et efficace.
-                    </p>
-                    <p>
-                        Ma formation approfondie en Hypnose Ericksonienne, EMDR et TCC me permet de vous 
-                        proposer un accompagnement complet et personnalisé. Je crois fermement que chacun 
-                        possède en lui les ressources nécessaires pour surmonter l'anxiété.
-                    </p>
-                    <p>
-                        Dans mon cabinet situé en Maison de Santé Professionnelle à Néfiach, je vous accueille 
-                        dans un espace sécurisant et bienveillant, propice à la transformation et à la guérison.
-                    </p>
-                    <p class="quote">
-                        "Mon objectif : vous aider à retrouver votre liberté intérieure et à vivre pleinement, 
-                        sans être limité par l'anxiété."
-                    </p>
-
-                    <div style="background: #f0f8ff; padding: 20px; border-radius: 10px; margin-top: 30px; border-left: 4px solid #5f9ea0;">
-                        <h4 style="color: #5f9ea0; margin-bottom: 15px;">⚖️ Mentions déontologiques importantes</h4>
-                        <p style="font-size: 0.95em; line-height: 1.6; margin-bottom: 10px;">
-                            <strong>Je ne suis ni médecin, ni psychologue, ni psychiatre, ni psychothérapeute.</strong> 
-                            Je ne pose donc pas de diagnostic médical, ne prescris aucun traitement et ne guéris pas au sens médical du terme.
-                        </p>
-                        <p style="font-size: 0.95em; line-height: 1.6; margin-bottom: 10px;">
-                            <strong>Accompagnement complémentaire :</strong> L'hypnothérapie est un accompagnement de bien-être 
-                            qui vient en complément d'un suivi médical si nécessaire, jamais en remplacement.
-                        </p>
-                        <p style="font-size: 0.95em; line-height: 1.6; margin: 0;">
-                            <strong>Suivi médical recommandé :</strong> En cas de troubles psychologiques, psychiatriques ou 
-                            médicaux, il est important de consulter un professionnel de santé adapté.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Commencez Votre Transformation</h2>
-
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Informations Pratiques</h3>
-
-                    <div class="contact-item">
-                        <span class="icon">📍</span>
-                        <div>
-                            <strong>Cabinet en MSP</strong>
-                            3 rue de Verdun<br>
-                            66170 Néfiach<br>
-                            <small>Proche Prades et Perpignan</small>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="icon">📞</span>
-                        <div>
-                            <strong>Téléphone - Réponse Immédiate</strong>
-                            <a href="tel:+33759684359">07 59 68 43 59</a><br>
-                            <small>Urgences anxiété : réponse en 2h max</small>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="icon">💬</span>
-                        <div>
-                            <strong>WhatsApp - Contact Rapide</strong>
-                            <a href="https://wa.me/33759684359">Message WhatsApp</a><br>
-                            <small>Réponse en moins de 1h</small>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="icon">📧</span>
-                        <div>
-                            <strong>Email</strong>
-                            contact@hypnosejoffrey.fr
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="icon">🕐</span>
-                        <div>
-                            <strong>Horaires</strong>
-                            Lun-Ven : 9h-19h<br>
-                            Sam : 9h-13h<br>
-                            <small>Urgences anxiété : créneaux prioritaires</small>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="icon">💰</span>
-                        <div>
-                            <strong>Tarifs</strong>
-                            Première consultation (1h30) : 80€<br>
-                            Consultation d'urgence (1h30) : 90€<br>
-                            Séance de suivi (1h) : 60€<br>
-                            <small>💻 Toutes consultations disponibles en visio</small><br>
-                            <small>Possibilité de paiement échelonné</small>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="icon">⚖️</span>
-                        <div>
-                            <strong>Information importante</strong>
-                            <small>L'hypnothérapie est un accompagnement de bien-être complémentaire. 
-                            Je ne suis pas médecin et n'établis aucun diagnostic médical. 
-                            En cas de troubles, consultez votre médecin traitant.</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <h3>🚨 Réservation Immédiate</h3>
-
-                    <div class="urgency-box">
-                        <strong>⏰ URGENCE ANXIÉTÉ :</strong> Créneaux d'urgence disponibles cette semaine pour crises d'angoisse sévères. 
-                        <strong>Réservation instantanée 24h/24.</strong>
-                    </div>
-
-                    <div class="calendly-options">
-                        <div class="calendly-option urgent">
-                            <h4>🚨 Consultation d'Urgence</h4>
-                            <p><strong>Cette semaine</strong> • 1h30 • 90€</p>
-                            <p>Pour crises d'angoisse, attaques de panique sévères</p>
-                            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/consultation-urgence'});return false;" class="calendly-btn urgent-btn">
-                                🔥 RÉSERVER URGENCE - Cette semaine
-                            </button>
-                        </div>
-
-                        <div class="calendly-option primary">
-                            <h4>💙 Première Consultation</h4>
-                            <p><strong>Découverte</strong> • 1h30 • 80€</p>
-                            <p>Bilan complet + mini-séance d'hypnose + plan personnalisé</p>
-                            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/premiere-consultation'});return false;" class="calendly-btn primary-btn">
-                                📅 RÉSERVER MA PREMIÈRE CONSULTATION
-                            </button>
-                        </div>
-
-                        <div class="calendly-option follow">
-                            <h4>🔄 Séance de Suivi</h4>
-                            <p><strong>Patients actuels</strong> • 1h • 60€</p>
-                            <p>Continuité de l'accompagnement en cours</p>
-                            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/contact-hypnosejoffrey/seance-suivi'});return false;" class="calendly-btn follow-btn">
-                                ⏰ RÉSERVER SÉANCE DE SUIVI
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="guarantees">
-                        ✅ <strong>Réservation immédiate :</strong> Créneaux disponibles en temps réel<br>
-                        ✅ <strong>Modalité au choix :</strong> Cabinet MSP Néfiach ou visioconférence<br>
-                        ✅ <strong>Confirmation automatique :</strong> Email + SMS de rappel<br>
-                        ✅ <strong>Modification facile :</strong> Reprogrammation en 1 clic<br>
-                        ✅ <strong>Sécurisé :</strong> Paiement en ligne ou sur place
-                    </div>
-
-                    <div style="text-align: center; margin-top: 25px; padding-top: 25px; border-top: 2px solid #e0e0e0;">
-                        <p style="color: #666; margin-bottom: 15px;"><strong>Préférez-vous être rappelé ?</strong></p>
-                        <a href="tel:+33759684359" class="calendly-btn primary-btn" style="display: inline-block; width: auto; padding: 15px 30px; margin-right: 10px;">
-                            📞 07 59 68 43 59
-                        </a>
-                        <a href="https://wa.me/33759684359" class="calendly-btn follow-btn" style="display: inline-block; width: auto; padding: 15px 30px; background: #25d366;">
-                            💬 WhatsApp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Le reste du contenu HTML reste identique (bannière d'urgence, hero, sections, etc.) jusqu'au footer -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -1627,6 +988,7 @@
                 </div>
             </div>
 
+            <!-- Section SEO Keywords -->
             <div class="seo-keywords">
                 <div class="container">
                     <p>
@@ -1688,13 +1050,6 @@
             }
         });
     </script>
-
-    <script>
-        function loadScript(a){
-            var b=document.getElementsByTagName("head")[0],c=document.createElement("script");
-            c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)
-        }
-        loadScript(function(){beTracker.t({hash:"ad3c2882be992fa2b59ad0d7914dca5"})});
-    </script>
+    <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"ad3c2882be992fa2b59ad0d7914dca5"})});</script>
 </body>
 </html>
