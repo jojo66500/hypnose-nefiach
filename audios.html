@@ -490,6 +490,7 @@
             
             .audio-details {
                 gap: 15px;
+                grid-template-columns: 1fr;
             }
             
             .player-iframe {
@@ -505,6 +506,69 @@
                 width: 100%;
                 max-width: 300px;
                 justify-content: center;
+            }
+            
+            /* Footer responsive */
+            .footer-content p {
+                font-size: 0.9rem;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+        }
+        
+        /* Responsive pour très petits écrans */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .header-section {
+                padding: 60px 0 30px;
+            }
+            
+            .header-section h1 {
+                font-size: 2rem;
+            }
+            
+            .featured-content {
+                padding: 20px;
+            }
+            
+            .featured-title {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .benefit-card {
+                padding: 25px 20px;
+            }
+            
+            .cta-section {
+                padding: 60px 0;
+                margin: 60px 0 0 0;
+            }
+            
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+            
+            .footer-content p {
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* Navigation mobile améliorée */
+        @media (max-width: 768px) {
+            .nav-content {
+                flex-wrap: wrap;
+            }
+            
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 13px;
             }
         }
     </style>
@@ -700,7 +764,7 @@
                 <p>Cabinet MSP, 3 rue de Verdun, 66170 Néfiach</p>
                 <p>
                     <a href="tel:+33759684359">07 59 68 43 59</a> | 
-                    <a href="/cdn-cgi/l/email-protection#3d5e5253495c5e497d55444d53524e5857525b5b4f5844135b4f"><span class="__cf_email__" data-cfemail="9cfff3f2e8fdffe8dcf4e5ecf2f3eff9f6f3fafaeef9e5b2faee">[email&#160;protected]</span></a>
+                    <a href="mailto:contact@hypnosejoffrey.fr">contact@hypnosejoffrey.fr</a>
                 </p>
                 <p style="margin-top: 20px; font-size: 0.9rem;">
                     <a href="mentions-legales.html">Mentions Légales</a> | 
