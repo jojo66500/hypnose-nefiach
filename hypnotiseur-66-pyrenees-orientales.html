@@ -715,10 +715,7 @@
             <a href="/" class="nav-logo">Joffrey Ros</a>
             <div class="nav-links">
                 <a href="/" class="nav-link">Accueil</a>
-                <a href="/services" class="nav-link">Services</a>
-                <a href="/zones-intervention" class="nav-link">Zones d'intervention</a>
-                <a href="/contact" class="nav-link">Contact</a>
-                <a href="tel:+33759684359" class="btn btn-primary">📞 07.59.68.43.59</a>
+                <a href="https://calendly.com/contact-hypnosejoffrey/decouverte-maladie-chronique" class="btn btn-primary">📞 07.59.68.43.59</a>
             </div>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
         </div>
@@ -734,8 +731,8 @@
                 <strong>troubles anxieux, le burn-out et l'accompagnement des traumatismes</strong>.
             </p>
             <div class="hero-cta">
-                <a href="tel:+33759684359" class="btn btn-primary">📞 Consultation Gratuite</a>
-                <a href="https://calendly.com/joffrey-ros" class="btn btn-outline">📅 Réserver en Ligne</a>
+                <a href="https://calendly.com/contact-hypnosejoffrey/decouverte-maladie-chronique" class="btn btn-primary">📞 Consultation Gratuite</a>
+                <a href="https://calendly.com/contact-hypnosejoffrey/decouverte-maladie-chronique" class="btn btn-outline">📅 Réserver en Ligne</a>
             </div>
         </div>
     </section>
@@ -1014,7 +1011,7 @@
                         📞 Appeler : 07.59.68.43.59
                     </a>
                     
-                    <a href="https://calendly.com/joffrey-ros" class="btn btn-outline">
+                    <a href="https://calendly.com/contact-hypnosejoffrey/decouverte-maladie-chronique" class="btn btn-outline">
                         📅 Réserver en Ligne
                     </a>
                     
@@ -1081,12 +1078,12 @@
             <p>
                 Cabinet : 3 rue de Verdun, MSP - 66170 Néfiach | 
                 <a href="tel:+33759684359">07.59.68.43.59</a> | 
-                <a href="/cdn-cgi/l/email-protection#1f7c70716b7e7c6b5f77666f71706c7a757079796d7a6631796d"><span class="__cf_email__" data-cfemail="ff9c90918b9e9c8bbf97868f91908c9a959099998d9a86d1998d">[email&#160;protected]</span></a>
+                <a href="mailto:contact@hypnosejoffrey.fr">contact@hypnosejoffrey.fr</a>
             </p>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         // Menu mobile
         function toggleMobileMenu() {
             const navLinks = document.querySelector('.nav-links');
@@ -1130,4 +1127,12 @@
         });
         
         // Fermer le menu mobile quand on clique sur un lien
-        document.querySelectorAll('.nav-li
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
